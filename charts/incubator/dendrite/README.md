@@ -1,6 +1,6 @@
 # dendrite
 
-![Version: 6.3.1](https://img.shields.io/badge/Version-6.3.1-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
+![Version: 6.4.0](https://img.shields.io/badge/Version-6.4.0-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
@@ -239,7 +239,7 @@ For more information see:
 
 ## Changelog
 
-### Version 6.3.1
+### Version 6.4.0
 
 #### Added
 
@@ -247,11 +247,11 @@ N/A
 
 #### Changed
 
-* Upgraded dendrite to 0.9.4
+N/A
 
 #### Fixed
 
-N/A
+* value for clientapi.registration_disabled so that it takes it directly from values.
 
 ### Older versions
 
