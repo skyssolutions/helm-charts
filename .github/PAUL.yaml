@@ -1,8 +1,5 @@
 maintainers:
-- billimek
-- bjw-s
-- carpenike
-- onedr0p
+- samip5
 labels: true
 empty_description_check:
   enabled: true
