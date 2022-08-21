@@ -1,7 +1,0 @@
-persistence:
-  config:
-    enabled: true
-    type: emptyDir
-  downloads:
-    enabled: true
-    type: emptyDir

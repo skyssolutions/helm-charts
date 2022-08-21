@@ -1,2 +1,0 @@
-env:
-  ONEDRIVE_AUTHFILES: "/onedrive/conf/auth-request:/onedrive/conf/auth-response"
