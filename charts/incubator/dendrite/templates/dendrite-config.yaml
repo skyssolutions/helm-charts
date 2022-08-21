@@ -84,7 +84,7 @@ stringData:
       external_api:
         listen: http://0.0.0.0:{{ .Values.clientapi.service.main.ports.external.port }}
       {{- end }}
-      registration_disabled: {{ default true .Values.clientapi.config.registration_disabled }}
+      registration_disabled: {{ .Values.clientapi.config.registration_disabled }}
       registration_shared_secret: {{ default "" .Values.clientapi.config.registration_shared_secret | quote }}
       enable_registration_captcha: {{ default false .Values.clientapi.config.captcha.enabled }}
       recaptcha_public_key: {{ default "" .Values.clientapi.config.captcha.recaptcha_public_key | quote }}

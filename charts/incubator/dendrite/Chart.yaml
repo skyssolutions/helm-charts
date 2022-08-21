@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.9.4
 description: Dendrite Matrix Homeserver
 name: dendrite
-version: 6.3.1
+version: 6.4.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - dendrite
@@ -81,5 +81,5 @@ dependencies:
     condition: dendrite.polylithEnabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Upgraded dendrite to 0.9.4
+    - kind: fixed
+      description: value for clientapi.registration_disabled so that it takes it directly from values.
