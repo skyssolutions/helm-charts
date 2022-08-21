@@ -69,6 +69,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded redis chart dependency to version 17.0.11
+    apiVersion: v2
+    appVersion: v0.19
+    created: "2022-08-21T11:22:30.831467409Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.0.11
+    description: DNS proxy as ad-blocker for local network
+    digest: fa045062c9bcfe84788c1714bc4bbc1303aa65c70ab1c0ef22dd9ce4d5b18c54
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/blocky
+    icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
+    keywords:
+    - blocky
+    - adblock
+    - dns
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: jeff@billimek.com
+      name: billimek
+    name: blocky
+    sources:
+    - https://github.com/0xERR0R/blocky
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/blocky-11.0.0/blocky-11.0.0.tgz
+    version: 11.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded app to version 0.19
     apiVersion: v2
     appVersion: v0.19
@@ -3720,4 +3753,4 @@ entries:
     urls:
     - https://github.com/samipsolutions/helm-charts/releases/download/zwavejs2mqtt-5.4.2/zwavejs2mqtt-5.4.2.tgz
     version: 5.4.2
-generated: "2022-08-21T11:21:17.090276757Z"
+generated: "2022-08-21T11:22:30.831662509Z"
