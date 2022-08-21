@@ -3,14 +3,14 @@ apiVersion: v2
 appVersion: 1.27.0
 description: Bridges events and allows you to control your Zigbee devices via MQTT
 name: zigbee2mqtt
-version: 9.5.0
+version: 9.5.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - zigbee
   - mqtt
   - home-assistant
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/zigbee2mqtt
-icon: https://www.zigbee2mqtt.io/images/logo.png
+icon: https://www.zigbee2mqtt.io/logo.png
 sources:
   - https://github.com/Koenkk/zigbee2mqtt
 maintainers:
