@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 0.17.0
+appVersion: 0.19.2
 description: The to-do app to organize your life
 name: vikunja
-version: 6.1.2
+version: 6.2.0
 keywords:
   - vikunja
   - to-do
@@ -11,7 +11,7 @@ keywords:
   - calendar
   - kanban
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/vikunja
-icon: https://s7.gifyu.com/images/GifCroppedTran.gif
+icon: https://vikunja.io/images/vikunja-logo.svg
 sources:
   - https://kolaente.dev/vikunja/api
   - https://kolaente.dev/vikunja/frontend
@@ -31,5 +31,7 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
+    - kind: fixed
+      description: Icon url
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded app to 0.19.2.
