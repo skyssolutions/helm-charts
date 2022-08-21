@@ -1,6 +1,6 @@
 # homebridge
 
-![Version: 5.3.2](https://img.shields.io/badge/Version-5.3.2-informational?style=flat-square) ![AppVersion: 2022-07-08](https://img.shields.io/badge/AppVersion-2022--07--08-informational?style=flat-square)
+![Version: 5.4.0](https://img.shields.io/badge/Version-5.4.0-informational?style=flat-square) ![AppVersion: 2022-08-09](https://img.shields.io/badge/AppVersion-2022--08--09-informational?style=flat-square)
 
 A lightweight NodeJS server that emulates the iOS HomeKit API
 
@@ -93,7 +93,7 @@ N/A
 
 ## Changelog
 
-### Version 5.3.2
+### Version 5.4.0
 
 #### Added
 
@@ -101,7 +101,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Update app to 2022-08-09.
 
 #### Fixed
 

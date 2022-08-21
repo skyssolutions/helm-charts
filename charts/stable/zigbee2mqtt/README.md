@@ -1,6 +1,6 @@
 # zigbee2mqtt
 
-![Version: 9.4.2](https://img.shields.io/badge/Version-9.4.2-informational?style=flat-square) ![AppVersion: 1.19.1](https://img.shields.io/badge/AppVersion-1.19.1-informational?style=flat-square)
+![Version: 9.5.0](https://img.shields.io/badge/Version-9.5.0-informational?style=flat-square) ![AppVersion: 1.27.0](https://img.shields.io/badge/AppVersion-1.27.0-informational?style=flat-square)
 
 Bridges events and allows you to control your Zigbee devices via MQTT
 
@@ -130,7 +130,7 @@ securityContext:
 
 ## Changelog
 
-### Version 9.4.2
+### Version 9.5.0
 
 #### Added
 
@@ -138,7 +138,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded appVersion to version 1.27.0
 
 #### Fixed
 

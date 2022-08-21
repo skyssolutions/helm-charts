@@ -1,6 +1,6 @@
 # ghost
 
-![Version: 2.1.2](https://img.shields.io/badge/Version-2.1.2-informational?style=flat-square) ![AppVersion: 4.37.0](https://img.shields.io/badge/AppVersion-4.37.0-informational?style=flat-square)
+![Version: 3.0.0](https://img.shields.io/badge/Version-3.0.0-informational?style=flat-square) ![AppVersion: 5.10.1](https://img.shields.io/badge/AppVersion-5.10.1-informational?style=flat-square)
 
 Ghost is a blogging and publishing software
 
@@ -100,7 +100,7 @@ N/A
 
 ## Changelog
 
-### Version 2.1.2
+### Version 3.0.0
 
 #### Added
 
@@ -108,7 +108,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgrade app version to 5.10.1
 
 #### Fixed
 

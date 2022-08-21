@@ -1,6 +1,6 @@
 # home-assistant
 
-![Version: 13.4.2](https://img.shields.io/badge/Version-13.4.2-informational?style=flat-square) ![AppVersion: 2022.5.4](https://img.shields.io/badge/AppVersion-2022.5.4-informational?style=flat-square)
+![Version: 13.4.2](https://img.shields.io/badge/Version-13.4.2-informational?style=flat-square) ![AppVersion: 2022.8.6](https://img.shields.io/badge/AppVersion-2022.8.6-informational?style=flat-square)
 
 Home Assistant
 
@@ -184,7 +184,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to 2022.8.6 from 3+ month old version.
 
 #### Fixed
 

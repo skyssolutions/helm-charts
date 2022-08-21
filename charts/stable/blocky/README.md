@@ -1,6 +1,6 @@
 # blocky
 
-![Version: 10.5.2](https://img.shields.io/badge/Version-10.5.2-informational?style=flat-square) ![AppVersion: v0.18](https://img.shields.io/badge/AppVersion-v0.18-informational?style=flat-square)
+![Version: 10.6.0](https://img.shields.io/badge/Version-10.6.0-informational?style=flat-square) ![AppVersion: v0.19](https://img.shields.io/badge/AppVersion-v0.19-informational?style=flat-square)
 
 DNS proxy as ad-blocker for local network
 
@@ -105,7 +105,7 @@ helm install blocky k8s-at-home/blocky -f values.yaml
 
 ## Changelog
 
-### Version 10.5.2
+### Version 10.6.0
 
 #### Added
 
@@ -113,7 +113,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to version 0.19
 
 #### Fixed
 
