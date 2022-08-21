@@ -7,11 +7,11 @@ keywords:
 - uptimerobot
 - influxdb
 - grafana
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/uptimerobot
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/uptimerobot
 icon: https://i.imgur.com/ARSSILk.png
 sources:
 - https://github.com/trojanc/node-influx-uptimerobot
-- https://github.com/k8s-at-home/charts
+- https://github.com/samipsolutions/helm-charts
 maintainers:
 - name: billimek
   email: jeff@billimek.com

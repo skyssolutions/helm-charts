@@ -12,7 +12,7 @@ keywords:
   - subtitles
   - usenet
   - torrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/bazarr
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/bazarr
 icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png
 sources:
   - https://github.com/morpheus65535/bazarr

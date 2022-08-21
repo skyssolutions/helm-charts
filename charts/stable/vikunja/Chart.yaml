@@ -10,7 +10,7 @@ keywords:
   - tasks
   - calendar
   - kanban
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/vikunja
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/vikunja
 icon: https://s7.gifyu.com/images/GifCroppedTran.gif
 sources:
   - https://kolaente.dev/vikunja/api

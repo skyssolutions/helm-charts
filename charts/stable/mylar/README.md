@@ -4,13 +4,13 @@
 
 Mylar is the automated Comic Book downloader (cbr/cbz) for use with various download clients.
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/samipsolutions/helm-charts/issues/new/choose)**
 
 ## Source Code
 
 * <https://github.com/mylar3/mylar3>
 * <https://github.com/linuxserver/docker-mylar3>
-* <https://github.com/k8s-at-home/charts/tree/master/charts/mylar>
+* <https://github.com/samipsolutions/helm-charts/tree/master/charts/mylar>
 
 ## Requirements
 
@@ -111,7 +111,7 @@ A historical overview of changes can be found on [ArtifactHUB](https://artifacth
 ## Support
 
 - See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
+- Open an [issue](https://github.com/samipsolutions/helm-charts/issues/new/choose)
 - Ask a [question](https://github.com/k8s-at-home/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 

@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - plex
   - plex-media-server
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/gaps
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/gaps
 icon: https://raw.githubusercontent.com/JasonHHouse/gaps/master/images/Final-Black.png
 sources:
   - https://github.com/JasonHHouse/gaps

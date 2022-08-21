@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v3.8.0
 description: A developer-oriented health dashboard that gives you the ability to monitor your services using HTTP, ICMP, TCP, and even DNS queries.
 icon: https://github.com/TwiN/gatus/raw/master/.github/assets/logo-with-dark-text.png
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/gatus
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/gatus
 name: gatus
 version: 1.1.2
 kubeVersion: ">=1.16.0-0"

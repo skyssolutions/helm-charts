@@ -9,7 +9,7 @@ keywords:
   - mosquitto
   - MQTT
   - eclipse-iot
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/mosquitto
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/mosquitto
 icon: https://raw.githubusercontent.com/eclipse/mosquitto/master/logo/mosquitto-logo-min.svg
 sources:
   - https://github.com/eclipse/mosquitto

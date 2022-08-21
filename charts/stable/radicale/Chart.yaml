@@ -9,7 +9,7 @@ keywords:
   - radicale
   - caldav
   - carddav
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/radicale
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/radicale
 sources:
   - https://github.com/Kozea/Radicale
   - https://github.com/tomsquest/docker-radicale
@@ -23,7 +23,7 @@ dependencies:
 annotations:
   artifacthub.io/links: |
     - name: Helm source
-      url: https://github.com/k8s-at-home/charts/tree/master/charts/stable/radicale
+      url: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/radicale
     - name: Radicale source
       url: https://github.com/Kozea/Radicale
     - name: docker-radicale image source

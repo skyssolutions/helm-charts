@@ -6,7 +6,7 @@ name: sharry
 version: 5.4.2
 keywords:
   - file sharing
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sharry
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/sharry
 icon: https://github.com/eikek/sharry/blob/master/artwork/logo.svg?raw=true
 sources:
   - https://github.com/eikek/sharry

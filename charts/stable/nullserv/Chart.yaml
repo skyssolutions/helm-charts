@@ -7,7 +7,7 @@ version: 2.4.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - nullserv
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/nullserv
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/nullserv
 sources:
   - https://github.com/bmrzycki/nullserv
 maintainers:

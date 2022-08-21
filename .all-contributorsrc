@@ -610,8 +610,8 @@
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "charts",
-  "projectOwner": "k8s-at-home",
+  "projectName": "helm-charts",
+  "projectOwner": "samipsolutions",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true

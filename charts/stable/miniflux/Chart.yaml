@@ -9,7 +9,7 @@ keywords:
   - miniflux
   - rss
   - news
-home: https://github.com/k8s-at-home/charts/tree/master/charts/miniflux
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/miniflux
 icon: https://raw.githubusercontent.com/miniflux/logo/master/icon.svg
 sources:
   - https://github.com/miniflux/v2

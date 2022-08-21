@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - sabnzbd
   - usenet
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sabnzbd
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/sabnzbd
 icon: https://avatars1.githubusercontent.com/u/960698?s=400&v=4
 sources:
   - https://sabnzbd.org/

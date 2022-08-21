@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - zigbee2mqtt
   - prometheus
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/mqtt-exporter
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/mqtt-exporter
 icon: https://static.veritone.com/assets/favicon/favicon.ico
 sources:
   - https://github.com/kpetremann/mqtt-exporter

@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - wiki
   - wikijs
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/wikijs
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/wikijs
 icon: https://static.requarks.io/logo/wikijs-butterfly.svg
 sources:
   - https://hub.docker.com/r/linuxserver/wikijs/

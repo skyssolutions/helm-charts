@@ -7,7 +7,7 @@ version: 1.5.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - openhab
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/openhab
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/openhab
 icon: https://www.openhab.org/openhab-logo-square.png
 sources:
   - https://hub.docker.com/r/openhab/openhab

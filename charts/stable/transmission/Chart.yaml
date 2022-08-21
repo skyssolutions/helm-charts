@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - transmission
   - torrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/transmission
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/transmission
 icon: https://raw.githubusercontent.com/transmission/transmission/main/extras/transmission-1920.jpg
 sources:
   - https://github.com/transmission/transmission

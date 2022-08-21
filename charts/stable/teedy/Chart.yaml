@@ -9,11 +9,11 @@ keywords:
   - teedy
   - documents
   - management
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/teedy
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/teedy
 icon: https://raw.githubusercontent.com/sismics/docs/v1.9/docs-web/src/main/resources/image/logo.png
 sources:
   - https://github.com/sismics/docs
-  - https://github.com/k8s-at-home/charts/tree/master/charts/teedy
+  - https://github.com/samipsolutions/helm-charts/tree/master/charts/teedy
 maintainers:
   - name: carpenike
     email: ryan@ryanholt.net

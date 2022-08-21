@@ -7,7 +7,7 @@ version: 1.2.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - nightscout
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/nightscout
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/nightscout
 icon: https://github.com/nightscout/cgm-remote-monitor/blob/master/static/images/favicon-96x96.png
 sources:
   - https://github.com/nightscout/nightscout-docker

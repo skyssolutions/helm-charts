@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - nut
   - prometheus
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/prometheus-nut-exporter
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/prometheus-nut-exporter
 icon: https://www.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/125-512.png
 sources:
   - https://github.com/HON95/prometheus-nut-exporter

@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - Vaultwarden
   - bitwardenrs
-home: "https://github.com/k8s-at-home/charts/tree/master/charts/stable/vaultwarden"
+home: "https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/vaultwarden"
 icon: "https://sesoodan.sirv.com/bitwarden_rs.png"
 sources:
   - https://github.com/dani-garcia/vaultwarden

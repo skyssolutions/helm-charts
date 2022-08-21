@@ -11,7 +11,7 @@ keywords:
   - oauth
   - oauth2
   - oidc
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/traefik-forward-auth
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/traefik-forward-auth
 sources:
   - https://github.com/thomseddon/traefik-forward-auth
   - https://hub.docker.com/r/thomseddon/traefik-forward-auth

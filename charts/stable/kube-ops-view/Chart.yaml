@@ -7,7 +7,7 @@ version: 1.2.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - kube-ops-view
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/kube-ops-view
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/kube-ops-view
 icon: https://codeberg.org/repo-avatars/677-c51f6426305941cab515fdd98368f0bb
 sources:
   - https://codeberg.org/hjacobs/kube-ops-view

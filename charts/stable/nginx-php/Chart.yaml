@@ -10,7 +10,7 @@ keywords:
   - nginx
   - php
   - php-fpm
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/nginx-php
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/nginx-php
 icon: https://www.nginx.com/wp-content/uploads/2020/05/NGINX-product-icon.svg
 sources:
   - https://github.com/TrafeX/docker-php-nginx

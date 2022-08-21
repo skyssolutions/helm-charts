@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - nzbget
   - usenet
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/nzbget
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/nzbget
 icon: https://avatars1.githubusercontent.com/u/3368377?s=400&v=4
 sources:
   - https://nzbget.net/

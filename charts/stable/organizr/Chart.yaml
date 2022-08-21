@@ -7,7 +7,7 @@ version: 7.4.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - organizr
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/organizr
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/organizr
 icon: https://github.com/causefx/Organizr/blob/v2-master/plugins/images/organizr/logo.png?raw=true
 sources:
   - https://github.com/causefx/Organizr

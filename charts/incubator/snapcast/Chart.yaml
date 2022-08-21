@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - snapcast
   - snapserver
-home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/snapcast
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/incubator/snapcast
 icon: https://github.com/badaix/snapcast/blob/master/doc/web_hi_res_512.png
 sources:
   - https://github.com/badaix/snapcast

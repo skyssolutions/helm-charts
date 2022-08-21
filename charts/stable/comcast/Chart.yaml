@@ -8,11 +8,11 @@ keywords:
   - comcast
   - influxdb
   - xfinity
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/comcast
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/comcast
 icon: https://i.imgur.com/iR1dUpp.png
 sources:
   - https://github.com/billimek/comcastUsage-for-influxdb
-  - https://github.com/k8s-at-home/charts
+  - https://github.com/samipsolutions/helm-charts
 maintainers:
   - name: billimek
     email: jeff@billimek.com

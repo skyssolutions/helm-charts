@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - rutorrent
   - torrrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/rtorrent-rutorrent
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/rtorrent-rutorrent
 icon: https://avatars.githubusercontent.com/u/88781313?s=200&v=4
 sources:
   - https://github.com/Novik/ruTorrent

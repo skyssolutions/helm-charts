@@ -12,7 +12,7 @@ keywords:
   - wireguard
 sources:
   - https://github.com/k8s-at-home/container-images
-  - https://github.com/k8s-at-home/charts
+  - https://github.com/samipsolutions/helm-charts
 icon: https://avatars.githubusercontent.com/u/13991055?s=200&v=4
 maintainers:
   - name: jr0dd

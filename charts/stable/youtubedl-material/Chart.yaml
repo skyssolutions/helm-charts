@@ -7,11 +7,11 @@ version: 4.4.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - youtubedl-material
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/youtubedl-material
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/youtubedl-material
 icon: https://i.imgur.com/IKOlr0N.png
 sources:
   - https://github.com/Tzahi12345/YoutubeDL-Material
-  - https://github.com/k8s-at-home/charts/tree/master/charts/youtubedl-material
+  - https://github.com/samipsolutions/helm-charts/tree/master/charts/youtubedl-material
 maintainers:
   - name: Patricol
     url: https://patricol.co/

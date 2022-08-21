@@ -12,7 +12,7 @@ keywords:
   - coral
   - ml
   - machine-learning
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/frigate
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/frigate
 icon: https://github.com/blakeblackshear/frigate/blob/master/docs/static/img/frigate.png
 sources:
   - https://github.com/blakeblackshear/frigate

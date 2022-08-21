@@ -4,12 +4,12 @@
 
 A tool to get statistics from Uptime Robot and log it into InfluxDB
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/samipsolutions/helm-charts/issues/new/choose)**
 
 ## Source Code
 
 * <https://github.com/trojanc/node-influx-uptimerobot>
-* <https://github.com/k8s-at-home/charts>
+* <https://github.com/samipsolutions/helm-charts>
 
 ## Requirements
 
@@ -112,7 +112,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Support
 
 - See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
+- Open an [issue](https://github.com/samipsolutions/helm-charts/issues/new/choose)
 - Ask a [question](https://github.com/k8s-at-home/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 

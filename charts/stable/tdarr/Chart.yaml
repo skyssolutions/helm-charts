@@ -9,7 +9,7 @@ keywords:
   - remux
   - media
   - video
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/tdarr
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/tdarr
 icon: https://s7.gifyu.com/images/GifCroppedTran.gif
 sources:
   - https://www.github.com/HaveAGitGat/Tdarr

@@ -12,7 +12,7 @@ keywords:
   - pulse
   - stream
   - retroarch
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/games-on-whales
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/games-on-whales
 icon: https://github.com/games-on-whales/gow/raw/master/docs/assets/img/gow-logo.png
 sources:
   - https://github.com/games-on-whales/gow

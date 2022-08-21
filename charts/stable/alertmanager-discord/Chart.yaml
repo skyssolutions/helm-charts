@@ -9,7 +9,7 @@ keywords:
   - alertmanager
   - discord
   - alerting
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/alertmanager-discord
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/alertmanager-discord
 icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
 sources:
   - https://github.com/rogerrum/alertmanager-discord

@@ -9,7 +9,7 @@ keywords:
   - deemix
   - music
   - deezer
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/deemix
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/deemix
 icon: https://gitlab.com/RemixDev/deemix-webui/-/raw/e63a8c709c477a8e68e61037f4b82359d23f4a32/src/assets/deemix-icon.svg
 sources:
   - https://gitlab.com/Bockiii/deemix-docker

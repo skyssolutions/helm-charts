@@ -8,7 +8,7 @@ keywords:
   - cron
   - monitoring
   - alert
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/healthchecks
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/healthchecks
 icon: https://raw.githubusercontent.com/healthchecks/healthchecks/master/stuff/logo.svg?raw=true
 sources:
   - https://github.com/healthchecks/healthchecks

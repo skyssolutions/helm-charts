@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - xbackbone
   - xshare
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/xbackbone
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/xbackbone
 icon: https://github.com/SergiX44/XBackBone/raw/master/.github/xbackbone.png
 sources:
   - https://github.com/SergiX44/XBackBone

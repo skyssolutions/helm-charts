@@ -7,7 +7,7 @@ version: 0.5.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - sinusbot
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sinusbot
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/sinusbot
 icon: https://pbs.twimg.com/profile_images/613423613711122432/fFJZiB_t_400x400.png
 sources:
   - https://github.com/sinusbot/sinusbot-docker

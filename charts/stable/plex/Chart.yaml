@@ -8,10 +8,10 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - plex
   - plex-media-server
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/plex
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/plex
 icon: https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png
 sources:
-  - https://github.com/k8s-at-home/charts/tree/master/charts/stable/plex
+  - https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/plex
   - https://github.com/k8s-at-home/container-images/
 maintainers:
   - name: billimek

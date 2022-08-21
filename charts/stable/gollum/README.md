@@ -4,7 +4,7 @@
 
 Gollum is a simple wiki system built on top of Git
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/samipsolutions/helm-charts/issues/new/choose)**
 
 ## Source Code
 
@@ -79,7 +79,7 @@ N/A
 | gollum.additionalArgs | list | `["--h1-title"]` | Additional arguments for starting gollum |
 | gollum.config | string | `"# Push and pull on commit\nGollum::Hook.register(:post_commit, :hook_id) do |committer, sha1|\n     committer.wiki.repo.git.pull('origin', committer.wiki.ref)\n     committer.wiki.repo.git.push('origin', committer.wiki.ref)\nend\n"` | Gollum config.rb customizations [[ref]](https://github.com/gollum/gollum#config-file) |
 | gollum.gitBranch | string | `"master"` | Branch to pull |
-| gollum.gitUrl | string | `"https://github.com/k8s-at-home/charts.git"` | Repository URL to pull (accepts access tokens) Example: https://user:access-token@git.example.com/user/repo.git |
+| gollum.gitUrl | string | `"https://github.com/samipsolutions/helm-charts.git"` | Repository URL to pull (accepts access tokens) Example: https://user:access-token@git.example.com/user/repo.git |
 | gollum.syncCommand | string | `"git pull && git push"` | Command run during the sync cron |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"gollumorg/gollum"` | image repository |
@@ -111,7 +111,7 @@ A historical overview of changes can be found on [ArtifactHUB](https://artifacth
 ## Support
 
 - See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
+- Open an [issue](https://github.com/samipsolutions/helm-charts/issues/new/choose)
 - Ask a [question](https://github.com/k8s-at-home/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 

@@ -10,7 +10,7 @@ keywords:
   - search
   - open source
   - privacy
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/whoogle
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/whoogle
 icon: https://raw.githubusercontent.com/benbusby/whoogle-search/develop/docs/banner.png
 sources:
   - https://github.com/benbusby/whoogle-search

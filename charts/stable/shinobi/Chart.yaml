@@ -7,7 +7,7 @@ version: 1.2.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - shinobi
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/shinobi
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/shinobi
 icon: https://shinobi.org/icon
 sources:
   - https://gitlab.com/Shinobi-Systems/Shinobi-Installer

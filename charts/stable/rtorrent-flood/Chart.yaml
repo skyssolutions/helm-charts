@@ -9,7 +9,7 @@ keywords:
   - rtorrent
   - flood
   - torrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/rtorrent-flood
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/rtorrent-flood
 icon: https://github.com/jfurrow/flood/blob/master/flood.png?raw=true
 sources:
   - https://github.com/jesec/rtorrent

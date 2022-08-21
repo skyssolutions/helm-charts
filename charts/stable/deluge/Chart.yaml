@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - deluge
   - torrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/deluge
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/deluge
 icon: https://avatars2.githubusercontent.com/u/6733935?v=3&s=200
 sources:
   - https://hub.docker.com/r/linuxserver/deluge/

@@ -4,12 +4,12 @@
 
 Teedy is an open source, lightweight document management system for individuals and businesses.
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/samipsolutions/helm-charts/issues/new/choose)**
 
 ## Source Code
 
 * <https://github.com/sismics/docs>
-* <https://github.com/k8s-at-home/charts/tree/master/charts/teedy>
+* <https://github.com/samipsolutions/helm-charts/tree/master/charts/teedy>
 
 ## Requirements
 
@@ -121,7 +121,7 @@ A historical overview of changes can be found on [ArtifactHUB](https://artifacth
 ## Support
 
 - See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
+- Open an [issue](https://github.com/samipsolutions/helm-charts/issues/new/choose)
 - Ask a [question](https://github.com/k8s-at-home/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 

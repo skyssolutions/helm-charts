@@ -12,7 +12,7 @@ keywords:
   - monolith
   - federation
   - polylith
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/dendrite
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/dendrite
 sources:
   - https://github.com/matrix-org/dendrite
   - https://github.com/matrix-org/dendrite/tree/master/build/docker

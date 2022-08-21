@@ -8,7 +8,7 @@ version: 0.3.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - scrypted
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/scrypted
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/scrypted
 icon: https://scrypted.org/icon
 sources:
   - https://github.com/koush/scrypted

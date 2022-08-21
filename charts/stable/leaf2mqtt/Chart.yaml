@@ -11,7 +11,7 @@ keywords:
   - nissan
   - kamereon
   - carwings
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/leaf2mqtt
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/leaf2mqtt
 icon: https://www.nissanusa.com/content/dam/Nissan/us/Navigation/nissan-logo-black.svg
 sources:
   - https://github.com/mitsumaui/leaf2mqtt

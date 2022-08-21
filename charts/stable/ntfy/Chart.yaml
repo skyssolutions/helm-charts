@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - ntfy
   - notification
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/ntfy
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/ntfy
 icon: https://raw.githubusercontent.com/binwiederhier/ntfy/main/web/public/static/img/ntfy.png
 sources:
   - https://github.com/binwiederhier/ntfy

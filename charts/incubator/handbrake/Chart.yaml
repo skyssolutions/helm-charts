@@ -7,7 +7,7 @@ version: 0.1.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - handbrake
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/handbrake
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/handbrake
 icon: https://handbrake.org/icon
 sources:
   - https://hub.docker.com/r/jlesage/handbrake

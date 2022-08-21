@@ -7,7 +7,7 @@ version: 5.4.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - calibre
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/calibre
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/calibre
 icon: https://github.com/kovidgoyal/calibre/raw/master/resources/images/lt.png
 sources:
   - https://hub.docker.com/r/linuxserver/calibre/

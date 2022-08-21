@@ -10,7 +10,7 @@ keywords:
   - comics
   - mangas
   - server
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/komga
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/komga
 icon: https://komga.org/assets/media/logo.svg
 sources:
   - https://komga.org/

@@ -7,11 +7,11 @@ description: periodic cable modem data collection and save the results to Influx
 keywords:
   - sb6183
   - influxdb
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/modem-stats
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/modem-stats
 icon: https://i.imgur.com/NprLyFf.png
 sources:
   - https://github.com/k8s-at-home/SB6183-stats-for-influxdb
-  - https://github.com/k8s-at-home/charts
+  - https://github.com/samipsolutions/helm-charts
 maintainers:
   - name: billimek
     email: jeff@billimek.com

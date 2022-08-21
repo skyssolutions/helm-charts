@@ -9,7 +9,7 @@ keywords:
   - statping
   - status
   - status-page
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/statping
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/statping
 icon: https://avatars.githubusercontent.com/u/61949049?s=200&v=4
 sources:
   - https://github.com/statping/statping

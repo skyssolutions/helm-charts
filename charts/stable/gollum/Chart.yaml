@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - gollum
   - wiki
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/gollum
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/gollum
 icon: https://gollum.org/icon
 sources:
   - https://github.com/gollum/gollum

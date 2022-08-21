@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - speedtest-exporter
   - speedtest
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/speedtest-exporter
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/speedtest-exporter
 sources:
   - https://github.com/MiguelNdeCarvalho/speedtest-exporter/
 maintainers:

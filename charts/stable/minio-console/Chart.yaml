@@ -9,7 +9,7 @@ keywords:
   - minio-console
   - minio
   - s3
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/minio-console
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/minio-console
 icon: https://min.io/resources/img/logo/MINIO_wordmark.png
 sources:
   - https://github.com/minio/console

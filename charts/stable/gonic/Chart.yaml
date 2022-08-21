@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - music
   - subsonic
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/gonic
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/gonic
 icon: https://raw.githubusercontent.com/sentriz/gonic/master/.github/logo.png
 sources:
   - https://github.com/sentriz/gonic

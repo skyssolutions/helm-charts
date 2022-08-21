@@ -8,7 +8,7 @@ kubeVersion: ">=1.19.0-0"
 keywords:
   - ghost
   - blogging
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/ghost
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/ghost
 icon: https://ghost.org/images/logos/logo-black-1.png
 sources:
   - https://github.com/TryGhost/Ghost

@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - recipes
   - cooking
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/recipes
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/recipes
 icon: https://raw.githubusercontent.com/vabene1111/recipes/develop/docs/logo_color.svg
 sources:
   - https://github.com/vabene1111/recipes

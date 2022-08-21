@@ -9,7 +9,7 @@ keywords:
   - openkm
   - documentation management
   - docs
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/openkm
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/openkm
 icon: https://raw.githubusercontent.com/openkm/document-management-system/master/src/main/webapp/img/logo_favicon.ico
 sources:
   - https://www.openkm.com/

@@ -9,7 +9,7 @@ keywords:
   - nut
   - network-ups-tools
   - ups
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/network-ups-tools
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/network-ups-tools
 icon: https://avatars0.githubusercontent.com/u/3526263?s=400&v=4
 sources:
   - https://github.com/networkupstools/nut

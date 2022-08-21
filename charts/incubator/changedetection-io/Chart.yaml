@@ -9,11 +9,11 @@ keywords:
   - changedetection.io
   - urlmonitor
   - website-monitoring
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/changedetection-io
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/changedetection-io
 icon:
 sources:
   - https://github.com/dgtlmoon/changedetection.io
-  - https://github.com/k8s-at-home/charts/tree/master/charts/changedetection-io
+  - https://github.com/samipsolutions/helm-charts/tree/master/charts/changedetection-io
 maintainers:
   - name: tuxpeople
     url: https://github.com/tuxpeople

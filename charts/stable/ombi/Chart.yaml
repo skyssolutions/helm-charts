@@ -12,7 +12,7 @@ keywords:
   - sonarr
   - radarr
   - couchpotato
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/ombi
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/ombi
 icon: https://github.com/tidusjar/Ombi/blob/feature/v4/src/Ombi/wwwroot/images/ms-icon-310x310.png?raw=true
 sources:
   - https://github.com/tidusjar/Ombi

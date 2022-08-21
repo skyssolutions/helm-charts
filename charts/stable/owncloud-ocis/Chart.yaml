@@ -14,7 +14,7 @@ keywords:
   - sync
   - share
   - server
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/owncloud-ocis
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/owncloud-ocis
 icon: https://avatars.githubusercontent.com/u/1645051?s=200&v=4
 sources:
   - https://hub.docker.com/r/owncloud/ocis

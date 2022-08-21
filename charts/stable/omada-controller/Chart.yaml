@@ -7,11 +7,11 @@ version: 4.4.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - omada-controller
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/omada-controller
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/omada-controller
 icon: https://www.tp-link.com/assets/images/icon/logo-white.svg
 sources:
   - https://github.com/mbentley/docker-omada-controller
-  - https://github.com/k8s-at-home/charts/tree/master/charts/omada-controller
+  - https://github.com/samipsolutions/helm-charts/tree/master/charts/omada-controller
 maintainers:
   - name: charlie-haley
     email: charlie-haley@users.noreply.github.com

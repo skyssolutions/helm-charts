@@ -37,4 +37,4 @@ Also don't be worried if the request is closed or not integrated sometimes our p
 - [ ] Chart `artifacthub.io/changes` changelog annotation has been updated in `Chart.yaml`. See [Artifact Hub documentation](https://artifacthub.io/docs/topics/annotations/helm/#supported-annotations) for more info.
 - [ ] Variables have been documented in the `values.yaml` file.
 
-<!-- Keep in mind that if you are submitting a new chart, try to use our [common](https://github.com/k8s-at-home/charts/tree/master/charts/common) library as a dependency. This will help maintaining charts here and keep them consistent between each other -->
+<!-- Keep in mind that if you are submitting a new chart, try to use our [common](https://github.com/samipsolutions/helm-charts/tree/master/charts/common) library as a dependency. This will help maintaining charts here and keep them consistent between each other -->

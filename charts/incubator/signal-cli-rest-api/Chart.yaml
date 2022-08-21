@@ -9,7 +9,7 @@ keywords:
   - signal-cli-rest-api
   - signal-messenger
   - signal
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/signal-cli-rest-api
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/signal-cli-rest-api
 icon: https://signal-cli-rest-api.org/icon
 sources:
   - https://github.com/bbernhard/signal-cli-rest-api

@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - onedrive
   - filesync
-home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/onedrive
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/incubator/onedrive
 icon: https://github.com/abraunegg/abraunegg.github.io/raw/master/images/linux_onedrive_logo.jpg
 sources:
   - https://github.com/abraunegg/onedrive

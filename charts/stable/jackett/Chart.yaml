@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - jackett
   - torrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/jackett
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/jackett
 icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jackett-banner.png
 sources:
   - https://github.com/Jackett/Jackett

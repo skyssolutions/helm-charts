@@ -10,7 +10,7 @@ keywords:
   - iptv
   - plex
   - emby
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/xteve
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/xteve
 icon: https://raw.githubusercontent.com/xteve-project/xTeVe/master/html/img/logo_b_880x200.jpg
 sources:
   - https://github.com/xteve-project/xTeVe

@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - babybuddy
   - baby
-home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/babybuddy
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/incubator/babybuddy
 icon: https://github.com/babybuddy/babybyddy/blob/master/babybuddy/static_src/logo/icon.png?raw=true
 sources:
   - https://github.com/babybuddy/babybuddy

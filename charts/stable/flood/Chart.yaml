@@ -10,7 +10,7 @@ keywords:
   - rtorrent
   - qbittorrent
   - transmission
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/flood
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/flood
 icon: https://raw.githubusercontent.com/jesec/flood/master/flood.svg
 sources:
   - https://github.com/jesec/flood

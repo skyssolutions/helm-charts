@@ -7,7 +7,7 @@ version: 0.4.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - cryptpad
-home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/cryptpad
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/incubator/cryptpad
 icon: https://cryptpad.fr/customize/CryptPad_logo.svg
 sources:
   - https://github.com/xwiki-labs/cryptpad-docker

@@ -10,7 +10,7 @@ keywords:
   - home-automation
   - home-assistant
   - mqtt
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/appdaemon
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/appdaemon
 icon: https://avatars.githubusercontent.com/u/67876516?s=200&v=4
 sources:
   - https://github.com/AppDaemon/appdaemon

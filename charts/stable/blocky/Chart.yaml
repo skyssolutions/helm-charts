@@ -9,7 +9,7 @@ keywords:
   - blocky
   - adblock
   - dns
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/blocky
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/blocky
 icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
 sources:
   - https://github.com/0xERR0R/blocky

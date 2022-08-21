@@ -9,7 +9,7 @@ keywords:
   - cluster
   - hardware
   - gpu
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/intel-gpu-plugin
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/intel-gpu-plugin
 icon: https://avatars0.githubusercontent.com/u/17888862?s=400&v=4
 sources:
   - https://github.com/intel/intel-device-plugins-for-kubernetes/blob/master/cmd/gpu_plugin

@@ -7,7 +7,7 @@ version: 8.5.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - grocy
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/grocy
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/grocy
 icon: https://github.com/grocy/grocy/raw/master/public/img/appicons/mstile-150x150.png
 sources:
   - https://github.com/grocy/grocy

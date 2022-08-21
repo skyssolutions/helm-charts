@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - privatebin
   - pastebin
-home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/privatebin
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/incubator/privatebin
 icon: https://privatebin.info/theme/img/icon.svg
 sources:
   - https://github.com/PrivateBin/PrivateBin

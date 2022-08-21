@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - dizqueTV
   - dizquetv
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/dizquetv
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/dizquetv
 icon: https://github.com/vexorian/dizquetv/raw/main/resources/dizquetv.png?raw=true
 sources:
   - https://github.com/vexorian/dizquetv

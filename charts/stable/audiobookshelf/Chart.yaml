@@ -9,7 +9,7 @@ keywords:
   - audiobookshelf
   - books
   - audiobooks
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/audiobookshelf
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/audiobookshelf
 icon: https://github.com/advplyr/audiobookshelf/blob/master/static/Logo.png
 sources:
   - https://github.com/advplyr/audiobookshelf

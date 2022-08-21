@@ -6,7 +6,7 @@ version: 1.2.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - ${CHARTNAME}
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/${CHARTNAME}
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/${CHARTNAME}
 icon: https://${CHARTNAME}.org/icon
 sources:
   - https://github.com/${CHARTNAME}/${CHARTNAME}-docker

@@ -7,7 +7,7 @@ version: 0.6.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - lancache
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/lancache
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/lancache
 icon: https://avatars.githubusercontent.com/u/16938914
 sources:
   - https://github.com/lancachenet/monolithic

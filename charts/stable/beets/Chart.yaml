@@ -7,7 +7,7 @@ version: 1.4.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - beets
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/beets
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/beets
 icon: https://pbs.twimg.com/profile_images/934307246/logo-square_400x400.png
 sources:
   - https://github.com/beetbox/beets

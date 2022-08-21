@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - firefly-iii
   - firefly
-home: "https://github.com/k8s-at-home/charts/tree/master/charts/stable/firefly-iii"
+home: "https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/firefly-iii"
 icon: "https://www.firefly-iii.org/assets/logo/color.png"
 sources:
   - https://github.com/firefly-iii/firefly-iii

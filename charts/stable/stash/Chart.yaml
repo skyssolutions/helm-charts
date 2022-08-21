@@ -7,7 +7,7 @@ version: 3.4.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - porn
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/stash
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/stash
 icon: https://raw.githubusercontent.com/stashapp/website/master/images/stash.svg
 sources:
   - https://github.com/stashapp/stash

@@ -9,7 +9,7 @@ keywords:
   - double-take
   - frigate
   - nvr
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/double-take
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/double-take
 icon: https://double-take.org/icon
 sources:
   - https://github.com/jakowenko/double-take

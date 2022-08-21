@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - qbittorrent
   - torrrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/qbittorrent
 icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
 sources:
   - https://github.com/qbittorrent/qBittorrent

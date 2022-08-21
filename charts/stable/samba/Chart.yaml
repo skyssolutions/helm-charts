@@ -7,7 +7,7 @@ version: 6.2.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - samba
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/samba
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/samba
 icon: https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Samba_logo_2010.svg/500px-Samba_logo_2010.svg.png
 sources:
   - https://github.com/dperson/samba

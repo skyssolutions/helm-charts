@@ -7,7 +7,7 @@ version: 8.1.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - crm
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/monica
+home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/monica
 icon: https://pbs.twimg.com/profile_images/951820722191720450/mtCNuIXX.jpg
 sources:
   - https://github.com/monicahq/monica
