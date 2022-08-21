@@ -695,6 +695,40 @@ entries:
         - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
+    appVersion: 0.10.1-amd64
+    created: "2022-08-21T07:14:44.120498945Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: NVR With Realtime Object Detection for IP Cameras
+    digest: 3f31e0bf3e5eda5f7bf46d77ed05701d96f81059f9b4773caf40897cb3f261e3
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/frigate
+    icon: https://raw.githubusercontent.com/blakeblackshear/frigate/master/docs/static/img/frigate.png
+    keywords:
+    - frigate
+    - nvr
+    - tensorflow
+    - coral
+    - ml
+    - machine-learning
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: jeff@billimek.com
+      name: billimek
+    - email: 5434875+PixelJonas@users.noreply.github.com
+      name: PixelJonas
+    name: frigate
+    sources:
+    - https://github.com/blakeblackshear/frigate
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/frigate-8.2.3/frigate-8.2.3.tgz
+    version: 8.2.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
     appVersion: 0.10.0-amd64
     created: "2022-08-21T05:32:48.095306724Z"
     dependencies:
@@ -1061,6 +1095,37 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/haste-server-3.4.2/haste-server-3.4.2.tgz
     version: 3.4.2
   healthchecks:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade app to v2.3
+    apiVersion: v2
+    appVersion: version-v2.3
+    created: "2022-08-21T07:14:45.538427704Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Healthchecks is a cron job monitoring service. It listens for HTTP
+      requests and email messages ("pings") from your cron jobs and scheduled tasks
+      ("checks"). When a ping does not arrive on time, Healthchecks sends out alerts.
+    digest: d6d367165ccba609b1c6f67b325ec6a4831e536b68437ea5b84ed2aa14fc36fa
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/healthchecks
+    icon: https://raw.githubusercontent.com/healthchecks/healthchecks/master/stuff/favicon.svg
+    keywords:
+    - cron
+    - monitoring
+    - alert
+    maintainers:
+    - email: k8s-at-home@xpander.eml.cc
+      name: auricom
+    name: healthchecks
+    sources:
+    - https://github.com/healthchecks/healthchecks
+    - https://hub.docker.com/r/linuxserver/healthchecks
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/healthchecks-4.5.0/healthchecks-4.5.0.tgz
+    version: 4.5.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -1842,6 +1907,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgrade app to 2.2.2-1.
+    apiVersion: v2
+    appVersion: 2.2.2-1
+    created: "2022-08-21T07:14:48.059794809Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Container for protonmail bridge to work on the network.
+    digest: ea53652fd02598c45e4d445360f7ccc8cceb239ea8bfa22b9003976ca7bd7ee3
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/protonmail-bridge
+    icon: https://raw.githubusercontent.com/ProtonMail/proton-bridge/master/dist/bridge.ico
+    keywords:
+    - protonmail
+    - protonmail-bridge
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: my@email.com
+      name: Eagleman7
+    name: protonmail-bridge
+    sources:
+    - https://github.com/shenxn/protonmail-bridge-docker
+    - https://hub.docker.com/r/shenxn/protonmail-bridge
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/protonmail-bridge-5.5.0/protonmail-bridge-5.5.0.tgz
+    version: 5.5.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 1.8.7-1
@@ -2595,6 +2689,46 @@ entries:
   vikunja:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Icon url
+        - kind: changed
+          description: Upgraded app to 0.19.2.
+    apiVersion: v2
+    appVersion: 0.19.2
+    created: "2022-08-21T07:14:50.58041364Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: The to-do app to organize your life
+    digest: d612278224975c4a658aea9f99b6428676658700abc9648b90a93d0e7b427a5e
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/vikunja
+    icon: https://vikunja.io/images/vikunja-logo.svg
+    keywords:
+    - vikunja
+    - to-do
+    - tasks
+    - calendar
+    - kanban
+    maintainers:
+    - email: k8s-at-home@xpander.eml.cc
+      name: auricom
+    name: vikunja
+    sources:
+    - https://kolaente.dev/vikunja/api
+    - https://kolaente.dev/vikunja/frontend
+    - https://hub.docker.com/r/vikunja/api
+    - https://hub.docker.com/r/vikunja/frontend
+    - https://vikunja.io/docs/
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/vikunja-6.2.0/vikunja-6.2.0.tgz
+    version: 6.2.0
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
@@ -2731,6 +2865,38 @@ entries:
           description: Upgraded appVersion to version 1.27.0
     apiVersion: v2
     appVersion: 1.27.0
+    created: "2022-08-21T07:14:51.004145746Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: eaab921e56ac665303ba976881192348380fb87eaab7e93278f5c0b1b7e2da4f
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/zigbee2mqtt
+    icon: https://www.zigbee2mqtt.io/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: miguelangel.santiago@hotmail.com
+      name: masantiago
+    - email: me@bjw-s.dev
+      name: bjw-s
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/zigbee2mqtt-9.5.1/zigbee2mqtt-9.5.1.tgz
+    version: 9.5.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded appVersion to version 1.27.0
+    apiVersion: v2
+    appVersion: 1.27.0
     created: "2022-08-21T05:44:12.130642554Z"
     dependencies:
     - name: common
@@ -2820,4 +2986,4 @@ entries:
     urls:
     - https://github.com/samipsolutions/helm-charts/releases/download/zwavejs2mqtt-5.4.2/zwavejs2mqtt-5.4.2.tgz
     version: 5.4.2
-generated: "2022-08-21T05:54:01.890503668Z"
+generated: "2022-08-21T07:14:51.10984702Z"
