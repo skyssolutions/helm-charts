@@ -1,15 +1,15 @@
 ---
 apiVersion: v2
-appVersion: 1.8.7-1
+appVersion: 2.2.2-1
 description: Container for protonmail bridge to work on the network.
 name: protonmail-bridge
-version: 5.4.2
+version: 5.5.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - protonmail
   - protonmail-bridge
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/protonmail-bridge
-icon: https://raw.githubusercontent.com/ProtonMail/proton-bridge/master/icon.iconset/icon_256x256.png
+icon: https://raw.githubusercontent.com/ProtonMail/proton-bridge/master/dist/bridge.ico
 sources:
   - https://github.com/shenxn/protonmail-bridge-docker
   - https://hub.docker.com/r/shenxn/protonmail-bridge
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgrade app to 2.2.2-1.
