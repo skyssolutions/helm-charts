@@ -25,9 +25,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install searx k8s-at-home/searx
+helm install searx samipsolutions/searx
 ```
 
 ## Installing the Chart
@@ -35,7 +35,7 @@ helm install searx k8s-at-home/searx
 To install the chart with the release name `searx`
 
 ```console
-helm install searx k8s-at-home/searx
+helm install searx samipsolutions/searx
 ```
 
 ## Uninstalling the Chart
@@ -58,13 +58,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install searx \
   --set env.TZ="America/New York" \
-    k8s-at-home/searx
+    samipsolutions/searx
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install searx k8s-at-home/searx -f values.yaml
+helm install searx samipsolutions/searx -f values.yaml
 ```
 
 ## Custom configuration
@@ -115,7 +115,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/searx?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/searx?modal=changelog)
 
 ## Support
 

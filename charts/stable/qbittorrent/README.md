@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install qbittorrent k8s-at-home/qbittorrent
+helm install qbittorrent samipsolutions/qbittorrent
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install qbittorrent k8s-at-home/qbittorrent
 To install the chart with the release name `qbittorrent`
 
 ```console
-helm install qbittorrent k8s-at-home/qbittorrent
+helm install qbittorrent samipsolutions/qbittorrent
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install qbittorrent \
   --set env.TZ="America/New York" \
-    k8s-at-home/qbittorrent
+    samipsolutions/qbittorrent
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install qbittorrent k8s-at-home/qbittorrent -f values.yaml
+helm install qbittorrent samipsolutions/qbittorrent -f values.yaml
 ```
 
 ## Custom configuration
@@ -117,7 +117,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/qbittorrent?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/qbittorrent?modal=changelog)
 
 ## Support
 

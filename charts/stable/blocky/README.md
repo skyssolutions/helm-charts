@@ -24,9 +24,9 @@ Kubernetes: `>=1.19.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install blocky k8s-at-home/blocky
+helm install blocky samipsolutions/blocky
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install blocky k8s-at-home/blocky
 To install the chart with the release name `blocky`
 
 ```console
-helm install blocky k8s-at-home/blocky
+helm install blocky samipsolutions/blocky
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install blocky \
   --set env.TZ="America/New York" \
-    k8s-at-home/blocky
+    samipsolutions/blocky
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install blocky k8s-at-home/blocky -f values.yaml
+helm install blocky samipsolutions/blocky -f values.yaml
 ```
 
 ## Custom configuration
@@ -121,7 +121,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/blocky?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/blocky?modal=changelog)
 
 ## Support
 

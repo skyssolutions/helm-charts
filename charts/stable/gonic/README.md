@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install gonic k8s-at-home/gonic
+helm install gonic samipsolutions/gonic
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install gonic k8s-at-home/gonic
 To install the chart with the release name `gonic`
 
 ```console
-helm install gonic k8s-at-home/gonic
+helm install gonic samipsolutions/gonic
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install gonic \
   --set env.TZ="America/New York" \
-    k8s-at-home/gonic
+    samipsolutions/gonic
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install gonic k8s-at-home/gonic -f values.yaml
+helm install gonic samipsolutions/gonic -f values.yaml
 ```
 
 ## Custom configuration
@@ -103,7 +103,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/gonic?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/gonic?modal=changelog)
 
 ## Support
 

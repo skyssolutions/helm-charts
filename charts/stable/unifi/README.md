@@ -22,9 +22,9 @@ Ubiquiti Network's Unifi Controller
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install unifi k8s-at-home/unifi
+helm install unifi samipsolutions/unifi
 ```
 
 ## Installing the Chart
@@ -32,7 +32,7 @@ helm install unifi k8s-at-home/unifi
 To install the chart with the release name `unifi`
 
 ```console
-helm install unifi k8s-at-home/unifi
+helm install unifi samipsolutions/unifi
 ```
 
 ## Uninstalling the Chart
@@ -55,13 +55,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install unifi \
   --set env.TZ="America/New York" \
-    k8s-at-home/unifi
+    samipsolutions/unifi
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install unifi k8s-at-home/unifi -f values.yaml
+helm install unifi samipsolutions/unifi -f values.yaml
 ```
 
 ## Custom configuration
@@ -162,7 +162,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/unifi?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/unifi?modal=changelog)
 
 ## Support
 

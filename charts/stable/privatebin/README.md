@@ -25,9 +25,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install privatebin k8s-at-home/privatebin
+helm install privatebin samipsolutions/privatebin
 ```
 
 ## Installing the Chart
@@ -35,7 +35,7 @@ helm install privatebin k8s-at-home/privatebin
 To install the chart with the release name `privatebin`
 
 ```console
-helm install privatebin k8s-at-home/privatebin
+helm install privatebin samipsolutions/privatebin
 ```
 
 ## Uninstalling the Chart
@@ -58,13 +58,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install privatebin \
   --set env.TZ="America/New York" \
-    k8s-at-home/privatebin
+    samipsolutions/privatebin
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install privatebin k8s-at-home/privatebin -f values.yaml
+helm install privatebin samipsolutions/privatebin -f values.yaml
 ```
 
 ## Custom configuration
@@ -107,7 +107,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/privatebin?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/privatebin?modal=changelog)
 
 ## Support
 

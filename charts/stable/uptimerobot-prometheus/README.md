@@ -22,9 +22,9 @@ Prometheus Exporter for the official uptimerobot CLI
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install uptimerobot-prometheus k8s-at-home/uptimerobot-prometheus
+helm install uptimerobot-prometheus samipsolutions/uptimerobot-prometheus
 ```
 
 ## Installing the Chart
@@ -32,7 +32,7 @@ helm install uptimerobot-prometheus k8s-at-home/uptimerobot-prometheus
 To install the chart with the release name `uptimerobot-prometheus`
 
 ```console
-helm install uptimerobot-prometheus k8s-at-home/uptimerobot-prometheus
+helm install uptimerobot-prometheus samipsolutions/uptimerobot-prometheus
 ```
 
 ## Uninstalling the Chart
@@ -55,13 +55,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install uptimerobot-prometheus \
   --set env.TZ="America/New York" \
-    k8s-at-home/uptimerobot-prometheus
+    samipsolutions/uptimerobot-prometheus
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install uptimerobot-prometheus k8s-at-home/uptimerobot-prometheus -f values.yaml
+helm install uptimerobot-prometheus samipsolutions/uptimerobot-prometheus -f values.yaml
 ```
 
 ## Custom configuration
@@ -109,7 +109,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/uptimerobot-prometheus?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/uptimerobot-prometheus?modal=changelog)
 
 ## Support
 

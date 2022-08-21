@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install ombi k8s-at-home/ombi
+helm install ombi samipsolutions/ombi
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install ombi k8s-at-home/ombi
 To install the chart with the release name `ombi`
 
 ```console
-helm install ombi k8s-at-home/ombi
+helm install ombi samipsolutions/ombi
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install ombi \
   --set env.TZ="America/New York" \
-    k8s-at-home/ombi
+    samipsolutions/ombi
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install ombi k8s-at-home/ombi -f values.yaml
+helm install ombi samipsolutions/ombi -f values.yaml
 ```
 
 ## Custom configuration
@@ -105,7 +105,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/ombi?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/ombi?modal=changelog)
 
 ## Support
 

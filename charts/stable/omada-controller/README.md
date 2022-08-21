@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install omada-controller k8s-at-home/omada-controller
+helm install omada-controller samipsolutions/omada-controller
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install omada-controller k8s-at-home/omada-controller
 To install the chart with the release name `omada-controller`
 
 ```console
-helm install omada-controller k8s-at-home/omada-controller
+helm install omada-controller samipsolutions/omada-controller
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install omada-controller \
   --set env.TZ="America/New York" \
-    k8s-at-home/omada-controller
+    samipsolutions/omada-controller
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install omada-controller k8s-at-home/omada-controller -f values.yaml
+helm install omada-controller samipsolutions/omada-controller -f values.yaml
 ```
 
 ## Custom configuration
@@ -103,7 +103,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/omada-controller?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/omada-controller?modal=changelog)
 
 ## Support
 

@@ -23,9 +23,9 @@ Kubernetes: `>=1.19.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install games-on-whales k8s-at-home/games-on-whales
+helm install games-on-whales samipsolutions/games-on-whales
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install games-on-whales k8s-at-home/games-on-whales
 To install the chart with the release name `games-on-whales`
 
 ```console
-helm install games-on-whales k8s-at-home/games-on-whales
+helm install games-on-whales samipsolutions/games-on-whales
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install games-on-whales \
   --set env.TZ="America/New York" \
-    k8s-at-home/games-on-whales
+    samipsolutions/games-on-whales
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install games-on-whales k8s-at-home/games-on-whales -f values.yaml
+helm install games-on-whales samipsolutions/games-on-whales -f values.yaml
 ```
 
 ## Custom configuration
@@ -161,7 +161,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/games-on-whales?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/games-on-whales?modal=changelog)
 
 ## Support
 

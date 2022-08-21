@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install adguard-home k8s-at-home/adguard-home
+helm install adguard-home samipsolutions/adguard-home
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install adguard-home k8s-at-home/adguard-home
 To install the chart with the release name `adguard-home`
 
 ```console
-helm install adguard-home k8s-at-home/adguard-home
+helm install adguard-home samipsolutions/adguard-home
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install adguard-home \
   --set env.TZ="America/New York" \
-    k8s-at-home/adguard-home
+    samipsolutions/adguard-home
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install adguard-home k8s-at-home/adguard-home -f values.yaml
+helm install adguard-home samipsolutions/adguard-home -f values.yaml
 ```
 
 ## Custom configuration
@@ -105,7 +105,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/adguard-home?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/adguard-home?modal=changelog)
 
 ## Support
 

@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install uptime-kuma k8s-at-home/uptime-kuma
+helm install uptime-kuma samipsolutions/uptime-kuma
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install uptime-kuma k8s-at-home/uptime-kuma
 To install the chart with the release name `uptime-kuma`
 
 ```console
-helm install uptime-kuma k8s-at-home/uptime-kuma
+helm install uptime-kuma samipsolutions/uptime-kuma
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install uptime-kuma \
   --set env.TZ="America/New York" \
-    k8s-at-home/uptime-kuma
+    samipsolutions/uptime-kuma
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install uptime-kuma k8s-at-home/uptime-kuma -f values.yaml
+helm install uptime-kuma samipsolutions/uptime-kuma -f values.yaml
 ```
 
 ## Custom configuration
@@ -102,7 +102,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/uptime-kuma?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/uptime-kuma?modal=changelog)
 
 ## Support
 

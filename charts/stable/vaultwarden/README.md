@@ -25,9 +25,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install vaultwarden k8s-at-home/vaultwarden
+helm install vaultwarden samipsolutions/vaultwarden
 ```
 
 ## Installing the Chart
@@ -35,7 +35,7 @@ helm install vaultwarden k8s-at-home/vaultwarden
 To install the chart with the release name `vaultwarden`
 
 ```console
-helm install vaultwarden k8s-at-home/vaultwarden
+helm install vaultwarden samipsolutions/vaultwarden
 ```
 
 ## Uninstalling the Chart
@@ -58,13 +58,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install vaultwarden \
   --set env.TZ="America/New York" \
-    k8s-at-home/vaultwarden
+    samipsolutions/vaultwarden
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install vaultwarden k8s-at-home/vaultwarden -f values.yaml
+helm install vaultwarden samipsolutions/vaultwarden -f values.yaml
 ```
 
 ## Custom configuration
@@ -115,7 +115,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/vaultwarden?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/vaultwarden?modal=changelog)
 
 ## Support
 

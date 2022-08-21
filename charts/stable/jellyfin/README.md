@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install jellyfin k8s-at-home/jellyfin
+helm install jellyfin samipsolutions/jellyfin
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install jellyfin k8s-at-home/jellyfin
 To install the chart with the release name `jellyfin`
 
 ```console
-helm install jellyfin k8s-at-home/jellyfin
+helm install jellyfin samipsolutions/jellyfin
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install jellyfin \
   --set env.TZ="America/New York" \
-    k8s-at-home/jellyfin
+    samipsolutions/jellyfin
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install jellyfin k8s-at-home/jellyfin -f values.yaml
+helm install jellyfin samipsolutions/jellyfin -f values.yaml
 ```
 
 ## Custom configuration
@@ -104,7 +104,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/jellyfin?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/jellyfin?modal=changelog)
 
 ## Support
 

@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install valheim k8s-at-home/valheim
+helm install valheim samipsolutions/valheim
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install valheim k8s-at-home/valheim
 To install the chart with the release name `valheim`
 
 ```console
-helm install valheim k8s-at-home/valheim
+helm install valheim samipsolutions/valheim
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install valheim \
   --set env.TZ="America/New York" \
-    k8s-at-home/valheim
+    samipsolutions/valheim
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install valheim k8s-at-home/valheim -f values.yaml
+helm install valheim samipsolutions/valheim -f values.yaml
 ```
 
 ## Custom configuration
@@ -102,7 +102,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/valheim?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/valheim?modal=changelog)
 
 ## Support
 

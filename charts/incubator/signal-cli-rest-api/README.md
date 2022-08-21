@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install signal-cli-rest-api k8s-at-home/signal-cli-rest-api
+helm install signal-cli-rest-api samipsolutions/signal-cli-rest-api
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install signal-cli-rest-api k8s-at-home/signal-cli-rest-api
 To install the chart with the release name `signal-cli-rest-api`
 
 ```console
-helm install signal-cli-rest-api k8s-at-home/signal-cli-rest-api
+helm install signal-cli-rest-api samipsolutions/signal-cli-rest-api
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install signal-cli-rest-api \
   --set env.TZ="America/New York" \
-    k8s-at-home/signal-cli-rest-api
+    samipsolutions/signal-cli-rest-api
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install signal-cli-rest-api k8s-at-home/signal-cli-rest-api -f values.yaml
+helm install signal-cli-rest-api samipsolutions/signal-cli-rest-api -f values.yaml
 ```
 
 ## Custom configuration
@@ -103,7 +103,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/signal-cli-rest-api?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/signal-cli-rest-api?modal=changelog)
 
 ## Support
 

@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install speedtest-exporter k8s-at-home/speedtest-exporter
+helm install speedtest-exporter samipsolutions/speedtest-exporter
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install speedtest-exporter k8s-at-home/speedtest-exporter
 To install the chart with the release name `speedtest-exporter`
 
 ```console
-helm install speedtest-exporter k8s-at-home/speedtest-exporter
+helm install speedtest-exporter samipsolutions/speedtest-exporter
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install speedtest-exporter \
   --set env.TZ="America/New York" \
-    k8s-at-home/speedtest-exporter
+    samipsolutions/speedtest-exporter
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install speedtest-exporter k8s-at-home/speedtest-exporter -f values.yaml
+helm install speedtest-exporter samipsolutions/speedtest-exporter -f values.yaml
 ```
 
 ## Custom configuration
@@ -110,7 +110,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/speedtest-exporter?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/speedtest-exporter?modal=changelog)
 
 ## Support
 

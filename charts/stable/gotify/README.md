@@ -21,9 +21,9 @@ A simple server for sending and receiving messages
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install gotify k8s-at-home/gotify
+helm install gotify samipsolutions/gotify
 ```
 
 ## Installing the Chart
@@ -31,7 +31,7 @@ helm install gotify k8s-at-home/gotify
 To install the chart with the release name `gotify`
 
 ```console
-helm install gotify k8s-at-home/gotify
+helm install gotify samipsolutions/gotify
 ```
 
 ## Uninstalling the Chart
@@ -54,13 +54,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install gotify \
   --set env.TZ="America/New York" \
-    k8s-at-home/gotify
+    samipsolutions/gotify
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install gotify k8s-at-home/gotify -f values.yaml
+helm install gotify samipsolutions/gotify -f values.yaml
 ```
 
 ## Custom configuration
@@ -122,7 +122,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/gotify?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/gotify?modal=changelog)
 
 ## Support
 

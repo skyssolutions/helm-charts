@@ -22,9 +22,9 @@ Healthchecks is a cron job monitoring service. It listens for HTTP requests and 
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install healthchecks k8s-at-home/healthchecks
+helm install healthchecks samipsolutions/healthchecks
 ```
 
 ## Installing the Chart
@@ -32,7 +32,7 @@ helm install healthchecks k8s-at-home/healthchecks
 To install the chart with the release name `healthchecks`
 
 ```console
-helm install healthchecks k8s-at-home/healthchecks
+helm install healthchecks samipsolutions/healthchecks
 ```
 
 ## Uninstalling the Chart
@@ -55,13 +55,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install healthchecks \
   --set env.TZ="America/New York" \
-    k8s-at-home/healthchecks
+    samipsolutions/healthchecks
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install healthchecks k8s-at-home/healthchecks -f values.yaml
+helm install healthchecks samipsolutions/healthchecks -f values.yaml
 ```
 
 ## Custom configuration
@@ -106,7 +106,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/healthchecks?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/healthchecks?modal=changelog)
 
 ## Support
 

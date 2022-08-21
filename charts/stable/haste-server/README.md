@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install haste-server k8s-at-home/haste-server
+helm install haste-server samipsolutions/haste-server
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install haste-server k8s-at-home/haste-server
 To install the chart with the release name `haste-server`
 
 ```console
-helm install haste-server k8s-at-home/haste-server
+helm install haste-server samipsolutions/haste-server
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install haste-server \
   --set env.TZ="America/New York" \
-    k8s-at-home/haste-server
+    samipsolutions/haste-server
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install haste-server k8s-at-home/haste-server -f values.yaml
+helm install haste-server samipsolutions/haste-server -f values.yaml
 ```
 
 ## Custom configuration
@@ -105,7 +105,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/haste-server?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/haste-server?modal=changelog)
 
 ## Support
 

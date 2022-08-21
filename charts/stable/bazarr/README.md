@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install bazarr k8s-at-home/bazarr
+helm install bazarr samipsolutions/bazarr
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install bazarr k8s-at-home/bazarr
 To install the chart with the release name `bazarr`
 
 ```console
-helm install bazarr k8s-at-home/bazarr
+helm install bazarr samipsolutions/bazarr
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install bazarr \
   --set env.TZ="America/New York" \
-    k8s-at-home/bazarr
+    samipsolutions/bazarr
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install bazarr k8s-at-home/bazarr -f values.yaml
+helm install bazarr samipsolutions/bazarr -f values.yaml
 ```
 
 ## Custom configuration
@@ -103,7 +103,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/bazarr?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/bazarr?modal=changelog)
 
 ## Support
 

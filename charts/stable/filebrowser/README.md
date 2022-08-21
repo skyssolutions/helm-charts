@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install filebrowser k8s-at-home/filebrowser
+helm install filebrowser samipsolutions/filebrowser
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install filebrowser k8s-at-home/filebrowser
 To install the chart with the release name `filebrowser`
 
 ```console
-helm install filebrowser k8s-at-home/filebrowser
+helm install filebrowser samipsolutions/filebrowser
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install filebrowser \
   --set env.TZ="America/New York" \
-    k8s-at-home/filebrowser
+    samipsolutions/filebrowser
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install filebrowser k8s-at-home/filebrowser -f values.yaml
+helm install filebrowser samipsolutions/filebrowser -f values.yaml
 ```
 
 ## Custom configuration
@@ -102,7 +102,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/filebrowser?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/filebrowser?modal=changelog)
 
 ## Support
 

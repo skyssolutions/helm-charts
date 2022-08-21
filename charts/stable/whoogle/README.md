@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install whoogle k8s-at-home/whoogle
+helm install whoogle samipsolutions/whoogle
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install whoogle k8s-at-home/whoogle
 To install the chart with the release name `whoogle`
 
 ```console
-helm install whoogle k8s-at-home/whoogle
+helm install whoogle samipsolutions/whoogle
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install whoogle \
   --set env.TZ="America/New York" \
-    k8s-at-home/whoogle
+    samipsolutions/whoogle
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install whoogle k8s-at-home/whoogle -f values.yaml
+helm install whoogle samipsolutions/whoogle -f values.yaml
 ```
 
 ## Custom configuration
@@ -101,7 +101,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/whoogle?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/whoogle?modal=changelog)
 
 ## Support
 

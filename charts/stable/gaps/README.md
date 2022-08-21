@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install gaps k8s-at-home/gaps
+helm install gaps samipsolutions/gaps
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install gaps k8s-at-home/gaps
 To install the chart with the release name `gaps`
 
 ```console
-helm install gaps k8s-at-home/gaps
+helm install gaps samipsolutions/gaps
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install gaps \
   --set env.TZ="America/New York" \
-    k8s-at-home/gaps
+    samipsolutions/gaps
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install gaps k8s-at-home/gaps -f values.yaml
+helm install gaps samipsolutions/gaps -f values.yaml
 ```
 
 ## Custom configuration
@@ -102,7 +102,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/gaps?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/gaps?modal=changelog)
 
 ## Support
 

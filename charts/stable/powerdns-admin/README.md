@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install powerdns-admin k8s-at-home/powerdns-admin
+helm install powerdns-admin samipsolutions/powerdns-admin
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install powerdns-admin k8s-at-home/powerdns-admin
 To install the chart with the release name `powerdns-admin`
 
 ```console
-helm install powerdns-admin k8s-at-home/powerdns-admin
+helm install powerdns-admin samipsolutions/powerdns-admin
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install powerdns-admin \
   --set env.TZ="America/New York" \
-    k8s-at-home/powerdns-admin
+    samipsolutions/powerdns-admin
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install powerdns-admin k8s-at-home/powerdns-admin -f values.yaml
+helm install powerdns-admin samipsolutions/powerdns-admin -f values.yaml
 ```
 
 ## Custom configuration
@@ -106,7 +106,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/powerdns-admin?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/powerdns-admin?modal=changelog)
 
 ## Support
 

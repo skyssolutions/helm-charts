@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install tautulli k8s-at-home/tautulli
+helm install tautulli samipsolutions/tautulli
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install tautulli k8s-at-home/tautulli
 To install the chart with the release name `tautulli`
 
 ```console
-helm install tautulli k8s-at-home/tautulli
+helm install tautulli samipsolutions/tautulli
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install tautulli \
   --set env.TZ="America/New York" \
-    k8s-at-home/tautulli
+    samipsolutions/tautulli
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install tautulli k8s-at-home/tautulli -f values.yaml
+helm install tautulli samipsolutions/tautulli -f values.yaml
 ```
 
 ## Custom configuration
@@ -103,7 +103,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/tautulli?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/tautulli?modal=changelog)
 
 ## Support
 

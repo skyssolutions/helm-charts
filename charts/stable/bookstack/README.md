@@ -25,9 +25,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install bookstack k8s-at-home/bookstack
+helm install bookstack samipsolutions/bookstack
 ```
 
 ## Installing the Chart
@@ -35,7 +35,7 @@ helm install bookstack k8s-at-home/bookstack
 To install the chart with the release name `bookstack`
 
 ```console
-helm install bookstack k8s-at-home/bookstack
+helm install bookstack samipsolutions/bookstack
 ```
 
 ## Uninstalling the Chart
@@ -58,13 +58,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install bookstack \
   --set env.TZ="America/New York" \
-    k8s-at-home/bookstack
+    samipsolutions/bookstack
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install bookstack k8s-at-home/bookstack -f values.yaml
+helm install bookstack samipsolutions/bookstack -f values.yaml
 ```
 
 ## Custom configuration
@@ -105,7 +105,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/bookstack?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/bookstack?modal=changelog)
 
 ## Support
 

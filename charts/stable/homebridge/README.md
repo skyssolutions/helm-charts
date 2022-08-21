@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install homebridge k8s-at-home/homebridge
+helm install homebridge samipsolutions/homebridge
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install homebridge k8s-at-home/homebridge
 To install the chart with the release name `homebridge`
 
 ```console
-helm install homebridge k8s-at-home/homebridge
+helm install homebridge samipsolutions/homebridge
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install homebridge \
   --set env.TZ="America/New York" \
-    k8s-at-home/homebridge
+    samipsolutions/homebridge
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install homebridge k8s-at-home/homebridge -f values.yaml
+helm install homebridge samipsolutions/homebridge -f values.yaml
 ```
 
 ## Custom configuration
@@ -109,7 +109,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/homebridge?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/homebridge?modal=changelog)
 
 ## Support
 

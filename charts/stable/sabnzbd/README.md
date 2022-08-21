@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install sabnzbd k8s-at-home/sabnzbd
+helm install sabnzbd samipsolutions/sabnzbd
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install sabnzbd k8s-at-home/sabnzbd
 To install the chart with the release name `sabnzbd`
 
 ```console
-helm install sabnzbd k8s-at-home/sabnzbd
+helm install sabnzbd samipsolutions/sabnzbd
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install sabnzbd \
   --set env.TZ="America/New York" \
-    k8s-at-home/sabnzbd
+    samipsolutions/sabnzbd
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install sabnzbd k8s-at-home/sabnzbd -f values.yaml
+helm install sabnzbd samipsolutions/sabnzbd -f values.yaml
 ```
 
 ## Custom configuration
@@ -105,7 +105,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/sabnzbd?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/sabnzbd?modal=changelog)
 
 ## Support
 

@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install pod-gateway k8s-at-home/pod-gateway
+helm install pod-gateway samipsolutions/pod-gateway
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install pod-gateway k8s-at-home/pod-gateway
 To install the chart with the release name `pod-gateway`
 
 ```console
-helm install pod-gateway k8s-at-home/pod-gateway
+helm install pod-gateway samipsolutions/pod-gateway
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install pod-gateway \
   --set env.TZ="America/New York" \
-    k8s-at-home/pod-gateway
+    samipsolutions/pod-gateway
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install pod-gateway k8s-at-home/pod-gateway -f values.yaml
+helm install pod-gateway samipsolutions/pod-gateway -f values.yaml
 ```
 
 ## Custom configuration
@@ -148,7 +148,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/pod-gateway?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/pod-gateway?modal=changelog)
 
 ## Support
 

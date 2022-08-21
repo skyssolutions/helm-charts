@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install overseerr k8s-at-home/overseerr
+helm install overseerr samipsolutions/overseerr
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install overseerr k8s-at-home/overseerr
 To install the chart with the release name `overseerr`
 
 ```console
-helm install overseerr k8s-at-home/overseerr
+helm install overseerr samipsolutions/overseerr
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install overseerr \
   --set env.TZ="America/New York" \
-    k8s-at-home/overseerr
+    samipsolutions/overseerr
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install overseerr k8s-at-home/overseerr -f values.yaml
+helm install overseerr samipsolutions/overseerr -f values.yaml
 ```
 
 ## Custom configuration
@@ -104,7 +104,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/overseerr?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/overseerr?modal=changelog)
 
 ## Support
 

@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install gatus k8s-at-home/gatus
+helm install gatus samipsolutions/gatus
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install gatus k8s-at-home/gatus
 To install the chart with the release name `gatus`
 
 ```console
-helm install gatus k8s-at-home/gatus
+helm install gatus samipsolutions/gatus
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install gatus \
   --set env.TZ="America/New York" \
-    k8s-at-home/gatus
+    samipsolutions/gatus
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install gatus k8s-at-home/gatus -f values.yaml
+helm install gatus samipsolutions/gatus -f values.yaml
 ```
 
 ## Custom configuration
@@ -104,7 +104,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/gatus?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/gatus?modal=changelog)
 
 ## Support
 

@@ -25,9 +25,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install librespeed k8s-at-home/librespeed
+helm install librespeed samipsolutions/librespeed
 ```
 
 ## Installing the Chart
@@ -35,7 +35,7 @@ helm install librespeed k8s-at-home/librespeed
 To install the chart with the release name `librespeed`
 
 ```console
-helm install librespeed k8s-at-home/librespeed
+helm install librespeed samipsolutions/librespeed
 ```
 
 ## Uninstalling the Chart
@@ -58,13 +58,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install librespeed \
   --set env.TZ="America/New York" \
-    k8s-at-home/librespeed
+    samipsolutions/librespeed
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install librespeed k8s-at-home/librespeed -f values.yaml
+helm install librespeed samipsolutions/librespeed -f values.yaml
 ```
 
 ## Custom configuration
@@ -106,7 +106,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/librespeed?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/librespeed?modal=changelog)
 
 ## Support
 

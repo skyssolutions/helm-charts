@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install mqtt-exporter k8s-at-home/mqtt-exporter
+helm install mqtt-exporter samipsolutions/mqtt-exporter
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install mqtt-exporter k8s-at-home/mqtt-exporter
 To install the chart with the release name `mqtt-exporter`
 
 ```console
-helm install mqtt-exporter k8s-at-home/mqtt-exporter
+helm install mqtt-exporter samipsolutions/mqtt-exporter
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install mqtt-exporter \
   --set env.TZ="America/New York" \
-    k8s-at-home/mqtt-exporter
+    samipsolutions/mqtt-exporter
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install mqtt-exporter k8s-at-home/mqtt-exporter -f values.yaml
+helm install mqtt-exporter samipsolutions/mqtt-exporter -f values.yaml
 ```
 
 ## Custom configuration
@@ -123,7 +123,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/mqtt-exporter?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/mqtt-exporter?modal=changelog)
 
 ## Support
 

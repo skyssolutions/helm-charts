@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install node-red k8s-at-home/node-red
+helm install node-red samipsolutions/node-red
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install node-red k8s-at-home/node-red
 To install the chart with the release name `node-red`
 
 ```console
-helm install node-red k8s-at-home/node-red
+helm install node-red samipsolutions/node-red
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install node-red \
   --set env.TZ="America/New York" \
-    k8s-at-home/node-red
+    samipsolutions/node-red
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install node-red k8s-at-home/node-red -f values.yaml
+helm install node-red samipsolutions/node-red -f values.yaml
 ```
 
 ## Custom configuration
@@ -107,7 +107,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/node-red?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/node-red?modal=changelog)
 
 ## Support
 

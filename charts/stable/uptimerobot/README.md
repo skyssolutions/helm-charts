@@ -21,9 +21,9 @@ A tool to get statistics from Uptime Robot and log it into InfluxDB
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install uptimerobot k8s-at-home/uptimerobot
+helm install uptimerobot samipsolutions/uptimerobot
 ```
 
 ## Installing the Chart
@@ -31,7 +31,7 @@ helm install uptimerobot k8s-at-home/uptimerobot
 To install the chart with the release name `uptimerobot`
 
 ```console
-helm install uptimerobot k8s-at-home/uptimerobot
+helm install uptimerobot samipsolutions/uptimerobot
 ```
 
 ## Uninstalling the Chart
@@ -54,13 +54,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install uptimerobot \
   --set env.TZ="America/New York" \
-    k8s-at-home/uptimerobot
+    samipsolutions/uptimerobot
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install uptimerobot k8s-at-home/uptimerobot -f values.yaml
+helm install uptimerobot samipsolutions/uptimerobot -f values.yaml
 ```
 
 ## Custom configuration
@@ -93,7 +93,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/uptimerobot?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/uptimerobot?modal=changelog)
 
 ## Support
 

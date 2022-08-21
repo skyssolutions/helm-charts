@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.samipsolutions.fi/
 helm repo update
-helm install esphome k8s-at-home/esphome
+helm install esphome samipsolutions/esphome
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install esphome k8s-at-home/esphome
 To install the chart with the release name `esphome`
 
 ```console
-helm install esphome k8s-at-home/esphome
+helm install esphome samipsolutions/esphome
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install esphome \
   --set env.TZ="America/New York" \
-    k8s-at-home/esphome
+    samipsolutions/esphome
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install esphome k8s-at-home/esphome -f values.yaml
+helm install esphome samipsolutions/esphome -f values.yaml
 ```
 
 ## Custom configuration
@@ -101,7 +101,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/esphome?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/samipsolutions/esphome?modal=changelog)
 
 ## Support
 
