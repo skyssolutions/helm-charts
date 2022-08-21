@@ -22,7 +22,7 @@ periodic comcast data usage checks and save the results to InfluxDB
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install comcast k8s-at-home/comcast
 ```

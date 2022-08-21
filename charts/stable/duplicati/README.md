@@ -22,7 +22,7 @@ Store securely encrypted backups on cloud storage services!
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install duplicati k8s-at-home/duplicati
 ```

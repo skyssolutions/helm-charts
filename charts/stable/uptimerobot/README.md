@@ -21,7 +21,7 @@ A tool to get statistics from Uptime Robot and log it into InfluxDB
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install uptimerobot k8s-at-home/uptimerobot
 ```

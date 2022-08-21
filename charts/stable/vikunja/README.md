@@ -26,7 +26,7 @@ The to-do app to organize your life
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install vikunja k8s-at-home/vikunja
 ```

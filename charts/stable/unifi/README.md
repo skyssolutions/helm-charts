@@ -22,7 +22,7 @@ Ubiquiti Network's Unifi Controller
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install unifi k8s-at-home/unifi
 ```

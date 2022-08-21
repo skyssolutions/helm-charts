@@ -10,9 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Have a question? 👉 [Start a new discussion](https://github.com/k8s-at-home/organization/discussions/new) or [ask on our Discord](https://discord.gg/k8s-at-home).
-
-        Before opening an issue, please check [the documentation](https://docs.k8s-at-home.com/our-helm-charts/introduction/) and see if it helps you resolve your issue. Please also make sure that you followed the installation instructions.
+        Have a question? 👉 [Start a new discussion](https://github.com/samipsolutions/organization/discussions/new).
 
         Finally, please search issues and discussions before opening a new bug report.
 
@@ -43,7 +41,7 @@ body:
     attributes:
       label: Container name
       description: Name of the container image this issue relates to
-      placeholder: e.g. ghcr.io/k8s-at-home/sonarr
+      placeholder: e.g. ghcr.io/samipsolutions/sonarr
     validations:
       required: true
 

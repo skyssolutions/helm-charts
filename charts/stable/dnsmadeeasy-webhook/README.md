@@ -23,7 +23,7 @@ Cert-Manager Webhook for DNSMadeEasy
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install dnsmadeeasy-webhook k8s-at-home/dnsmadeeasy-webhook
 ```

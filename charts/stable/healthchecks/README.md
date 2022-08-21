@@ -22,7 +22,7 @@ Healthchecks is a cron job monitoring service. It listens for HTTP requests and 
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install healthchecks k8s-at-home/healthchecks
 ```

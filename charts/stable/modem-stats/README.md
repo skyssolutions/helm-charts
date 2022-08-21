@@ -22,7 +22,7 @@ periodic cable modem data collection and save the results to InfluxDB
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install modem-stats k8s-at-home/modem-stats
 ```

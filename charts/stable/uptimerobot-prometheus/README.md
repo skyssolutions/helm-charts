@@ -22,7 +22,7 @@ Prometheus Exporter for the official uptimerobot CLI
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install uptimerobot-prometheus k8s-at-home/uptimerobot-prometheus
 ```

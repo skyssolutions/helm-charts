@@ -24,7 +24,7 @@ This server allows you to sync any Joplin client
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install joplin-server k8s-at-home/joplin-server
 ```

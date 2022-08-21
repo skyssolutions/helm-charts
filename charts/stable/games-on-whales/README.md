@@ -23,7 +23,7 @@ Kubernetes: `>=1.19.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install games-on-whales k8s-at-home/games-on-whales
 ```

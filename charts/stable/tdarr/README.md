@@ -23,7 +23,7 @@ Tdarr is a self hosted web-app for automating media library transcode/remux mana
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://helm.samipsolutions.fi/
 helm repo update
 helm install tdarr k8s-at-home/tdarr
 ```

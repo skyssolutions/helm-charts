@@ -64,9 +64,9 @@ jobs:
         with:
           file_pattern: charts/**/
           commit_message: "chore: Auto-update chart README [skip ci]"
-          commit_user_name: k8s-at-home[bot]
-          commit_user_email: k8s-at-home[bot]@users.noreply.github.com
-          commit_author: k8s-at-home[bot] <k8s-at-home[bot]@users.noreply.github.com>
+          commit_user_name: samipsolutions[bot]
+          commit_user_email: samipsolutions[bot]@users.noreply.github.com
+          commit_author: samipsolutions[bot] <samipsolutions[bot]@users.noreply.github.com>
 
       - name: Save commit hash
         id: save-commit-hash
@@ -86,14 +86,14 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "k8s-at-home[bot]"
-          git config user.email "k8s-at-home[bot]@users.noreply.github.com"
+          git config user.name "samipsolutions[bot]"
+          git config user.email "samipsolutions[bot]@users.noreply.github.com"
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.4.0
         with:
           charts_dir: charts/*
-          charts_repo_url: https://k8s-at-home.com/charts/
+          charts_repo_url: https://helm.samipsolutions.fi/
         env:
           CR_TOKEN: "${{ steps.generate-token.outputs.token }}"
           CR_SKIP_EXISTING: "true"
@@ -132,7 +132,7 @@ jobs:
         with:
           push_options: --force
           commit_message: Auto-generate chart summary [no ci]
-          commit_user_name: k8s-at-home[bot]
-          commit_user_email: k8s-at-home[bot]@users.noreply.github.com
-          commit_author: k8s-at-home[bot] <k8s-at-home[bot]@users.noreply.github.com>
+          commit_user_name: samipsolutions[bot]
+          commit_user_email: samipsolutions[bot]@users.noreply.github.com
+          commit_author: samipsolutions[bot] <samipsolutions[bot]@users.noreply.github.com>
           file_pattern: charts/README.md

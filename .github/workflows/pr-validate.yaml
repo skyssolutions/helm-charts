@@ -17,17 +17,17 @@ concurrency:
 
 jobs:
   pr-metadata:
-    uses: k8s-at-home/charts/.github/workflows/pr-metadata.yaml@master
+    uses: samipsolutions/charts/.github/workflows/pr-metadata.yaml@master
 
   pre-commit-check:
-    uses: k8s-at-home/charts/.github/workflows/pre-commit-check.yaml@master
+    uses: samipsolutions/charts/.github/workflows/pre-commit-check.yaml@master
     needs:
       - pr-metadata
     with:
       modifiedFiles: ${{ needs.pr-metadata.outputs.addedOrModifiedFiles }}
 
   charts-changelog:
-    uses: k8s-at-home/charts/.github/workflows/charts-changelog.yaml@master
+    uses: samipsolutions/charts/.github/workflows/charts-changelog.yaml@master
     needs:
       - pr-metadata
       - pre-commit-check
@@ -36,7 +36,7 @@ jobs:
       modifiedCharts: ${{ needs.pr-metadata.outputs.addedOrModifiedCharts }}
 
   charts-lint:
-    uses: k8s-at-home/charts/.github/workflows/charts-lint.yaml@master
+    uses: samipsolutions/charts/.github/workflows/charts-lint.yaml@master
     needs:
       - pr-metadata
       - charts-changelog
@@ -45,7 +45,7 @@ jobs:
       chartChangesDetected: ${{ needs.pr-metadata.outputs.addedOrModified }}
 
   charts-test:
-    uses: k8s-at-home/charts/.github/workflows/charts-test.yaml@master
+    uses: samipsolutions/charts/.github/workflows/charts-test.yaml@master
     needs:
       - pr-metadata
       - charts-changelog

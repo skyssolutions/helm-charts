@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Have a question? 👉 [Start a new discussion](https://github.com/k8s-at-home/organization/discussions/new) or [ask on our Discord](https://discord.gg/k8s-at-home).
+        Have a question? 👉 [Start a new discussion](https://github.com/samipsolutions/organization/discussions/new).
 
 # Helm Chart details
 
