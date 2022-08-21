@@ -69,6 +69,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded app to version 0.19
+    apiVersion: v2
+    appVersion: v0.19
+    created: "2022-08-21T05:44:03.47631804Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.1
+    description: DNS proxy as ad-blocker for local network
+    digest: 6e5165b98e13b81f1a6a709c0915f06f555185b776d00005ed48290a9f381509
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/blocky
+    icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
+    keywords:
+    - blocky
+    - adblock
+    - dns
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: jeff@billimek.com
+      name: billimek
+    name: blocky
+    sources:
+    - https://github.com/0xERR0R/blocky
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/blocky-10.6.0/blocky-10.6.0.tgz
+    version: 10.6.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: v0.18
@@ -708,6 +741,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgrade app version to 5.10.1
+    apiVersion: v2
+    appVersion: 5.10.1
+    created: "2022-08-21T05:44:05.576696054Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    description: Ghost is a blogging and publishing software
+    digest: 311c0b02e8e188a8d855c9ff211aa431b7699cce3fd87480bbc1d0164f5974ea
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/ghost
+    icon: https://ghost.org/images/logos/logo-black-1.png
+    keywords:
+    - ghost
+    - blogging
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: sm+k8s-at-home+git@samip.fi
+      name: samip5
+    name: ghost
+    sources:
+    - https://github.com/TryGhost/Ghost
+    - https://github.com/TryGhost/Ghost-CLI
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/ghost-3.0.0/ghost-3.0.0.tgz
+    version: 3.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 4.37.0
@@ -1020,6 +1086,35 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/home-assistant-13.4.2/home-assistant-13.4.2.tgz
     version: 13.4.2
   homebridge:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update app to 2022-08-09.
+    apiVersion: v2
+    appVersion: "2022-08-09"
+    created: "2022-08-21T05:44:06.82188339Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A lightweight NodeJS server that emulates the iOS HomeKit API
+    digest: cb709fef0fee348efaf11dfb951749b8dcd15ba01b145fa14a585ced07acc164
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/homebridge
+    icon: https://avatars0.githubusercontent.com/u/38217527?s=400&v=4?sanitize=true
+    keywords:
+    - homebridge
+    - homekit
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: bjw-s@users.noreply.github.com
+      name: bjw-s
+    name: homebridge
+    sources:
+    - https://homebridge.io/
+    - https://github.com/oznu/docker-homebridge
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/homebridge-5.4.0/homebridge-5.4.0.tgz
+    version: 5.4.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2553,6 +2648,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded appVersion to version 1.27.0
+    apiVersion: v2
+    appVersion: 1.27.0
+    created: "2022-08-21T05:44:12.130642554Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: b315c2c7de335c59b4cba2a8aed86d92c10a638134f2e1b47c1dc4bcb6f4a26f
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/zigbee2mqtt
+    icon: https://www.zigbee2mqtt.io/images/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: miguelangel.santiago@hotmail.com
+      name: masantiago
+    - email: me@bjw-s.dev
+      name: bjw-s
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/zigbee2mqtt-9.5.0/zigbee2mqtt-9.5.0.tgz
+    version: 9.5.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 1.19.1
@@ -2613,4 +2740,4 @@ entries:
     urls:
     - https://github.com/samipsolutions/helm-charts/releases/download/zwavejs2mqtt-5.4.2/zwavejs2mqtt-5.4.2.tgz
     version: 5.4.2
-generated: "2022-08-21T05:32:57.142749796Z"
+generated: "2022-08-21T05:44:12.2326571Z"
