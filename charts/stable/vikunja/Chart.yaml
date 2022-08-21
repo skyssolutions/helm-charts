@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 0.19.2
 description: The to-do app to organize your life
 name: vikunja
-version: 6.2.1
+version: 6.3.0
 keywords:
   - vikunja
   - to-do
@@ -26,7 +26,7 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: postgresql
-    version: 11.6.26
+    version: 11.7.5
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 annotations:
