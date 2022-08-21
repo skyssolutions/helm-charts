@@ -1,4 +1,0 @@
-config:
-  files:
-    dummy-ups.dev: |
-      ups.status: OL

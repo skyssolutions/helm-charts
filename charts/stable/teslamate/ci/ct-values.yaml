@@ -1,6 +1,0 @@
----
-env:
-  DISABLE_MQTT: "true"
-
-postgresql:
-  enabled: true

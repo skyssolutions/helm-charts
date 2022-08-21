@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-- name: Discuss on Discord
-  url: https://discord.gg/k8s-at-home
-  about: Join our Discord community
-- name: Ask a question
-  url: https://github.com/k8s-at-home/organization/discussions
-  about: Please ask and answer questions here.
