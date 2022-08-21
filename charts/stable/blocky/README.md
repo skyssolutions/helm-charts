@@ -1,6 +1,6 @@
 # blocky
 
-![Version: 10.6.0](https://img.shields.io/badge/Version-10.6.0-informational?style=flat-square) ![AppVersion: v0.19](https://img.shields.io/badge/AppVersion-v0.19-informational?style=flat-square)
+![Version: 10.6.1](https://img.shields.io/badge/Version-10.6.1-informational?style=flat-square) ![AppVersion: v0.19](https://img.shields.io/badge/AppVersion-v0.19-informational?style=flat-square)
 
 DNS proxy as ad-blocker for local network
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.19.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | redis | 16.13.1 |
+| https://charts.bitnami.com/bitnami | redis | 16.13.2 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -105,7 +105,7 @@ helm install blocky samipsolutions/blocky -f values.yaml
 
 ## Changelog
 
-### Version 10.6.0
+### Version 10.6.1
 
 #### Added
 

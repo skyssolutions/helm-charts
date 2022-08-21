@@ -1,6 +1,6 @@
 # unifi-poller
 
-![Version: 11.1.2](https://img.shields.io/badge/Version-11.1.2-informational?style=flat-square) ![AppVersion: 2.1.3](https://img.shields.io/badge/AppVersion-2.1.3-informational?style=flat-square)
+![Version: 11.1.3](https://img.shields.io/badge/Version-11.1.3-informational?style=flat-square) ![AppVersion: 2.1.3](https://img.shields.io/badge/AppVersion-2.1.3-informational?style=flat-square)
 
 Collect ALL UniFi Controller, Site, Device & Client Data - Export to InfluxDB or Prometheus
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | influxdb | 5.3.5 |
+| https://charts.bitnami.com/bitnami | influxdb | 5.3.11 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -100,7 +100,7 @@ N/A
 
 ## Changelog
 
-### Version 11.1.2
+### Version 11.1.3
 
 #### Added
 
