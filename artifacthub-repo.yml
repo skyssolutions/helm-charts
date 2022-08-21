@@ -1,0 +1,11 @@
+repositoryID: 157d5103-9d63-49d4-9b01-2bdbec0a7c0b
+owners:
+  - name: Skyler Mäntysaari
+    email: me@skym.fi
+ignore:
+  # These charts are related to the common library
+  - name: common
+  - name: common-test
+  - name: kah-common-chart
+  # This chart is for testing only at the moment
+  - name: plex-media-server
