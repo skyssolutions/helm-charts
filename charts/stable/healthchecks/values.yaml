@@ -4,7 +4,8 @@ image:
   # -- image repository
   repository: linuxserver/healthchecks
   # -- image tag
-  tag: version-v1.20.0
+  # @default -- chart.appVersion
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
