@@ -1,6 +1,6 @@
 # privatebin
 
-![Version: 2.1.3](https://img.shields.io/badge/Version-2.1.3-informational?style=flat-square) ![AppVersion: 1.3.5](https://img.shields.io/badge/AppVersion-1.3.5-informational?style=flat-square)
+![Version: 2.2.0](https://img.shields.io/badge/Version-2.2.0-informational?style=flat-square) ![AppVersion: 1.3.5](https://img.shields.io/badge/AppVersion-1.3.5-informational?style=flat-square)
 
 A minimalist, open source online pastebin running on an Nginx, php-fpm & Alpine Linux stack
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 11.6.26 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.7.5 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -91,7 +91,7 @@ N/A
 
 ## Changelog
 
-### Version 2.1.3
+### Version 2.2.0
 
 #### Added
 

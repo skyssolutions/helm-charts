@@ -1,6 +1,6 @@
 # bookstack
 
-![Version: 5.1.2](https://img.shields.io/badge/Version-5.1.2-informational?style=flat-square) ![AppVersion: v21.12](https://img.shields.io/badge/AppVersion-v21.12-informational?style=flat-square)
+![Version: 5.2.0](https://img.shields.io/badge/Version-5.2.0-informational?style=flat-square) ![AppVersion: v21.12](https://img.shields.io/badge/AppVersion-v21.12-informational?style=flat-square)
 
 A simple, self-hosted, easy-to-use platform for organising and storing information.
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 11.0.14 |
+| https://charts.bitnami.com/bitnami | mariadb | 11.1.8 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 5.1.2
+### Version 5.2.0
 
 #### Added
 

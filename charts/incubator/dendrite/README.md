@@ -1,6 +1,6 @@
 # dendrite
 
-![Version: 6.4.1](https://img.shields.io/badge/Version-6.4.1-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
+![Version: 6.5.0](https://img.shields.io/badge/Version-6.5.0-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 11.6.26 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.7.5 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 | https://library-charts.k8s-at-home.com | keyserver(common) | 4.5.2 |
 | https://library-charts.k8s-at-home.com | clientapi(common) | 4.5.2 |
@@ -239,7 +239,7 @@ For more information see:
 
 ## Changelog
 
-### Version 6.4.1
+### Version 6.5.0
 
 #### Added
 
