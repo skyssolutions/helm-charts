@@ -172,6 +172,44 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: v21.12
+    created: "2022-08-21T11:10:20.143992087Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.8
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: b69be6f0c123ff5506cee3ff220e459d80f0c9a402ab7fc7c1a6af2ce3c3c1ee
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/bookstack
+    icon: https://avatars3.githubusercontent.com/u/20912696?s=400&v=4?sanitize=true
+    keywords:
+    - bookstack
+    - book
+    - stack
+    - organizer
+    - server
+    - hosted
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: bookstack
+    sources:
+    - https://www.bookstackapp.com/
+    - https://hub.docker.com/r/linuxserver/bookstack
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/bookstack-5.2.0/bookstack-5.2.0.tgz
+    version: 5.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: v21.12
     created: "2022-08-21T05:32:45.987560029Z"
     dependencies:
     - name: common
@@ -323,6 +361,86 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/deluge-5.4.2/deluge-5.4.2.tgz
     version: 5.4.2
   dendrite:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: fixed
+          description: value for clientapi.registration_disabled so that it takes it directly from values.
+    apiVersion: v2
+    appVersion: v0.9.4
+    created: "2022-08-21T11:10:20.312338828Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.5
+    - condition: nats.enabled
+      name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 0.17.5
+    - alias: clientapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - alias: mediaapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - alias: syncapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - alias: roomserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - alias: federationapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - alias: keyserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - alias: userapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - alias: appserviceapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Dendrite Matrix Homeserver
+    digest: 4ff7d3a97c8b5b638037b41e548f57fd39bf22d38b965c6f8250ca9ca3e37c73
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/dendrite
+    keywords:
+    - dendrite
+    - matrix
+    - homeserver
+    - monolith
+    - federation
+    - polylith
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: jonathan@jonnobrow.co.uk
+      name: jonnobrow
+    name: dendrite
+    sources:
+    - https://github.com/matrix-org/dendrite
+    - https://github.com/matrix-org/dendrite/tree/master/build/docker
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/dendrite-6.5.0/dendrite-6.5.0.tgz
+    version: 6.5.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: fixed
@@ -971,6 +1089,39 @@ entries:
           description: Upgrade app version to 5.10.1
     apiVersion: v2
     appVersion: 5.10.1
+    created: "2022-08-21T11:10:20.453201361Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.8
+    description: Ghost is a blogging and publishing software
+    digest: 9200f0b79d7b2784f367b70e7c50e9f3d12025e0af965f60cc791f124f481f2c
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/ghost
+    icon: https://ghost.org/images/logos/logo-black-1.png
+    keywords:
+    - ghost
+    - blogging
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: sm+k8s-at-home+git@samip.fi
+      name: samip5
+    name: ghost
+    sources:
+    - https://github.com/TryGhost/Ghost
+    - https://github.com/TryGhost/Ghost-CLI
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/ghost-3.1.0/ghost-3.1.0.tgz
+    version: 3.1.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade app version to 5.10.1
+    apiVersion: v2
+    appVersion: 5.10.1
     created: "2022-08-21T05:44:05.576696054Z"
     dependencies:
     - name: common
@@ -1300,6 +1451,49 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/heimdall-8.4.2/heimdall-8.4.2.tgz
     version: 8.4.2
   home-assistant:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded app to 2022.8.6 from 3+ month old version.
+    apiVersion: v2
+    appVersion: 2022.8.6
+    created: "2022-08-21T11:10:20.617299916Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.8
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.11
+    description: Home Assistant
+    digest: 1bf56ec9df54356d2b453f23c4bb0dcbd0bda608b425b2c44d2679163f1cb07e
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: jeff@billimek.com
+      name: billimek
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    - https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/home-assistant
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/home-assistant-13.5.0/home-assistant-13.5.0.tgz
+    version: 13.5.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -1654,6 +1848,39 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/littlelink-server-1.4.2/littlelink-server-1.4.2.tgz
     version: 1.4.2
   monica:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 3.7.0-apache
+    created: "2022-08-21T11:10:20.779365379Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.8
+    description: A Personal Relationship Management tool to help you organize your
+      social life
+    digest: 8ff1075f0e34e5d0b526d53a44d067e495ed4c641661f9d4ab13f94fcb3b8f0a
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/monica
+    icon: https://pbs.twimg.com/profile_images/951820722191720450/mtCNuIXX.jpg
+    keywords:
+    - crm
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: jeff@billimek.com
+      name: billimek
+    name: monica
+    sources:
+    - https://github.com/monicahq/monica
+    - https://hub.docker.com/_/monica
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/monica-8.2.0/monica-8.2.0.tgz
+    version: 8.2.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2025,6 +2252,40 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/powerdns-admin-1.2.2/powerdns-admin-1.2.2.tgz
     version: 1.2.2
   privatebin:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 1.3.5
+    created: "2022-08-21T11:10:20.920922009Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.5
+    description: A minimalist, open source online pastebin running on an Nginx, php-fpm
+      & Alpine Linux stack
+    digest: e28fdc0ab8337eaebc508e912d97bec6534df4cd8ccd86b6811ff074a239236f
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/incubator/privatebin
+    icon: https://privatebin.info/theme/img/icon.svg
+    keywords:
+    - privatebin
+    - pastebin
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: psych0d0g@users.noreply.github.com
+      name: psych0d0g
+    name: privatebin
+    sources:
+    - https://github.com/PrivateBin/PrivateBin
+    - https://github.com/PrivateBin/docker-nginx-fpm-alpine
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/privatebin-2.2.0/privatebin-2.2.0.tgz
+    version: 2.2.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2405,6 +2666,37 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
   seafile:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 8.0.7
+    created: "2022-08-21T11:10:21.063476836Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.8
+    description: seafile helm package
+    digest: 3db21fdf2a97493e1c681b70b5457bdd13b6ef9bdd15c83260bd58366b234d5c
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/seafile
+    icon: https://manual.seafile.com/media/seafile-transparent-1024.png
+    keywords:
+    - seafile
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: 1985132+phybros@users.noreply.github.com
+      name: phybros
+    name: seafile
+    sources:
+    - https://github.com/haiwen/seafile-docker
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/seafile-3.2.0/seafile-3.2.0.tgz
+    version: 3.2.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2913,6 +3205,42 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 1.25.2
+    created: "2022-08-21T11:10:21.212612941Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.8
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.5
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: 2b7ef49196e85978f8606324bfff53b7309197b6a903797eb3959faed2f1c041
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/vaultwarden
+    icon: https://sesoodan.sirv.com/bitwarden_rs.png
+    keywords:
+    - Vaultwarden
+    - bitwardenrs
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: rwalt@pm.me
+      name: Rwaltr
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/vaultwarden-5.4.0/vaultwarden-5.4.0.tgz
+    version: 5.4.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 1.25.2
     created: "2022-08-21T07:32:52.363497157Z"
     dependencies:
     - name: common
@@ -2980,6 +3308,46 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/vaultwarden-5.3.2/vaultwarden-5.3.2.tgz
     version: 5.3.2
   vikunja:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: fixed
+          description: Icon url
+        - kind: changed
+          description: Upgraded app to 0.19.2.
+    apiVersion: v2
+    appVersion: 0.19.2
+    created: "2022-08-21T11:10:21.579232925Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.7.5
+    description: The to-do app to organize your life
+    digest: 6afd640001c79052475bbe070a3606c28f22dfaab50c714d3199fcc49f8444c1
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/vikunja
+    icon: https://vikunja.io/images/vikunja-logo.svg
+    keywords:
+    - vikunja
+    - to-do
+    - tasks
+    - calendar
+    - kanban
+    maintainers:
+    - email: k8s-at-home@xpander.eml.cc
+      name: auricom
+    name: vikunja
+    sources:
+    - https://kolaente.dev/vikunja/api
+    - https://kolaente.dev/vikunja/frontend
+    - https://hub.docker.com/r/vikunja/api
+    - https://hub.docker.com/r/vikunja/frontend
+    - https://vikunja.io/docs/
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/vikunja-6.3.0/vikunja-6.3.0.tgz
+    version: 6.3.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: fixed
@@ -3319,4 +3687,4 @@ entries:
     urls:
     - https://github.com/samipsolutions/helm-charts/releases/download/zwavejs2mqtt-5.4.2/zwavejs2mqtt-5.4.2.tgz
     version: 5.4.2
-generated: "2022-08-21T07:32:52.515762098Z"
+generated: "2022-08-21T11:10:21.579353825Z"
