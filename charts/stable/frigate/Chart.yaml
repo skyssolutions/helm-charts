@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 0.10.0-amd64
+appVersion: 0.10.1-amd64
 description: NVR With Realtime Object Detection for IP Cameras
 name: frigate
-version: 8.2.2
+version: 8.2.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - frigate
@@ -13,7 +13,7 @@ keywords:
   - ml
   - machine-learning
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/frigate
-icon: https://github.com/blakeblackshear/frigate/blob/master/docs/static/img/frigate.png
+icon: https://raw.githubusercontent.com/blakeblackshear/frigate/master/docs/static/img/frigate.png
 sources:
   - https://github.com/blakeblackshear/frigate
 maintainers:
