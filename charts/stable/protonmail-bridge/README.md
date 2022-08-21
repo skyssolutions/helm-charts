@@ -1,6 +1,6 @@
 # protonmail-bridge
 
-![Version: 5.4.2](https://img.shields.io/badge/Version-5.4.2-informational?style=flat-square) ![AppVersion: 1.8.7-1](https://img.shields.io/badge/AppVersion-1.8.7--1-informational?style=flat-square)
+![Version: 5.5.0](https://img.shields.io/badge/Version-5.5.0-informational?style=flat-square) ![AppVersion: 2.2.2-1](https://img.shields.io/badge/AppVersion-2.2.2--1-informational?style=flat-square)
 
 Container for protonmail bridge to work on the network.
 
@@ -95,7 +95,7 @@ Once installed do the following to configure the application within the pod:
 
 ## Changelog
 
-### Version 5.4.2
+### Version 5.5.0
 
 #### Added
 
@@ -103,7 +103,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgrade app to 2.2.2-1.
 
 #### Fixed
 

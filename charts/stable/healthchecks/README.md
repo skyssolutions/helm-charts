@@ -1,6 +1,6 @@
 # healthchecks
 
-![Version: 4.4.2](https://img.shields.io/badge/Version-4.4.2-informational?style=flat-square) ![AppVersion: version-v1.20.0](https://img.shields.io/badge/AppVersion-version--v1.20.0-informational?style=flat-square)
+![Version: 4.5.0](https://img.shields.io/badge/Version-4.5.0-informational?style=flat-square) ![AppVersion: version-v2.3](https://img.shields.io/badge/AppVersion-version--v2.3-informational?style=flat-square)
 
 Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages ("pings") from your cron jobs and scheduled tasks ("checks"). When a ping does not arrive on time, Healthchecks sends out alerts.
 
@@ -83,14 +83,14 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"linuxserver/healthchecks"` | image repository |
-| image.tag | string | `"version-v1.20.0"` | image tag |
+| image.tag | string | chart.appVersion | image tag |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | persistence.config | object | `{"enabled":false,"mountpath":"/config"}` | Volume used for configuration |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 4.4.2
+### Version 4.5.0
 
 #### Added
 
@@ -98,7 +98,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgrade app to v2.3
 
 #### Fixed
 

@@ -1,6 +1,6 @@
 # vikunja
 
-![Version: 6.1.2](https://img.shields.io/badge/Version-6.1.2-informational?style=flat-square) ![AppVersion: 0.17.0](https://img.shields.io/badge/AppVersion-0.17.0-informational?style=flat-square)
+![Version: 6.2.0](https://img.shields.io/badge/Version-6.2.0-informational?style=flat-square) ![AppVersion: 0.19.2](https://img.shields.io/badge/AppVersion-0.19.2-informational?style=flat-square)
 
 The to-do app to organize your life
 
@@ -96,7 +96,7 @@ N/A
 
 ## Changelog
 
-### Version 6.1.2
+### Version 6.2.0
 
 #### Added
 
@@ -104,11 +104,11 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to 0.19.2.
 
 #### Fixed
 
-N/A
+* Icon url
 
 ### Older versions
 
