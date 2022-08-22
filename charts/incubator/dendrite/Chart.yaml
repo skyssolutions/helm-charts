@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.9.4
 description: Dendrite Matrix Homeserver
 name: dendrite
-version: 7.1.1
+version: 7.1.2
 kubeVersion: ">=1.19.0-0"
 keywords:
   - dendrite
@@ -24,7 +24,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts/
     version: 0.1.0
   - name: nats
-    version: 0.17.1
+    version: 0.17.5
     repository: https://nats-io.github.io/k8s/helm/charts/
     condition: nats.enabled
   # Client API
@@ -77,5 +77,5 @@ dependencies:
     condition: dendrite.polylithEnabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: fixed
-      description: Global database config
+    - kind: changed
+      description: Upgrade nats chart dep.
