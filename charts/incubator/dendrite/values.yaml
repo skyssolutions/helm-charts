@@ -59,22 +59,6 @@ persistence:
     accessMode: ReadWriteOnce
     size: 1Gi
 
-# -- Override general dendrite.database parameters.
-# @default -- See values.yaml
-database:
-  # -- Custom connection string
-  # @default -- file or derived from included postgresql deployment
-  connection_string: null
-  # -- Maximum open connections
-  # @default -- dendrite.database.max_open_conns
-  max_open_conns: null
-  # -- Maximum dile connections
-  # @default -- dendrite.database.max_idle_conns
-  max_idle_conns: null
-  # -- Maximum connection lifetime
-  # @default -- dendrite.database.conn_max_lifetime
-  conn_max_lifetime: null
-
 # -- Configure the key server.
 # For more information see [the sample dendrite configuration](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.polylith.yaml)
 # @default -- See values.yaml
@@ -512,12 +496,6 @@ dendrite:
       # https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#use-regex
       # - /_matrix/client/.*?/(sync|user/.*?/filter/?.*|keys/changes|rooms/.*?/messages)$
 
-  # -- Configure database connection parameters.
-  # @default -- See values.yaml
-  database:
-    max_open_conns: 100
-    max_idle_conns: 2
-    conn_max_lifetime: -1
   # -- Configure the global settings for dendrite.
   # @default -- See values.yaml
   global:
@@ -578,6 +556,14 @@ dendrite:
       cache_lifetime: "5m"
     # -- Configure experimental MSC's
     mscs: []
+
+    # Configure global database settings
+    # @default -- see values.yaml
+    database:
+      connection_string: null
+      max_open_conns: 100
+      max_idle_conns: 2
+      conn_max_lifetime: -1
 
   # -- Configure opentracing.
   # @default -- See values.yaml

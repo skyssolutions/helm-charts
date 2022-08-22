@@ -74,9 +74,5 @@ dependencies:
     condition: dendrite.polylithEnabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Changed dependencies to use the bjw-s common chart.
-    - kind: changed
-      description: Removed PostgreSQL subchart support.
-    - kind: changed
-      description: Require at least Kubernetes 1.19.
+    - kind: fixed
+      description: Global database config
