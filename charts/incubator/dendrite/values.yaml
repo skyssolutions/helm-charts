@@ -59,6 +59,14 @@ persistence:
     accessMode: ReadWriteOnce
     size: 1Gi
 
+# Configure global database settings
+# @default -- see values.yaml
+database:
+  connection_string: file:dendrite?sslmode=disable
+  max_open_conns: 100
+  max_idle_conns: 2
+  conn_max_lifetime: -1
+
 # -- Configure the key server.
 # For more information see [the sample dendrite configuration](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.polylith.yaml)
 # @default -- See values.yaml
@@ -557,14 +565,6 @@ dendrite:
     # -- Configure experimental MSC's
     mscs: []
 
-    # Configure global database settings
-    # @default -- see values.yaml
-    database:
-      connection_string: null
-      max_open_conns: 100
-      max_idle_conns: 2
-      conn_max_lifetime: -1
-
   # -- Configure opentracing.
   # @default -- See values.yaml
   tracing:
@@ -587,23 +587,6 @@ dendrite:
       level: info
       params:
         path: /var/log/dendrite
-
-postgresql:
-  # -- Enable and configure postgres as the database for dendrite.
-  # @default -- See value.yaml
-  enabled: false
-  image:
-    repository: bitnami/postgresql
-    tag: "14.4.0"
-  auth:
-    username: dendrite
-    password: changeme
-    database: dendrite
-  primary:
-    persistence:
-      enabled: false
-    initdb:
-      scriptsConfigMap: "dendrite-postgresql-init-scripts"
 
 nats:
   # -- Enable and configure NATS for dendrite. Can be disabled for monolith

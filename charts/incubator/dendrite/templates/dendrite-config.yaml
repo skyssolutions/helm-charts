@@ -53,8 +53,8 @@ stringData:
         cache_lifetime: {{ default "5m" .Values.dendrite.global.dns_cache.cache_lifetime }}
       {{- if not $componentSpecificDatabaseConfig }}
       database:
-        connection_string: {{ .Values.global.database.connection_string }}
-        max_open_conns: {{ default 100 .Values.global.database.max_open_conns }}
+        connection_string: {{ .Values.database.connection_string }}
+        max_open_conns: {{ default 100 .Values.database.max_open_conns }}
         max_idle_conns: {{ default 5 .Values.database.max_idle_conns }}
         conn_max_lifetime: {{default -1 .Values.database.conn_max_lifetime }}
       {{- end }}
