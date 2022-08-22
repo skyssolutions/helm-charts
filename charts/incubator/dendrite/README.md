@@ -1,6 +1,6 @@
 # dendrite
 
-![Version: 6.5.0](https://img.shields.io/badge/Version-6.5.0-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
+![Version: 7.0.0](https://img.shields.io/badge/Version-7.0.0-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
@@ -13,23 +13,22 @@ Dendrite Matrix Homeserver
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.19.0-0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 11.7.5 |
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
-| https://library-charts.k8s-at-home.com | keyserver(common) | 4.5.2 |
-| https://library-charts.k8s-at-home.com | clientapi(common) | 4.5.2 |
-| https://library-charts.k8s-at-home.com | mediaapi(common) | 4.5.2 |
-| https://library-charts.k8s-at-home.com | syncapi(common) | 4.5.2 |
-| https://library-charts.k8s-at-home.com | roomserver(common) | 4.5.2 |
-| https://library-charts.k8s-at-home.com | federationapi(common) | 4.5.2 |
-| https://library-charts.k8s-at-home.com | userapi(common) | 4.5.2 |
-| https://library-charts.k8s-at-home.com | appserviceapi(common) | 4.5.2 |
-| https://nats-io.github.io/k8s/helm/charts/ | nats | 0.17.5 |
+| https://bjw-s.github.io/helm-charts/ | common | 0.1.0 |
+| https://bjw-s.github.io/helm-charts/ | keyserver(common) | 0.1.0 |
+| https://bjw-s.github.io/helm-charts/ | clientapi(common) | 0.1.0 |
+| https://bjw-s.github.io/helm-charts/ | mediaapi(common) | 0.1.0 |
+| https://bjw-s.github.io/helm-charts/ | syncapi(common) | 0.1.0 |
+| https://bjw-s.github.io/helm-charts/ | roomserver(common) | 0.1.0 |
+| https://bjw-s.github.io/helm-charts/ | federationapi(common) | 0.1.0 |
+| https://bjw-s.github.io/helm-charts/ | userapi(common) | 0.1.0 |
+| https://bjw-s.github.io/helm-charts/ | appserviceapi(common) | 0.1.0 |
+| https://nats-io.github.io/k8s/helm/charts/ | nats | 0.17.1 |
 
 ## TL;DR
 
@@ -239,7 +238,7 @@ For more information see:
 
 ## Changelog
 
-### Version 6.5.0
+### Version 7.0.0
 
 #### Added
 
@@ -247,11 +246,13 @@ N/A
 
 #### Changed
 
-N/A
+* Changed dependencies to use the bjw-s common chart.
+* Removed PostgreSQL subchart support.
+* Require at least Kubernetes 1.19.
 
 #### Fixed
 
-* value for clientapi.registration_disabled so that it takes it directly from values.
+N/A
 
 ### Older versions
 
