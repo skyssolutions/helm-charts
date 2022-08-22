@@ -1,6 +1,6 @@
 # dendrite
 
-![Version: 7.0.0](https://img.shields.io/badge/Version-7.0.0-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
+![Version: 7.1.1](https://img.shields.io/badge/Version-7.1.1-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
@@ -104,19 +104,17 @@ For more information see:
 | clientapi | object | See values.yaml | Configuration for the client api component. For more information see [the sample dendrite configuration](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.polylith.yaml) |
 | clientapi.config.captcha | object | See values.yaml | Configure captcha for registration |
 | clientapi.config.rate_limiting | object | values.yaml | Configure rate limiting. |
-| clientapi.config.registration_disabled | bool | `false` | Enable or disable registration for this homeserver. |
+| clientapi.config.registration_disabled | bool | `true` | Enable or disable registration for this homeserver. |
 | clientapi.config.registration_shared_secret | string | `""` | Shared secret that allows registration, despite registration_disabled. |
 | clientapi.config.turn | object | See values.yaml | Configure TURN |
 | clientapi.image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | clientapi.image.repository | string | `"matrixdotorg/dendrite-polylith"` | image repository |
 | clientapi.image.tag | string | chart.appVersion | image tag |
-| database | object | See values.yaml | Override general dendrite.database parameters. |
-| database.conn_max_lifetime | string | dendrite.database.conn_max_lifetime | Maximum connection lifetime |
-| database.connection_string | string | file or derived from included postgresql deployment | Custom connection string |
-| database.max_idle_conns | string | dendrite.database.max_idle_conns | Maximum dile connections |
-| database.max_open_conns | string | dendrite.database.max_open_conns | Maximum open connections |
+| database.conn_max_lifetime | int | `-1` |  |
+| database.connection_string | string | `"file:dendrite?sslmode=disable"` |  |
+| database.max_idle_conns | int | `2` |  |
+| database.max_open_conns | int | `100` |  |
 | dendrite | object | See values.yaml | Configuration for Dendrite. For more information see [the sample denrite-config.yaml](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.polylith.yaml) |
-| dendrite.database | object | See values.yaml | Configure database connection parameters. |
 | dendrite.global | object | See values.yaml | Configure the global settings for dendrite. |
 | dendrite.global.cache | object | `{"max_age":"1h","max_size_estimated":"1gb"}` | Congigure the in-memory caches |
 | dendrite.global.cache.max_age | string | `"1h"` | The maximum amount of time that a cache entry can live for in memory |
@@ -196,14 +194,6 @@ For more information see:
 | nats.nats.jetstream.enabled | bool | `true` |  |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | persistence.jetstream | object | See values.yaml | Configure Jetsream persistence. This is highly recommended in production. |
-| postgresql.auth.database | string | `"dendrite"` |  |
-| postgresql.auth.password | string | `"changeme"` |  |
-| postgresql.auth.username | string | `"dendrite"` |  |
-| postgresql.enabled | bool | See value.yaml | Enable and configure postgres as the database for dendrite. |
-| postgresql.image.repository | string | `"bitnami/postgresql"` |  |
-| postgresql.image.tag | string | `"14.4.0"` |  |
-| postgresql.primary.initdb.scriptsConfigMap | string | `"dendrite-postgresql-init-scripts"` |  |
-| postgresql.primary.persistence.enabled | bool | `false` |  |
 | roomserver | object | values.yaml | Configure the Room Server For more information see [the sample dendrite configuration](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.polylith.yaml) |
 | roomserver.database | object | See values.yaml | Override general dendrite.database parameters. |
 | roomserver.database.conn_max_lifetime | string | dendrite.database.conn_max_lifetime | Maximum connection lifetime |
@@ -238,7 +228,7 @@ For more information see:
 
 ## Changelog
 
-### Version 7.0.0
+### Version 7.1.1
 
 #### Added
 
@@ -246,13 +236,11 @@ N/A
 
 #### Changed
 
-* Changed dependencies to use the bjw-s common chart.
-* Removed PostgreSQL subchart support.
-* Require at least Kubernetes 1.19.
+N/A
 
 #### Fixed
 
-N/A
+* Global database config
 
 ### Older versions
 
