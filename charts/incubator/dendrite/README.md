@@ -1,6 +1,6 @@
 # dendrite
 
-![Version: 7.1.1](https://img.shields.io/badge/Version-7.1.1-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
+![Version: 7.1.2](https://img.shields.io/badge/Version-7.1.2-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
@@ -28,7 +28,7 @@ Kubernetes: `>=1.19.0-0`
 | https://bjw-s.github.io/helm-charts/ | federationapi(common) | 0.1.0 |
 | https://bjw-s.github.io/helm-charts/ | userapi(common) | 0.1.0 |
 | https://bjw-s.github.io/helm-charts/ | appserviceapi(common) | 0.1.0 |
-| https://nats-io.github.io/k8s/helm/charts/ | nats | 0.17.1 |
+| https://nats-io.github.io/k8s/helm/charts/ | nats | 0.17.5 |
 
 ## TL;DR
 
@@ -228,7 +228,7 @@ For more information see:
 
 ## Changelog
 
-### Version 7.1.1
+### Version 7.1.2
 
 #### Added
 
@@ -236,11 +236,11 @@ N/A
 
 #### Changed
 
-N/A
+* Upgrade nats chart dep.
 
 #### Fixed
 
-* Global database config
+N/A
 
 ### Older versions
 
