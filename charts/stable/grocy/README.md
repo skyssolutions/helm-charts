@@ -1,6 +1,6 @@
 # grocy
 
-![Version: 8.5.2](https://img.shields.io/badge/Version-8.5.2-informational?style=flat-square) ![AppVersion: version-v3.1.3](https://img.shields.io/badge/AppVersion-version--v3.1.3-informational?style=flat-square)
+![Version: 8.6.0](https://img.shields.io/badge/Version-8.6.0-informational?style=flat-square) ![AppVersion: version-v3.3.1](https://img.shields.io/badge/AppVersion-version--v3.3.1-informational?style=flat-square)
 
 ERP beyond your fridge - grocy is a web-based self-hosted groceries & household management solution for your home
 
@@ -12,7 +12,7 @@ ERP beyond your fridge - grocy is a web-based self-hosted groceries & household 
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.19.0-0`
 
 ## Dependencies
 
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 8.5.2
+### Version 8.6.0
 
 #### Added
 
@@ -97,7 +97,8 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to version 3.3.1.
+* Support only Kubernetes 1.19+.
 
 #### Fixed
 

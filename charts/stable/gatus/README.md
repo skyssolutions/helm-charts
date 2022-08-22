@@ -1,6 +1,6 @@
 # gatus
 
-![Version: 1.1.2](https://img.shields.io/badge/Version-1.1.2-informational?style=flat-square) ![AppVersion: v3.8.0](https://img.shields.io/badge/AppVersion-v3.8.0-informational?style=flat-square)
+![Version: 2.0.0](https://img.shields.io/badge/Version-2.0.0-informational?style=flat-square) ![AppVersion: v4.0.0](https://img.shields.io/badge/AppVersion-v4.0.0-informational?style=flat-square)
 
 A developer-oriented health dashboard that gives you the ability to monitor your services using HTTP, ICMP, TCP, and even DNS queries.
 
@@ -12,7 +12,7 @@ A developer-oriented health dashboard that gives you the ability to monitor your
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.19.0-0`
 
 ## Dependencies
 
@@ -88,7 +88,7 @@ N/A
 
 ## Changelog
 
-### Version 1.1.2
+### Version 2.0.0
 
 #### Added
 
@@ -96,7 +96,8 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to 4.0.0.
+* Support only Kubernetes 1.19+.
 
 #### Fixed
 

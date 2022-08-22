@@ -1,6 +1,6 @@
 # filebrowser
 
-![Version: 1.4.2](https://img.shields.io/badge/Version-1.4.2-informational?style=flat-square) ![AppVersion: 2.18.0](https://img.shields.io/badge/AppVersion-2.18.0-informational?style=flat-square)
+![Version: 2.0.0](https://img.shields.io/badge/Version-2.0.0-informational?style=flat-square) ![AppVersion: 2.22.4](https://img.shields.io/badge/AppVersion-2.22.4-informational?style=flat-square)
 
 filebrowser provides a file managing interface within a specified directory
 
@@ -12,7 +12,7 @@ filebrowser provides a file managing interface within a specified directory
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.19.0-0`
 
 ## Dependencies
 
@@ -86,7 +86,7 @@ N/A
 
 ## Changelog
 
-### Version 1.4.2
+### Version 2.0.0
 
 #### Added
 
@@ -94,7 +94,8 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to 2.22.4.
+* Support only Kubernetes 1.19+.
 
 #### Fixed
 

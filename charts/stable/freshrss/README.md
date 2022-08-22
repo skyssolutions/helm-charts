@@ -1,6 +1,6 @@
 # freshrss
 
-![Version: 6.4.2](https://img.shields.io/badge/Version-6.4.2-informational?style=flat-square) ![AppVersion: 1.18.1](https://img.shields.io/badge/AppVersion-1.18.1-informational?style=flat-square)
+![Version: 6.5.1](https://img.shields.io/badge/Version-6.5.1-informational?style=flat-square) ![AppVersion: 1.19.2](https://img.shields.io/badge/AppVersion-1.19.2-informational?style=flat-square)
 
 FreshRSS is a self-hosted RSS feed aggregator
 
@@ -13,7 +13,7 @@ FreshRSS is a self-hosted RSS feed aggregator
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.19.0-0`
 
 ## Dependencies
 
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 6.4.2
+### Version 6.5.1
 
 #### Added
 
@@ -97,7 +97,8 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to 1.19.2.
+* Support only Kubernetes 1.19+.
 
 #### Fixed
 

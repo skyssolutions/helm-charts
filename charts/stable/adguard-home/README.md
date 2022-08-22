@@ -1,6 +1,6 @@
 # adguard-home
 
-![Version: 5.5.2](https://img.shields.io/badge/Version-5.5.2-informational?style=flat-square) ![AppVersion: v0.107.7](https://img.shields.io/badge/AppVersion-v0.107.7-informational?style=flat-square)
+![Version: 5.5.3](https://img.shields.io/badge/Version-5.5.3-informational?style=flat-square) ![AppVersion: v0.107.11](https://img.shields.io/badge/AppVersion-v0.107.11-informational?style=flat-square)
 
 DNS proxy as ad-blocker for local network
 
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 5.5.2
+### Version 5.5.3
 
 #### Added
 
@@ -97,7 +97,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to v0.107.11.
 
 #### Fixed
 

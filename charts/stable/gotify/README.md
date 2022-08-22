@@ -1,6 +1,6 @@
 # gotify
 
-![Version: 1.2.2](https://img.shields.io/badge/Version-1.2.2-informational?style=flat-square) ![AppVersion: 2.1.4](https://img.shields.io/badge/AppVersion-2.1.4-informational?style=flat-square)
+![Version: 1.2.3](https://img.shields.io/badge/Version-1.2.3-informational?style=flat-square) ![AppVersion: 2.1.5](https://img.shields.io/badge/AppVersion-2.1.5-informational?style=flat-square)
 
 A simple server for sending and receiving messages
 
@@ -106,7 +106,7 @@ N/A
 
 ## Changelog
 
-### Version 1.2.2
+### Version 1.2.3
 
 #### Added
 
@@ -114,7 +114,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to version 2.1.5.
 
 #### Fixed
 

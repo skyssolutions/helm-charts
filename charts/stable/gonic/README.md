@@ -1,6 +1,6 @@
 # gonic
 
-![Version: 6.4.2](https://img.shields.io/badge/Version-6.4.2-informational?style=flat-square) ![AppVersion: v0.13.1](https://img.shields.io/badge/AppVersion-v0.13.1-informational?style=flat-square)
+![Version: 6.5.0](https://img.shields.io/badge/Version-6.5.0-informational?style=flat-square) ![AppVersion: v0.14.0](https://img.shields.io/badge/AppVersion-v0.14.0-informational?style=flat-square)
 
 Music streaming server / subsonic server API implementation
 
@@ -87,7 +87,7 @@ N/A
 
 ## Changelog
 
-### Version 6.4.2
+### Version 6.5.0
 
 #### Added
 
@@ -95,7 +95,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded app to 0.14.0.
 
 #### Fixed
 
