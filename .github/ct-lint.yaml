@@ -8,5 +8,5 @@ excluded-charts:
 chart-repos:
 - bitnami=https://charts.bitnami.com/bitnami
 - k8s-at-home-libraries=https://library-charts.k8s-at-home.com
-- samipsolutions=https://helm.samipsolutions.com/
+- samipsolutions=https://helm.samipsolutions.fi/
 - jetstack=https://charts.jetstack.io
