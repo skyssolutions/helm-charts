@@ -396,6 +396,82 @@ entries:
   dendrite:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Global database config
+    apiVersion: v2
+    appVersion: v0.9.4
+    created: "2022-08-22T14:10:05.959469433Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.1.0
+    - condition: nats.enabled
+      name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 0.17.1
+    - alias: clientapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.1.0
+    - alias: mediaapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.1.0
+    - alias: syncapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.1.0
+    - alias: roomserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.1.0
+    - alias: federationapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.1.0
+    - alias: keyserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.1.0
+    - alias: userapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.1.0
+    - alias: appserviceapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.1.0
+    description: Dendrite Matrix Homeserver
+    digest: 3d823321bd0849aa2f7180436846ab471adfb45f889375015281ff829b16e053
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/dendrite
+    keywords:
+    - dendrite
+    - matrix
+    - homeserver
+    - monolith
+    - federation
+    - polylith
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - name: Skyler Mäntysaari
+      url: https://github.com/samip5
+    name: dendrite
+    sources:
+    - https://github.com/matrix-org/dendrite
+    - https://github.com/matrix-org/dendrite/tree/master/build/docker
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/dendrite-7.1.1/dendrite-7.1.1.tgz
+    version: 7.1.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Changed dependencies to use the bjw-s common chart.
         - kind: changed
@@ -3830,4 +3906,4 @@ entries:
     urls:
     - https://github.com/samipsolutions/helm-charts/releases/download/zwavejs2mqtt-5.4.2/zwavejs2mqtt-5.4.2.tgz
     version: 5.4.2
-generated: "2022-08-22T12:38:59.636291061Z"
+generated: "2022-08-22T14:10:05.959560446Z"
