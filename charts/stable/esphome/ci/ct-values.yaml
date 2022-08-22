@@ -1,2 +1,0 @@
-env:
-  ESPHOME_DASHBOARD_USE_PING: true
