@@ -1,12 +1,12 @@
 ---
 apiVersion: v2
-appVersion: v3.8.0
+appVersion: v4.0.0
 description: A developer-oriented health dashboard that gives you the ability to monitor your services using HTTP, ICMP, TCP, and even DNS queries.
 icon: https://github.com/TwiN/gatus/raw/master/.github/assets/logo-with-dark-text.png
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/gatus
 name: gatus
-version: 1.1.2
-kubeVersion: ">=1.16.0-0"
+version: 2.0.0
+kubeVersion: ">=1.19.0-0"
 sources:
   - https://github.com/TwiN/gatus
 maintainers:
@@ -19,4 +19,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded app to 4.0.0.
+    - kind: changed
+      description: Support only Kubernetes 1.19+.

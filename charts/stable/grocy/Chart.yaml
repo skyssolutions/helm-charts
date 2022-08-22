@@ -1,10 +1,10 @@
 ---
 apiVersion: v2
-appVersion: version-v3.1.3
+appVersion: version-v3.3.1
 description: ERP beyond your fridge - grocy is a web-based self-hosted groceries & household management solution for your home
 name: grocy
-version: 8.5.2
-kubeVersion: ">=1.16.0-0"
+version: 8.6.0
+kubeVersion: ">=1.19.0-0"
 keywords:
   - grocy
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/grocy
@@ -12,8 +12,8 @@ icon: https://github.com/grocy/grocy/raw/master/public/img/appicons/mstile-150x1
 sources:
   - https://github.com/grocy/grocy
 maintainers:
-  - name: billimek
-    email: jeff@billimek.com
+  - name: Skyler Mäntysaari
+    url: https://github.com/samip5
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
@@ -21,4 +21,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded app to version 3.3.1.
+    - kind: changed
+      description: Support only Kubernetes 1.19+.

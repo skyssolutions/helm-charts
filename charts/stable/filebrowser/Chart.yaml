@@ -1,10 +1,10 @@
 ---
 apiVersion: v2
-appVersion: 2.18.0
+appVersion: 2.22.4
 description: filebrowser provides a file managing interface within a specified directory
 name: filebrowser
-version: 1.4.2
-kubeVersion: ">=1.16.0-0"
+version: 2.0.0
+kubeVersion: ">=1.19.0-0"
 keywords:
   - filebrowser
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/incubator/filebrowser
@@ -12,8 +12,8 @@ icon: https://raw.githubusercontent.com/filebrowser/logo/master/icon.png
 sources:
   - https://github.com/filebrowser/filebrowser
 maintainers:
-  - name: PixelJonas
-    email: 5434875+PixelJonas@users.noreply.github.com
+  - name: Skyler Mäntysaari
+    url: https://github.com/samip5
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
@@ -21,4 +21,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded app to 2.22.4.
+    - kind: changed
+      description: Support only Kubernetes 1.19+.
