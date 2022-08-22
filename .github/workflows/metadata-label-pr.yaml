@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Label Size
         uses: pascalgn/size-label-action@v0.4.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           sizes: >
             {
