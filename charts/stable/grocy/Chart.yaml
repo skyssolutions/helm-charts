@@ -23,4 +23,4 @@ annotations:
     - kind: changed
       description: Upgraded app to version 3.3.1.
     - kind: changed
-      description: Support only Kubernetes 1.19+. 
+      description: Support only Kubernetes 1.19+.
