@@ -2241,6 +2241,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded to Node Red 3.0.2 upstream image
+        - kind: changed
+          description: Support k8s 1.19+ only.
+    apiVersion: v2
+    appVersion: 3.0.2
+    created: "2022-08-22T15:17:21.398622453Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Node-RED is low-code programming for event-driven applications
+    digest: 80642274e3ceb0be2582f08aa6251d1e95a0d61a0945b85be93b19c6814d584b
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/node-red
+    icon: https://nodered.org/about/resources/media/node-red-icon-2.png
+    keywords:
+    - nodered
+    - node-red
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - name: Skyler Mäntysaari
+      url: https://github.com/samip5
+    name: node-red
+    sources:
+    - https://github.com/node-red/node-red-docker
+    - https://github.com/samipsolutions/helm-charts/tree/master/charts/node-red
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/node-red-11.0.0/node-red-11.0.0.tgz
+    version: 11.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 2.2.2
@@ -3982,4 +4013,4 @@ entries:
     urls:
     - https://github.com/samipsolutions/helm-charts/releases/download/zwavejs2mqtt-5.4.2/zwavejs2mqtt-5.4.2.tgz
     version: 5.4.2
-generated: "2022-08-22T14:49:18.335932155Z"
+generated: "2022-08-22T15:17:21.398723053Z"
