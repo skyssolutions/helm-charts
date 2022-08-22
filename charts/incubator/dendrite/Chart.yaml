@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.9.4
 description: Dendrite Matrix Homeserver
 name: dendrite
-version: 7.0.0
+version: 7.1.1
 kubeVersion: ">=1.19.0-0"
 keywords:
   - dendrite
@@ -13,6 +13,9 @@ keywords:
   - federation
   - polylith
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/dendrite
+maintainers:
+  - name: Skyler Mäntysaari
+    url: https://github.com/samip5
 sources:
   - https://github.com/matrix-org/dendrite
   - https://github.com/matrix-org/dendrite/tree/master/build/docker
@@ -74,9 +77,5 @@ dependencies:
     condition: dendrite.polylithEnabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Changed dependencies to use the bjw-s common chart.
-    - kind: changed
-      description: Removed PostgreSQL subchart support.
-    - kind: changed
-      description: Require at least Kubernetes 1.19.
+    - kind: fixed
+      description: Global database config

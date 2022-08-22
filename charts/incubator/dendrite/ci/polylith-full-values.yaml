@@ -17,5 +17,3 @@ nats:
 persistence:
   jetstream:
     enabled: true
-postgresql:
-  enabled: true
