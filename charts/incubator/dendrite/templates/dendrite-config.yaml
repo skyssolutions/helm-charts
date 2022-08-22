@@ -1,8 +1,4 @@
-{{- $connectionString := "file:" -}}
-{{- if .Values.postgresql.enabled}}
-{{- $connectionString = print "postgresql://" .Values.postgresql.auth.username ":" .Values.postgresql.auth.password "@" (include "common.names.fullname" $.Subcharts.postgresql) "/" -}}
-{{- end}}
-{{- $componentSpecificDatabaseConfig := or .Values.dendrite.polylithEnabled (not .Values.postgresql.enabled) -}}
+{{- $componentSpecificDatabaseConfig := or .Values.dendrite.polylithEnabled -}}
 ---
 apiVersion: v1
 kind: Secret
@@ -57,7 +53,7 @@ stringData:
         cache_lifetime: {{ default "5m" .Values.dendrite.global.dns_cache.cache_lifetime }}
       {{- if not $componentSpecificDatabaseConfig }}
       database:
-        connection_string: {{ default (print $connectionString "dendrite?sslmode=disable") .Values.database.connection_string }}
+        connection_string: {{ .Values.database.connection_string }}
         max_open_conns: {{ default 100 .Values.database.max_open_conns }}
         max_idle_conns: {{ default 5 .Values.database.max_idle_conns }}
         conn_max_lifetime: {{default -1 .Values.database.conn_max_lifetime }}
@@ -70,7 +66,7 @@ stringData:
       {{- end }}
       {{- if $componentSpecificDatabaseConfig }}
       database:
-        connection_string: {{ default (print $connectionString "dendrite_appservice?sslmode=disable") .Values.appserviceapi.database.connection_string }}
+        connection_string: {{ .Values.appserviceapi.database.connection_string }}
         max_open_conns: {{ default .Values.dendrite.database.max_open_conns .Values.appserviceapi.database.max_open_conns }}
         max_idle_conns: {{ default .Values.dendrite.database.max_idle_conns .Values.appserviceapi.database.max_idle_conns }}
         conn_max_lifetime: {{ default .Values.dendrite.database.conn_max_lifetime .Values.appserviceapi.database.conn_max_lifetime }}
@@ -114,7 +110,7 @@ stringData:
       {{- end }}
       {{- if $componentSpecificDatabaseConfig }}
       database:
-        connection_string: {{ default (print $connectionString "dendrite_federationapi?sslmode=disable") .Values.federationapi.database.connection_string }}
+        connection_string: {{ .Values.federationapi.database.connection_string }}
         max_open_conns: {{ default .Values.dendrite.database.max_open_conns .Values.federationapi.database.max_open_conns }}
         max_idle_conns: {{ default .Values.dendrite.database.max_idle_conns .Values.federationapi.database.max_idle_conns }}
       {{- end }}
@@ -130,7 +126,7 @@ stringData:
       {{- end }}
       {{- if $componentSpecificDatabaseConfig }}
       database:
-        connection_string: {{ default (print $connectionString "dendrite_keyserver?sslmode=disable") .Values.keyserver.database.connection_string }}
+        connection_string: {{ .Values.keyserver.database.connection_string }}
         max_open_conns: {{ default .Values.dendrite.database.max_open_conns .Values.keyserver.database.max_open_conns }}
         max_idle_conns: {{ default .Values.dendrite.database.max_idle_conns .Values.keyserver.database.max_idle_conns }}
         conn_max_lifetime: {{ default .Values.dendrite.database.conn_max_lifetime .Values.keyserver.database.conn_max_lifetime }}
@@ -145,7 +141,7 @@ stringData:
       {{- end }}
       {{- if $componentSpecificDatabaseConfig }}
       database:
-        connection_string: {{ default (print $connectionString "dendrite_mediaapi?sslmode=disable") .Values.mediaapi.database.connection_string }}
+        connection_string: {{ .Values.mediaapi.database.connection_string }}
         max_open_conns: {{ default .Values.dendrite.database.max_open_conns .Values.mediaapi.database.max_open_conns }}
         max_idle_conns: {{ default .Values.dendrite.database.max_idle_conns .Values.mediaapi.database.max_idle_conns }}
         conn_max_lifetime: {{ default .Values.dendrite.database.conn_max_lifetime .Values.mediaapi.database.conn_max_lifetime }}
@@ -159,7 +155,7 @@ stringData:
       mscs: {{ .Values.dendrite.global.mscs | toYaml | nindent 8 }}
       {{- if $componentSpecificDatabaseConfig }}
       database:
-        connection_string: {{ default (print $connectionString "dendrite_mscs?sslmode=disable") .Values.mscs.database.connection_string }}
+        connection_string: {{ .Values.mscs.database.connection_string }}
         max_open_conns: {{ default .Values.dendrite.database.max_open_conns .Values.mscs.database.max_open_conns }}
         max_idle_conns: {{ default .Values.dendrite.database.max_idle_conns .Values.mscs.database.max_idle_conns }}
         conn_max_lifetime: {{ default .Values.dendrite.database.conn_max_lifetime .Values.mscs.database.conn_max_lifetime }}
@@ -172,7 +168,7 @@ stringData:
       {{- end }}
       {{- if $componentSpecificDatabaseConfig }}
       database:
-        connection_string: {{ default (print $connectionString "dendrite_roomserver?sslmode=disable") .Values.roomserver.database.connection_string }}
+        connection_string: {{ .Values.roomserver.database.connection_string }}
         max_open_conns: {{ default .Values.dendrite.database.max_open_conns .Values.roomserver.database.max_open_conns }}
         max_idle_conns: {{ default .Values.dendrite.database.max_idle_conns .Values.roomserver.database.max_idle_conns }}
         conn_max_lifetime: {{ default .Values.dendrite.database.conn_max_lifetime .Values.roomserver.database.conn_max_lifetime }}
@@ -187,7 +183,7 @@ stringData:
       {{- end }}
       {{- if $componentSpecificDatabaseConfig }}
       database:
-        connection_string: {{ default (print $connectionString "dendrite_syncapi?sslmode=disable") .Values.syncapi.database.connection_string }}
+        connection_string: {{ .Values.syncapi.database.connection_string }}
         max_open_conns: {{ default .Values.dendrite.database.max_open_conns .Values.syncapi.database.max_open_conns }}
         max_idle_conns: {{ default .Values.dendrite.database.max_idle_conns .Values.syncapi.database.max_idle_conns }}
         conn_max_lifetime: {{ default .Values.dendrite.database.conn_max_lifetime .Values.syncapi.database.conn_max_lifetime }}
@@ -200,7 +196,7 @@ stringData:
       {{- end }}
       {{- if $componentSpecificDatabaseConfig }}
       account_database:
-        connection_string: {{ default (print $connectionString "dendrite_userapi_accounts?sslmode=disable") .Values.userapi.database.connection_string }}
+        connection_string: {{ .Values.userapi.database.connection_string }}
         max_open_conns: {{ default .Values.dendrite.database.max_open_conns .Values.userapi.database.max_open_conns }}
         max_idle_conns: {{ default .Values.dendrite.database.max_idle_conns .Values.userapi.database.max_idle_conns }}
         conn_max_lifetime: {{ default .Values.dendrite.database.conn_max_lifetime .Values.userapi.database.conn_max_lifetime }}
