@@ -4,6 +4,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded app to v0.107.11.
+    apiVersion: v2
+    appVersion: v0.107.11
+    created: "2022-08-22T15:44:45.11665315Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: DNS proxy as ad-blocker for local network
+    digest: 8b755ba108456d879b55e633fa42f7b649ed458bca98efa033e4415d7a9daaf2
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/adguard-home
+    icon: https://avatars3.githubusercontent.com/u/8361145?s=200&v=4?sanitize=true
+    keywords:
+    - adguard-home
+    - adblock
+    - dns
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: Skyler Mäntysaari
+      url: https://github.com/samip5
+    name: adguard-home
+    sources:
+    - https://github.com/AdguardTeam/AdGuardHome
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/adguard-home-5.5.3/adguard-home-5.5.3.tgz
+    version: 5.5.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: v0.107.7
@@ -1097,6 +1126,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded app to 2.22.4.
+        - kind: changed
+          description: Support only Kubernetes 1.19+.
+    apiVersion: v2
+    appVersion: 2.22.4
+    created: "2022-08-22T15:44:45.219471684Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: filebrowser provides a file managing interface within a specified
+      directory
+    digest: 5087ae2dbfa5ff66b3f8e43e2a8682f012303149a5acbfa1e8012e569822c3f0
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/incubator/filebrowser
+    icon: https://raw.githubusercontent.com/filebrowser/logo/master/icon.png
+    keywords:
+    - filebrowser
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - name: Skyler Mäntysaari
+      url: https://github.com/samip5
+    name: filebrowser
+    sources:
+    - https://github.com/filebrowser/filebrowser
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/filebrowser-2.0.0/filebrowser-2.0.0.tgz
+    version: 2.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 2.18.0
@@ -1153,6 +1212,37 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/flaresolverr-5.4.2/flaresolverr-5.4.2.tgz
     version: 5.4.2
   freshrss:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded app to 1.19.2.
+        - kind: changed
+          description: Support only Kubernetes 1.19+.
+    apiVersion: v2
+    appVersion: 1.19.2
+    created: "2022-08-22T15:44:45.32894655Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: FreshRSS is a self-hosted RSS feed aggregator
+    digest: 0580f0009b33ea85360c6c8ef3aa78aaf28acfd96257f21ebd76103fa051b317
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/freshrss
+    icon: https://avatars.githubusercontent.com/u/9414285?s=200&v=4
+    keywords:
+    - freshrss
+    - rss
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: nathan@nathanpawelek.com
+      name: npawelek
+    name: freshrss
+    sources:
+    - https://github.com/FreshRSS/FreshRSS
+    - https://hub.docker.com/r/linuxserver/freshrss
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/freshrss-6.5.1/freshrss-6.5.1.tgz
+    version: 6.5.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -1321,6 +1411,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded app to 4.0.0.
+        - kind: changed
+          description: Support only Kubernetes 1.19+.
+    apiVersion: v2
+    appVersion: v4.0.0
+    created: "2022-08-22T15:44:45.458413915Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A developer-oriented health dashboard that gives you the ability
+      to monitor your services using HTTP, ICMP, TCP, and even DNS queries.
+    digest: 12e55be6c16f16173a961c36a64621070e113244ead85df8fae381e6af0b45d7
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/gatus
+    icon: https://github.com/TwiN/gatus/raw/master/.github/assets/logo-with-dark-text.png
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: davidy@funkypenguin.co.nz
+      name: funkypenguin
+    name: gatus
+    sources:
+    - https://github.com/TwiN/gatus
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/gatus-2.0.0/gatus-2.0.0.tgz
+    version: 2.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: v3.8.0
@@ -1478,6 +1596,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded app to 0.14.0.
+    apiVersion: v2
+    appVersion: v0.14.0
+    created: "2022-08-22T15:44:45.588731623Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Music streaming server / subsonic server API implementation
+    digest: 02536a2edff9ae4f56d0c5200e18a412127862c0404cee4b34536b9ac6953eab
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/gonic
+    icon: https://raw.githubusercontent.com/sentriz/gonic/master/.github/logo.png
+    keywords:
+    - music
+    - subsonic
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: Skyler Mäntysaari
+      url: https://github.com/samip5
+    name: gonic
+    sources:
+    - https://github.com/sentriz/gonic
+    - https://hub.docker.com/r/sentriz/gonic
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/gonic-6.5.0/gonic-6.5.0.tgz
+    version: 6.5.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: v0.13.1
@@ -1508,6 +1655,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded app to version 2.1.5.
+    apiVersion: v2
+    appVersion: 2.1.5
+    created: "2022-08-22T15:44:45.714945325Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A simple server for sending and receiving messages
+    digest: c358b5e9817ef2ca03ece16fe6b46f48b7908186a7919e130d34e54a650bc6cc
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/gotify/
+    icon: https://avatars.githubusercontent.com/u/36410427?s=200&v=4
+    keywords:
+    - gotify
+    maintainers:
+    - name: Skyler Mäntysaari
+      url: https://github.com/samip5
+    name: gotify
+    sources:
+    - https://github.com/gotify/server
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/gotify-1.2.3/gotify-1.2.3.tgz
+    version: 1.2.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 2.1.4
@@ -1532,6 +1705,36 @@ entries:
     - https://github.com/samipsolutions/helm-charts/releases/download/gotify-1.2.2/gotify-1.2.2.tgz
     version: 1.2.2
   grocy:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded app to version 3.3.1.
+        - kind: changed
+          description: Support only Kubernetes 1.19+.
+    apiVersion: v2
+    appVersion: version-v3.3.1
+    created: "2022-08-22T15:44:45.826837613Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: ERP beyond your fridge - grocy is a web-based self-hosted groceries
+      & household management solution for your home
+    digest: 0ce95b5305520bc736c85c9688e21ae2895bd4ac10eaeded9ab20b48f1458108
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/grocy
+    icon: https://github.com/grocy/grocy/raw/master/public/img/appicons/mstile-150x150.png
+    keywords:
+    - grocy
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - name: Skyler Mäntysaari
+      url: https://github.com/samip5
+    name: grocy
+    sources:
+    - https://github.com/grocy/grocy
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/grocy-8.6.0/grocy-8.6.0.tgz
+    version: 8.6.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -4013,4 +4216,4 @@ entries:
     urls:
     - https://github.com/samipsolutions/helm-charts/releases/download/zwavejs2mqtt-5.4.2/zwavejs2mqtt-5.4.2.tgz
     version: 5.4.2
-generated: "2022-08-22T15:17:21.398723053Z"
+generated: "2022-08-22T15:44:45.826955918Z"
