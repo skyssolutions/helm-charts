@@ -1,6 +1,6 @@
 # home-assistant
 
-![Version: 13.5.1](https://img.shields.io/badge/Version-13.5.1-informational?style=flat-square) ![AppVersion: 2022.8.6](https://img.shields.io/badge/AppVersion-2022.8.6-informational?style=flat-square)
+![Version: 13.6.0](https://img.shields.io/badge/Version-13.6.0-informational?style=flat-square) ![AppVersion: 2022.8.6](https://img.shields.io/badge/AppVersion-2022.8.6-informational?style=flat-square)
 
 Home Assistant
 
@@ -20,9 +20,9 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | influxdb | 5.3.12 |
-| https://charts.bitnami.com/bitnami | mariadb | 11.1.8 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.7.6 |
+| https://charts.bitnami.com/bitnami | influxdb | 5.4.1 |
+| https://charts.bitnami.com/bitnami | mariadb | 11.2.2 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.8.1 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -176,7 +176,7 @@ endpoint in your Home-Assistant configuration. See the [official documentation](
 
 ## Changelog
 
-### Version 13.5.1
+### Version 13.6.0
 
 #### Added
 
@@ -184,8 +184,9 @@ N/A
 
 #### Changed
 
-* Upgraded `postgresql` chart dependency to version 11.7.6
-* Upgraded `influxdb` chart dependency to version 5.3.12
+* Upgraded `postgresql` chart dependency to version 11.8.1
+* Upgraded `mariadb` chart dependency to version 11.2.2
+* Upgraded `influxdb` chart dependency to version 5.4.1
 
 #### Fixed
 

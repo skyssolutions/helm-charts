@@ -1,6 +1,6 @@
 # unifi
 
-![Version: 6.0.0](https://img.shields.io/badge/Version-6.0.0-informational?style=flat-square) ![AppVersion: v7.1.68](https://img.shields.io/badge/AppVersion-v7.1.68-informational?style=flat-square)
+![Version: 6.1.0](https://img.shields.io/badge/Version-6.1.0-informational?style=flat-square) ![AppVersion: v7.1.68](https://img.shields.io/badge/AppVersion-v7.1.68-informational?style=flat-square)
 
 Ubiquiti Network's Unifi Controller
 
@@ -16,7 +16,7 @@ Ubiquiti Network's Unifi Controller
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mongodb | 13.0.2 |
+| https://charts.bitnami.com/bitnami | mongodb | 13.1.2 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -146,7 +146,7 @@ service:
 
 ## Changelog
 
-### Version 6.0.0
+### Version 6.1.0
 
 #### Added
 
@@ -154,7 +154,7 @@ N/A
 
 #### Changed
 
-* Upgraded `mongodb` chart dependency to version 13.0.2
+* Upgraded `mongodb` chart dependency to version 13.1.2
 
 #### Fixed
 

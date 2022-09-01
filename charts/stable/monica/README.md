@@ -1,6 +1,6 @@
 # monica
 
-![Version: 8.2.0](https://img.shields.io/badge/Version-8.2.0-informational?style=flat-square) ![AppVersion: 3.7.0-apache](https://img.shields.io/badge/AppVersion-3.7.0--apache-informational?style=flat-square)
+![Version: 8.3.0](https://img.shields.io/badge/Version-8.3.0-informational?style=flat-square) ![AppVersion: 3.7.0-apache](https://img.shields.io/badge/AppVersion-3.7.0--apache-informational?style=flat-square)
 
 A Personal Relationship Management tool to help you organize your social life
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 11.1.8 |
+| https://charts.bitnami.com/bitnami | mariadb | 11.2.2 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -90,7 +90,7 @@ N/A
 
 ## Changelog
 
-### Version 8.2.0
+### Version 8.3.0
 
 #### Added
 
@@ -98,7 +98,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded `mariadb` chart dependency to version 11.2.2
 
 #### Fixed
 
