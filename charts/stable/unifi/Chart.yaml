@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v7.1.68
 description: Ubiquiti Network's Unifi Controller
 name: unifi
-version: 6.0.0
+version: 6.1.0
 keywords:
   - ubiquiti
   - unifi
@@ -21,10 +21,10 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: mongodb
-    version: 13.0.2
+    version: 13.1.2
     repository: https://charts.bitnami.com/bitnami
     condition: mongodb.enabled
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `mongodb` chart dependency to version 13.0.2
+      description: Upgraded `mongodb` chart dependency to version 13.1.2
