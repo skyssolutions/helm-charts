@@ -31,7 +31,5 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: fixed
-      description: Icon url
     - kind: changed
-      description: Upgraded app to 0.19.2.
+      description: Upgraded `postgresql` chart dependency to version 11.7.6

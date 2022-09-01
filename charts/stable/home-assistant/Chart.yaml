@@ -37,4 +37,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded app to 2022.8.6 from 3+ month old version.
+      description: Upgraded `postgresql` chart dependency to version 11.7.6
+    - kind: changed
+      description: Upgraded `influxdb` chart dependency to version 5.3.12
