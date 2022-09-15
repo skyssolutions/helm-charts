@@ -1,6 +1,6 @@
 # dendrite
 
-![Version: 7.1.2](https://img.shields.io/badge/Version-7.1.2-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
+![Version: 7.2.0](https://img.shields.io/badge/Version-7.2.0-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
@@ -19,15 +19,15 @@ Kubernetes: `>=1.19.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts/ | common | 0.1.0 |
-| https://bjw-s.github.io/helm-charts/ | keyserver(common) | 0.1.0 |
-| https://bjw-s.github.io/helm-charts/ | clientapi(common) | 0.1.0 |
-| https://bjw-s.github.io/helm-charts/ | mediaapi(common) | 0.1.0 |
-| https://bjw-s.github.io/helm-charts/ | syncapi(common) | 0.1.0 |
-| https://bjw-s.github.io/helm-charts/ | roomserver(common) | 0.1.0 |
-| https://bjw-s.github.io/helm-charts/ | federationapi(common) | 0.1.0 |
-| https://bjw-s.github.io/helm-charts/ | userapi(common) | 0.1.0 |
-| https://bjw-s.github.io/helm-charts/ | appserviceapi(common) | 0.1.0 |
+| https://bjw-s.github.io/helm-charts/ | common | 0.2.1 |
+| https://bjw-s.github.io/helm-charts/ | keyserver(common) | 0.2.1 |
+| https://bjw-s.github.io/helm-charts/ | clientapi(common) | 0.2.1 |
+| https://bjw-s.github.io/helm-charts/ | mediaapi(common) | 0.2.1 |
+| https://bjw-s.github.io/helm-charts/ | syncapi(common) | 0.2.1 |
+| https://bjw-s.github.io/helm-charts/ | roomserver(common) | 0.2.1 |
+| https://bjw-s.github.io/helm-charts/ | federationapi(common) | 0.2.1 |
+| https://bjw-s.github.io/helm-charts/ | userapi(common) | 0.2.1 |
+| https://bjw-s.github.io/helm-charts/ | appserviceapi(common) | 0.2.1 |
 | https://nats-io.github.io/k8s/helm/charts/ | nats | 0.17.5 |
 
 ## TL;DR
@@ -228,7 +228,7 @@ For more information see:
 
 ## Changelog
 
-### Version 7.1.2
+### Version 7.2.0
 
 #### Added
 
@@ -236,7 +236,15 @@ N/A
 
 #### Changed
 
-* Upgrade nats chart dep.
+* Upgraded `common` chart dependency to version 0.2.1
+* Upgraded `common` chart dependency to version 0.2.1 for alias 'clientapi'
+* Upgraded `common` chart dependency to version 0.2.1 for alias 'mediaapi'
+* Upgraded `common` chart dependency to version 0.2.1 for alias 'syncapi'
+* Upgraded `common` chart dependency to version 0.2.1 for alias 'roomserver'
+* Upgraded `common` chart dependency to version 0.2.1 for alias 'federationapi'
+* Upgraded `common` chart dependency to version 0.2.1 for alias 'keyserver'
+* Upgraded `common` chart dependency to version 0.2.1 for alias 'userapi'
+* Upgraded `common` chart dependency to version 0.2.1 for alias 'appserviceapi'
 
 #### Fixed
 
