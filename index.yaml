@@ -492,6 +492,98 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `common` chart dependency to version 0.2.1
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 0.2.1 for alias 'clientapi'
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 0.2.1 for alias 'mediaapi'
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 0.2.1 for alias 'syncapi'
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 0.2.1 for alias 'roomserver'
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 0.2.1 for alias 'federationapi'
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 0.2.1 for alias 'keyserver'
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 0.2.1 for alias 'userapi'
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 0.2.1 for alias 'appserviceapi'
+    apiVersion: v2
+    appVersion: v0.9.4
+    created: "2022-09-15T01:19:59.846546809Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.1
+    - condition: nats.enabled
+      name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 0.17.5
+    - alias: clientapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.1
+    - alias: mediaapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.1
+    - alias: syncapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.1
+    - alias: roomserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.1
+    - alias: federationapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.1
+    - alias: keyserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.1
+    - alias: userapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.1
+    - alias: appserviceapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.1
+    description: Dendrite Matrix Homeserver
+    digest: 7ab884774c59eb459ab2470f6003d5938c59c5935c2b0be1fc533dc9c76621ad
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/dendrite
+    keywords:
+    - dendrite
+    - matrix
+    - homeserver
+    - monolith
+    - federation
+    - polylith
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - name: Skyler Mäntysaari
+      url: https://github.com/samip5
+    name: dendrite
+    sources:
+    - https://github.com/matrix-org/dendrite
+    - https://github.com/matrix-org/dendrite/tree/master/build/docker
+    urls:
+    - https://github.com/samipsolutions/helm-charts/releases/download/dendrite-7.2.0/dendrite-7.2.0.tgz
+    version: 7.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgrade nats chart dep.
     apiVersion: v2
     appVersion: v0.9.4
@@ -4691,4 +4783,4 @@ entries:
     urls:
     - https://github.com/samipsolutions/helm-charts/releases/download/zwavejs2mqtt-5.4.2/zwavejs2mqtt-5.4.2.tgz
     version: 5.4.2
-generated: "2022-09-01T19:29:35.78971944Z"
+generated: "2022-09-15T01:19:59.846995203Z"
