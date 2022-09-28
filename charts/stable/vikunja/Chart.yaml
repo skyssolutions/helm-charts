@@ -20,7 +20,6 @@ sources:
   - https://vikunja.io/docs/
 maintainers:
   - name: auricom
-    email: k8s-at-home@xpander.eml.cc
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
@@ -32,4 +31,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `postgresql` chart dependency to version 11.8.1
+      description: Upgraded `postgresql` chart dependency to version 11.9.2
