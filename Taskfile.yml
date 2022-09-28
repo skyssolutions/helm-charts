@@ -1,16 +1,17 @@
 ---
-version: '3'
+version: 3
+
 
 vars:
-  GIT_ROOT:
+  PROJECT_DIR:
     sh: git rev-parse --show-toplevel
 
 includes:
-  deps: .taskfiles/Taskfile_{{OS}}.yml
-  chart: .taskfiles/Taskfile_chart.yml
+  charts: .taskfiles/charts.yaml
+  precommit: .taskfiles/precommit.yaml
 
 tasks:
   default:
-    cmds:
-    - task -l
     silent: true
+    cmds:
+      - task -l

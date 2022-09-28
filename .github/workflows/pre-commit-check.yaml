@@ -4,13 +4,15 @@ on:
   workflow_call:
     inputs:
       modifiedFiles:
+        description: >
+          A JSON encoded array of files to check
         required: true
         type: string
 
 jobs:
   pre-commit-check:
     name: Run pre-commit checks
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -18,4 +20,4 @@ jobs:
       - name: Run against changes
         uses: pre-commit/action@v3.0.0
         with:
-          extra_args: --files ${{ inputs.modifiedFiles }}
+          extra_args: --files ${{ join(fromJson(inputs.modifiedFiles), ' ') }} --config .ci/pre-commit/config.yaml

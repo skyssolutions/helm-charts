@@ -4,135 +4,47 @@ concurrency: helm-release
 
 on:
   workflow_dispatch:
+    inputs:
+      charts:
+        description: >
+          Charts to release. Comma-separated string.
+          Defaults to releasing everything.
+        default: ""
+        required: false
+
   push:
     branches:
-      - master
+      - main
     paths:
       - "charts/**"
 
+env:
+  HELM_VERSION: 3.9.2
+
 jobs:
-  release:
-    runs-on: ubuntu-20.04
+  prepare:
+    name: Prepare data required for release
+    runs-on: ubuntu-22.04
+    outputs:
+      charts-to-release: ${{ steps.collect-charts.outputs.charts }}
     steps:
-      - name: Generate Token
-        uses: tibdex/github-app-token@v1
-        id: generate-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0
 
-      - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.8.2
+      - name: Collect charts to release
+        uses: bjw-s/helm-charts-actions/collect-charts@main
+        id: collect-charts
         with:
-          setup-tools: |
-            helmv3
-            yq
-          helm: "3.8.0"
-          yq: "4.16.2"
+          repoConfigFile: ./.ci/repo-config.yaml
+          overrideCharts: "[${{ inputs.charts }}]"
 
-      - name: Install helm-docs
-        run: |
-          wget -O /tmp/helm-docs.deb  https://github.com/k8s-at-home/helm-docs/releases/download/v0.1.1/helm-docs_0.1.1_Linux_x86_64.deb
-          sudo dpkg -i /tmp/helm-docs.deb
-
-      - name: Collect changes
-        id: collect-changes
-        uses: ./.github/actions/collect-changes
-
-      - name: Generate README for changed charts
-        if: |
-          steps.collect-changes.outputs.changesDetected == 'true'
-        run: |
-          CHARTS=(${{ steps.collect-changes.outputs.addedOrModifiedCharts }})
-          for i in "${CHARTS[@]}"
-          do
-              IFS='/' read -r -a chart_parts <<< "$i"
-              if [ -f "charts/${chart_parts[0]}"/"${chart_parts[1]}/Chart.yaml" ]; then
-                ./.github/scripts/gen-helm-docs.sh "${chart_parts[0]}" "${chart_parts[1]}"
-              fi
-          done
-
-      - name: Create commit
-        id: create-commit
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          file_pattern: charts/**/
-          commit_message: "chore: Auto-update chart README [skip ci]"
-          commit_user_name: samipsolutions[bot]
-          commit_user_email: samipsolutions[bot]@users.noreply.github.com
-          commit_author: samipsolutions[bot] <samipsolutions[bot]@users.noreply.github.com>
-
-      - name: Save commit hash
-        id: save-commit-hash
-        run: |
-          if [ "${{ steps.create-commit.outputs.changes_detected || 'unknown' }}" == "true" ]; then
-            echo '::set-output name=commit_hash::${{ steps.create-commit.outputs.commit_hash }}'
-          else
-            echo "::set-output name=commit_hash::${GITHUB_SHA}"
-          fi
-
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          token: ${{ steps.generate-token.outputs.token }}
-          ref: ${{ steps.save-commit-hash.outputs.commit_hash }}
-          fetch-depth: 0
-
-      - name: Configure Git
-        run: |
-          git config user.name "samipsolutions[bot]"
-          git config user.email "samipsolutions[bot]@users.noreply.github.com"
-
-      - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.4.0
-        with:
-          charts_dir: charts/*
-          charts_repo_url: https://helm.samipsolutions.fi/
-        env:
-          CR_TOKEN: "${{ steps.generate-token.outputs.token }}"
-          CR_SKIP_EXISTING: "true"
-
-  generate-summary:
-    name: Auto-generate charts summary
-    runs-on: ubuntu-20.04
+  release-github-pages:
+    name: Release Charts to GitHub pages
+    uses: ./.github/workflows/charts-release-ghpages.yaml
     needs:
-      - release
-    steps:
-      - name: Generate Token
-        uses: tibdex/github-app-token@v1
-        id: generate-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          token: ${{ steps.generate-token.outputs.token }}
-          ref: master
-          fetch-depth: 0
-
-      - name: Install yq
-        uses: chrisdickinson/setup-yq@latest
-        with:
-          yq-version: v4.9.3
-
-      - name: Run script
-        run: |
-          ./hack/gen-chart-summary.sh
-
-      - name: Create Commit
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          push_options: --force
-          commit_message: Auto-generate chart summary [no ci]
-          commit_user_name: samipsolutions[bot]
-          commit_user_email: samipsolutions[bot]@users.noreply.github.com
-          commit_author: samipsolutions[bot] <samipsolutions[bot]@users.noreply.github.com>
-          file_pattern: charts/README.md
+      - prepare
+    with:
+      charts: "${{ needs.prepare.outputs.charts-to-release }}"
+    secrets: inherit
