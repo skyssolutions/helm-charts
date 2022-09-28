@@ -1,3 +1,0 @@
-configmap:
-  config:
-    enabled: true
