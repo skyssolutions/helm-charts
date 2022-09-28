@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2022.8.6
 description: Home Assistant
 name: home-assistant
-version: 13.6.0
+version: 13.7.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
@@ -23,11 +23,11 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: postgresql
-    version: 11.8.1
+    version: 11.9.2
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: mariadb
-    version: 11.2.2
+    version: 11.3.1
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: influxdb
@@ -37,8 +37,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `postgresql` chart dependency to version 11.8.1
+      description: Upgraded `postgresql` chart dependency to version 11.9.2
     - kind: changed
-      description: Upgraded `mariadb` chart dependency to version 11.2.2
-    - kind: changed
-      description: Upgraded `influxdb` chart dependency to version 5.4.1
+      description: Upgraded `mariadb` chart dependency to version 11.3.1
