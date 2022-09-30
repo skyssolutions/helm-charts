@@ -80,6 +80,12 @@ stringData:
       external_api:
         listen: http://0.0.0.0:{{ .Values.clientapi.service.main.ports.external.port }}
       {{- end }}
+      {{ if .Values.clientapi.login.sso.enabled }}
+      login:
+        sso:
+         enabled: {{ .Values.clientapi.login.sso.enabled }}
+         providers: {{ .Values.clientapi.login.sso.providers }}
+       {{- end }}
       registration_disabled: {{ .Values.clientapi.config.registration_disabled }}
       registration_shared_secret: {{ default "" .Values.clientapi.config.registration_shared_secret | quote }}
       enable_registration_captcha: {{ default false .Values.clientapi.config.captcha.enabled }}

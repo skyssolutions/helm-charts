@@ -149,6 +149,13 @@ appserviceapi:
 # For more information see [the sample dendrite configuration](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.polylith.yaml)
 # @default -- See values.yaml
 clientapi:
+  # Requires loginsso branch usage, otherwise not supported.
+  login:
+    sso:
+      enabled: false
+      providers:
+        - id: id.example.org
+          type: oidc
   image:
     # -- image repository
     repository: matrixdotorg/dendrite-polylith
