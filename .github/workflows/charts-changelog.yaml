@@ -1,4 +1,4 @@
-ame: "Charts: Update README"
+name: "Charts: Update README"
 
 on:
   workflow_call:
