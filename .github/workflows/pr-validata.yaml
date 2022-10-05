@@ -2,6 +2,7 @@ name: "Pull Request: Validate"
 
 on:
   pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.head_ref }}-pr-validate
