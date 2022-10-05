@@ -59,11 +59,13 @@ jobs:
         run: |
           pip install -r ./.github/scripts/requirements.txt
           CHARTS=(${{ inputs.modifiedCharts }})
+          echo ${CHARTS}
           for i in "${CHARTS[@]}"
           do
               IFS='/' read -r -a chart_parts <<< "$i"
               ./.github/scripts/renovate-releasenotes.py --debug --check-branch "$CHECK_BRANCH" "${chart_parts[0]}/${chart_parts[1]}"
               echo ""
+              echo "${chart_parts[0]}/${chart_parts[1]}"
           done
       - name: Create commit
         id: create-commit
