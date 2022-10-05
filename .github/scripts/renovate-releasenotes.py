@@ -67,8 +67,10 @@ def main(
         raise typer.Exit(1)
 
     logger.info(f"Comparing against branch {branch}")
+    logger.debug(f"Chart folders: {chart_folders}")
 
     for chart_folder in chart_folders:
+        logger.debug(f"Chart folder is: {chart_folder}")
         chart_folder = chart_base_folder.joinpath(chart_folder)
         if not chart_folder.is_dir():
             logger.error(f"Could not find folder {str(chart_folder)}")
