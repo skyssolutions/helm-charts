@@ -28,7 +28,7 @@ jobs:
         if: inputs.isRenovatePR != 'true'
         run: |
           IN_CHARTS=(${{ inputs.modifiedCharts }})
-          CHARTS=($(python -c 'import sys;a=sys.argv[1].translate(str.maketrans('','','[]')).split(",");print(" ".join(a))' $IN_CHARTS))
+          CHARTS=($(python -c 'import sys;a=sys.argv[1].translate(str.maketrans("","","[]")).split(",");print(" ".join(a))' $IN_CHARTS))
           for i in "${CHARTS[@]}"
           do
               IFS='/' read -r -a chart_parts <<< "$i"
@@ -60,7 +60,7 @@ jobs:
         run: |
           pip install -r ./.github/scripts/requirements.txt
           IN_CHARTS=(${{ inputs.modifiedCharts }})
-          CHARTS=($(python -c 'import sys;a=sys.argv[1].translate(str.maketrans('','','[]')).split(",");print(" ".join(a))' $IN_CHARTS))
+          CHARTS=($(python -c 'import sys;a=sys.argv[1].translate(str.maketrans("","","[]")).split(",");print(" ".join(a))' $IN_CHARTS))
           for i in "${CHARTS[@]}"
           do
               IFS='/' read -r -a chart_parts <<< "$i"
