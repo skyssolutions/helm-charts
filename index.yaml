@@ -1418,36 +1418,6 @@ entries:
     urls:
     - https://helm.samipsolutions.fi/stable/overseerr-5.4.2.tgz
     version: 5.4.2
-  pod-gateway:
-  - annotations:
-      artifacthub.io/changes: |-
-        - kind: changed
-          description: Upgraded `common` chart dependency to version 4.5.2
-    apiVersion: v2
-    appVersion: v1.6.1
-    created: "2022-10-25T05:44:09.114778419Z"
-    dependencies:
-    - name: common
-      repository: https://library-charts.k8s-at-home.com
-      version: 4.5.2
-    description: Admision controller to change the default gateway and DNS server
-      of PODs
-    digest: d8c495a6f9457879267c8bb80e021bc880e17c7da758a19b3848bb87585324ef
-    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/pod-gateway
-    icon: https://pod-gateway.org/icon
-    keywords:
-    - pod-gateway
-    kubeVersion: '>=1.16.0-0'
-    maintainers:
-    - email: git@angelnu.com
-      name: angelnu
-    name: pod-gateway
-    sources:
-    - https://github.com/k8s-at-home/gateway-admision-controller
-    - https://github.com/k8s-at-home/pod-gateway
-    urls:
-    - https://helm.samipsolutions.fi/stable/pod-gateway-5.6.2.tgz
-    version: 5.6.2
   powerdns-admin:
   - annotations:
       artifacthub.io/changes: |-
