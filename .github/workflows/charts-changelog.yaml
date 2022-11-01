@@ -63,9 +63,9 @@ jobs:
           for i in "${CHARTS[@]}"
           do
               IFS='/' read -r -a chart_parts <<< "$i"
-              ./.github/scripts/renovate-releasenotes.py --debug --check-branch "$CHECK_BRANCH" "${chart_parts[0]}/${chart_parts[1]}"
+              ./.github/scripts/renovate-releasenotes.py --debug --check-branch "$CHECK_BRANCH" "{i}"
               echo ""
-              echo "${chart_parts[0]}/${chart_parts[1]}"
+              echo "${i}"
           done
       - name: Create commit
         id: create-commit

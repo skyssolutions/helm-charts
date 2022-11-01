@@ -2,7 +2,15 @@ name: "Pull Request: Validate"
 
 on:
   pull_request:
-  workflow_dispatch:
+    branches:
+      - main
+      - development
+    types:
+      - opened
+      - edited
+      - reopened
+      - ready_for_review
+      - synchronize
 
 concurrency:
   group: ${{ github.head_ref }}-pr-validate
@@ -19,15 +27,6 @@ jobs:
     with:
       modifiedFiles: ${{ needs.pr-metadata.outputs.addedOrModifiedFiles }}
 
-  charts-changelog:
-    uses: ./.github/workflows/charts-changelog.yaml
-    needs:
-      - pr-metadata
-      - pre-commit-check
-    with:
-      isRenovatePR: ${{ needs.pr-metadata.outputs.isRenovatePR }}
-      modifiedCharts: ${{ needs.pr-metadata.outputs.addedOrModifiedCharts }}
-
   charts-lint:
     uses: ./.github/workflows/charts-lint.yaml
     needs:
@@ -36,6 +35,7 @@ jobs:
       checkoutCommit: ${{ github.sha }}
       chartsToLint: ${{ needs.pr-metadata.outputs.chartsToLint }}
       isRenovatePR: ${{ needs.pr-metadata.outputs.isRenovatePR }}
+      overrideDeps: '[]'
 
   charts-test:
     uses: ./.github/workflows/charts-test.yaml
@@ -43,4 +43,8 @@ jobs:
       - pr-metadata
     with:
       checkoutCommit: ${{ github.sha }}
-      chartsToTest: ${{ needs.pr-metadata.outputs.chartsToInstall }}
+      chartsToTest: |-
+        ${{
+           needs.pr-metadata.outputs.chartsToInstall
+         }}
+      overrideDeps: '[]'
