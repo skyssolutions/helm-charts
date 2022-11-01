@@ -27,7 +27,8 @@ jobs:
       - name: Check changelog annotations
         if: inputs.isRenovatePR != 'true'
         run: |
-          CHARTS=(${{ inputs.modifiedCharts }})
+          IN_CHARTS=(${{ inputs.modifiedCharts }})
+          CHARTS=($(python -c 'import sys;a=sys.argv[1].translate(None,"[]").split(",");print(" ".join(a))' $IN_CHARTS))
           for i in "${CHARTS[@]}"
           do
               IFS='/' read -r -a chart_parts <<< "$i"
@@ -58,7 +59,8 @@ jobs:
           CHECK_BRANCH: "origin/${{ github.event.repository.default_branch }}"
         run: |
           pip install -r ./.github/scripts/requirements.txt
-          CHARTS=(${{ inputs.modifiedCharts }})
+          IN_CHARTS=(${{ inputs.modifiedCharts }})
+          CHARTS=($(python -c 'import sys;a=sys.argv[1].translate(None,"[]").split(",");print(" ".join(a))' $IN_CHARTS))
           for i in "${CHARTS[@]}"
           do
               IFS='/' read -r -a chart_parts <<< "$i"
