@@ -31,4 +31,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `postgresql` chart dependency to version 11.9.2
+      description: Upgraded `postgresql` chart dependency to version 11.9.13

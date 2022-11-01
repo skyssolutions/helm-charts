@@ -78,4 +78,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: common chart dep upgrade
+      description: Upgraded `nats` chart dependency to version 0.18.2
