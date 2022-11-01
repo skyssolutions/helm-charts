@@ -59,15 +59,7 @@ jobs:
           CHECK_BRANCH: "origin/${{ github.event.repository.default_branch }}"
         run: |
           pip install -r ./.github/scripts/requirements.txt
-          CHARTS=(${{ inputs.modifiedCharts }})
-          echo ${CHARTS}
-          for i in "${CHARTS[@]}"
-          do
-              IFS='/' read -r -a chart_parts <<< "$i"
-              ./.github/scripts/renovate-releasenotes.py --debug --check-branch "$CHECK_BRANCH" "{i}"
-              echo ""
-              echo "${i}"
-          done
+          ./.github/scripts/renovate-releasenotes.py --check-branch "$CHECK_BRANCH" ${{ inputs.modifiedCharts }}
       - name: Create commit
         id: create-commit
         if: inputs.isRenovatePR == 'true'
