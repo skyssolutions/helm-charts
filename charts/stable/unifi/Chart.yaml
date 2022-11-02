@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: v7.1.68
+appVersion: v7.2.94
 description: Ubiquiti Network's Unifi Controller
 name: unifi
-version: 6.2.0
+version: 7.0.0
 keywords:
   - ubiquiti
   - unifi
@@ -18,8 +18,8 @@ maintainers:
     email: mike@quadra-tec.net
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 0.2.2
   - name: mongodb
     version: 13.3.1
     repository: https://charts.bitnami.com/bitnami
@@ -27,4 +27,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `mongodb` chart dependency to version 13.3.1
+      description: Upgraded `appVersion` to v7.2.94
+    - kind: changed
+      description: Use bjw-s common chart.

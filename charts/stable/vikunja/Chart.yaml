@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 0.19.2
+appVersion: 0.20.0
 description: The to-do app to organize your life
 name: vikunja
-version: 7.0.0
+version: 8.0.0
 keywords:
   - vikunja
   - to-do
@@ -22,8 +22,8 @@ maintainers:
   - name: auricom
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 0.2.2
   - name: postgresql
     version: 12.0.1
     repository: https://charts.bitnami.com/bitnami
@@ -31,4 +31,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `postgresql` chart dependency to version 12.0.1
+     description: Upgraded `appVersion` to 0.20.0
+    - kind: changed
+     description: Use bjw-s common chart.
