@@ -24,7 +24,7 @@ env:
 jobs:
   prepare:
     name: Prepare data required for release
-    runs-on: custom-arm64
+    runs-on: self-hosted
     outputs:
       charts-to-release: ${{ steps.collect-charts.outputs.charts }}
     steps:
