@@ -25,6 +25,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-     description: Upgraded `appVersion` to 1.28.1
+      description: Upgraded `appVersion` to 1.28.1
     - kind: changed
-     description: Use bjw-s common chart.
+      description: Use bjw-s common chart.
