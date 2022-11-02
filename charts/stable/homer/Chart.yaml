@@ -1,11 +1,11 @@
 ---
 apiVersion: v2
-appVersion: v22.07.2
+appVersion: v22.10.2
 description: A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/homer
 name: homer
-version: 8.0.2
+version: 9.0.0
 kubeVersion: ">=1.16.0-0"
 sources:
   - https://github.com/bastienwirtz/homer
@@ -20,3 +20,5 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Use bjw-s common chart.
+    - kind: changed
+      description: Upgraded app to 22.10.2
