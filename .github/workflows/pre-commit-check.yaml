@@ -12,7 +12,7 @@ on:
 jobs:
   pre-commit-check:
     name: Run pre-commit checks
-    runs-on: self-hosted
+    runs-on: custom-arm64
     steps:
       - name: Checkout
         uses: actions/checkout@v3
