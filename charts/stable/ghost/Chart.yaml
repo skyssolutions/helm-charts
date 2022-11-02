@@ -30,4 +30,3 @@ annotations:
       description: Upgraded `appVersion` to 5.22.4
     - kind: changed
       description: Use bjw-s common chart.
-    
