@@ -22,7 +22,7 @@ env:
 jobs:
   release-charts:
     name: Release charts
-    runs-on: self-hosted
+    runs-on: ["self-hosted", "X64"]
     steps:
       - name: Get GitHub API token
         id: get-app-token
