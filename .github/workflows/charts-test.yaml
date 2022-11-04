@@ -54,6 +54,11 @@ jobs:
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.3.1
 
+      - name: Debug
+        run: |
+          kubectl config view --minify
+          env
+
       - name: Create k3d cluster
         uses: nolar/setup-k3d-k3s@v1
         with:
