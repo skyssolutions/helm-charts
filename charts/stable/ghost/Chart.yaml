@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 5.10.1
+appVersion: 5.22.4
 description: Ghost is a blogging and publishing software
 name: ghost
-version: 3.3.1
+version: 4.0.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - ghost
@@ -18,8 +18,8 @@ maintainers:
     email: sm+k8s-at-home+git@samip.fi
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 0.2.2
   - name: mariadb
     version: 11.3.3
     repository: https://charts.bitnami.com/bitnami
@@ -27,4 +27,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `mariadb` chart dependency to version 11.3.3
+      description: Upgraded `appVersion` to 5.22.4
+    - kind: changed
+      description: Use bjw-s common chart.

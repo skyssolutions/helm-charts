@@ -3,8 +3,8 @@ apiVersion: v2
 appVersion: version-5.2.4
 description: Librespeed is a HTML5 webpage to test upload and download speeds
 name: librespeed
-version: 5.4.2
-kubeVersion: ">=1.16.0-0"
+version: 6.0.0
+kubeVersion: ">=1.19.0-0"
 keywords:
   - librespeed
   - speedtest
@@ -19,9 +19,9 @@ maintainers:
     email: mark@markmcw.uk
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 0.2.2
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Use bjw-s common chart.
