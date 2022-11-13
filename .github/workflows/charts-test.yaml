@@ -56,7 +56,7 @@ jobs:
 
       - name: Debug
         run: |
-          kubectl config view --minify
+          kubectl config view
           env
 
       - name: Create k3d cluster
