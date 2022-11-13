@@ -30,6 +30,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `appVersion` to 1.26.0
-    - kind: changed
-      description: Use bjw-s common chart.
+      description: Upgraded `mariadb` chart dependency to version 11.3.5

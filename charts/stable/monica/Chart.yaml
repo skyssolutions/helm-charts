@@ -26,4 +26,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Use bjw-s common chart.
+      description: Upgraded `mariadb` chart dependency to version 11.3.5

@@ -37,4 +37,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Use bjw-s common chart.
+      description: Upgraded `mariadb` chart dependency to version 11.3.5
+    - kind: changed
+      description: Upgraded `influxdb` chart dependency to version 5.4.10
