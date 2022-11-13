@@ -9,7 +9,36 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: v0.107.11
-    created: "2022-11-13T03:34:33.23518621Z"
+    created: "2022-11-13T04:28:10.691894218Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: DNS proxy as ad-blocker for local network
+    digest: 2fc85afc9fe0d03af9150bf4dae5a084150c714f4a5d441a85ac121792bf1555
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/adguard-home
+    icon: https://avatars3.githubusercontent.com/u/8361145?s=200&v=4?sanitize=true
+    keywords:
+    - adguard-home
+    - adblock
+    - dns
+    kubeVersion: '>=1.19.0-0'
+    name: adguard-home
+    sources:
+    - https://github.com/AdguardTeam/AdGuardHome
+    urls:
+    - https://helm.samipsolutions.fi/stable/adguard-home-7.0.1.tgz
+    version: 7.0.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Require kube 1.19+.
+        - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: v0.107.11
+    created: "2022-11-13T04:28:10.687596368Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -38,7 +67,7 @@ entries:
           description: Upgraded app to v0.107.11.
     apiVersion: v2
     appVersion: v0.107.11
-    created: "2022-11-13T03:34:33.232225858Z"
+    created: "2022-11-13T04:28:10.684834336Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -68,7 +97,38 @@ entries:
           description: Upgraded `redis` chart dependency to version 17.3.9
     apiVersion: v2
     appVersion: v0.20
-    created: "2022-11-13T03:34:33.2550164Z"
+    created: "2022-11-13T04:28:10.718257523Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.3.9
+    deprecated: true
+    description: DNS proxy as ad-blocker for local network
+    digest: 2d3fe8dd1699fc20ef07d2a7e0f67d479b8346cf1bdd7f0d6179878b0039df6e
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/blocky
+    icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
+    keywords:
+    - blocky
+    - adblock
+    - dns
+    kubeVersion: '>=1.19.0-0'
+    name: blocky
+    sources:
+    - https://github.com/0xERR0R/blocky
+    urls:
+    - https://helm.samipsolutions.fi/stable/blocky-13.0.0.tgz
+    version: 13.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `redis` chart dependency to version 17.3.9
+    apiVersion: v2
+    appVersion: v0.20
+    created: "2022-11-13T04:28:10.709402521Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -101,7 +161,7 @@ entries:
           description: Upgraded `redis` chart dependency to version 17.3.7
     apiVersion: v2
     appVersion: v0.19
-    created: "2022-11-13T03:34:33.245105655Z"
+    created: "2022-11-13T04:28:10.700296415Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -133,9 +193,85 @@ entries:
       artifacthub.io/changes: |-
         - kind: changed
           description: Upgraded `nats` chart dependency to version 0.18.2
+        - kind: changed
+          description: Added deprecation information.
+    apiVersion: v2
+    appVersion: v0.10.7
+    created: "2022-11-13T04:28:10.674639818Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - condition: nats.enabled
+      name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 0.18.2
+    - alias: clientapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - alias: mediaapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - alias: syncapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - alias: roomserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - alias: federationapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - alias: keyserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - alias: userapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - alias: appserviceapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Dendrite Matrix Homeserver
+    digest: c8cf62abe2e4d463fabd0668372f2dbbf745540d9966bd7558335294809c9fde
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/dendrite
+    keywords:
+    - dendrite
+    - matrix
+    - homeserver
+    - monolith
+    - federation
+    - polylith
+    kubeVersion: '>=1.20.0-0'
+    name: dendrite
+    sources:
+    - https://github.com/matrix-org/dendrite
+    - https://github.com/matrix-org/dendrite/tree/master/build/docker
+    urls:
+    - https://helm.samipsolutions.fi/incubator/dendrite-9.1.0.tgz
+    version: 9.1.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `nats` chart dependency to version 0.18.2
     apiVersion: v2
     appVersion: v0.9.4
-    created: "2022-11-13T03:34:33.224596708Z"
+    created: "2022-11-13T04:28:10.668914551Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -211,7 +347,7 @@ entries:
           description: Upgraded `nats` chart dependency to version 0.18.2
     apiVersion: v2
     appVersion: v0.9.4
-    created: "2022-11-13T03:34:33.21815866Z"
+    created: "2022-11-13T04:28:10.663136184Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -285,10 +421,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-11-13T04:28:10.723302582Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Server error pages in the docker image
+    digest: ae3d607c204ab3bb50a3e26fd368e0551f7775f7d8834d52180e4e6f05c8e048
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/error-pages
+    icon: https://hsto.org/webt/rm/9y/ww/rm9ywwx3gjv9agwkcmllhsuyo7k.png
+    keywords:
+    - traefik
+    - error-pages
+    kubeVersion: '>=1.19.0-0'
+    name: error-pages
+    sources:
+    - https://github.com/tarampampam/error-pages
+    urls:
+    - https://helm.samipsolutions.fi/stable/error-pages-3.0.0.tgz
+    version: 3.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2022-11-13T03:34:33.257796237Z"
+    created: "2022-11-13T04:28:10.720855853Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -314,10 +476,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: stable
+    created: "2022-11-13T04:28:10.73180618Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Factorio dedicated steam game server
+    digest: 20300912898685bd201165cd4c9c1403d89efbe786f74309bd0bf4d18483a079
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/factorio
+    icon: https://factorio.com/static/img/factorio-wheel.png
+    keywords:
+    - factorio
+    - steam
+    kubeVersion: '>=1.19.0-0'
+    name: factorio
+    sources:
+    - https://github.com/factoriotools/factorio-docker
+    urls:
+    - https://helm.samipsolutions.fi/stable/factorio-3.0.0.tgz
+    version: 3.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: stable
-    created: "2022-11-13T03:34:33.268501149Z"
+    created: "2022-11-13T04:28:10.728179038Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -346,7 +534,38 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.3.5
     apiVersion: v2
     appVersion: 5.22.4
-    created: "2022-11-13T03:34:33.28695232Z"
+    created: "2022-11-13T04:28:10.753027726Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.5
+    deprecated: true
+    description: Ghost is a blogging and publishing software
+    digest: 66ccebe6abb7b4618e9a66d744438bf5e82599d441c0873713d43b8bc4559099
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/ghost
+    icon: https://ghost.org/images/logos/logo-black-1.png
+    keywords:
+    - ghost
+    - blogging
+    kubeVersion: '>=1.19.0-0'
+    name: ghost
+    sources:
+    - https://github.com/TryGhost/Ghost
+    - https://github.com/TryGhost/Ghost-CLI
+    urls:
+    - https://helm.samipsolutions.fi/stable/ghost-5.0.0.tgz
+    version: 5.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `mariadb` chart dependency to version 11.3.5
+    apiVersion: v2
+    appVersion: 5.22.4
+    created: "2022-11-13T04:28:10.746495251Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -379,7 +598,7 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.3.3
     apiVersion: v2
     appVersion: 5.10.1
-    created: "2022-11-13T03:34:33.280450067Z"
+    created: "2022-11-13T04:28:10.738046753Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -415,7 +634,50 @@ entries:
           description: Upgraded `influxdb` chart dependency to version 5.4.10
     apiVersion: v2
     appVersion: 2022.10.5
-    created: "2022-11-13T03:34:33.319449889Z"
+    created: "2022-11-13T04:28:10.79818165Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.0.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.5
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.4.10
+    deprecated: true
+    description: Home Assistant
+    digest: 070561a2e34bf8b0d61f406e537c3c0175720a8e7955efe2ce74a6b5b6ca1631
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.19.0-0'
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    - https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/home-assistant
+    urls:
+    - https://helm.samipsolutions.fi/stable/home-assistant-16.0.0.tgz
+    version: 16.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `mariadb` chart dependency to version 11.3.5
+        - kind: changed
+          description: Upgraded `influxdb` chart dependency to version 5.4.10
+    apiVersion: v2
+    appVersion: 2022.10.5
+    created: "2022-11-13T04:28:10.784652993Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -458,7 +720,7 @@ entries:
           description: Upgraded `postgresql` chart dependency to version 12.0.1
     apiVersion: v2
     appVersion: 2022.10.5
-    created: "2022-11-13T03:34:33.30420249Z"
+    created: "2022-11-13T04:28:10.769195614Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -499,10 +761,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Use bjw-s common chart.
+        - kind: changed
+          description: Upgraded app to 22.10.2
+    apiVersion: v2
+    appVersion: v22.10.2
+    created: "2022-11-13T04:28:10.802036995Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 829297543098188f27cd4974426c927a47f918983377925df3b9cb3dce25bd09
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/homer
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+    kubeVersion: '>=1.16.0-0'
+    name: homer
+    sources:
+    - https://github.com/bastienwirtz/homer
+    urls:
+    - https://helm.samipsolutions.fi/stable/homer-10.0.0.tgz
+    version: 10.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: v22.07.2
-    created: "2022-11-13T03:34:33.323403726Z"
+    created: "2022-11-13T04:28:10.804751726Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -526,10 +814,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Use bjw-s common chart.
+        - kind: changed
+          description: Upgraded app to 0.20.2186.
+    apiVersion: v2
+    appVersion: v0.20.2186
+    created: "2022-11-13T04:28:10.81030419Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: API Support for your favorite torrent trackers
+    digest: 878ecacc0024f6485ac50cf2f338e7437528ba7bab0ba8a4d5c51976a7b3a824
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/jackett
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jackett-banner.png
+    keywords:
+    - jackett
+    - torrent
+    kubeVersion: '>=1.19.0-0'
+    name: jackett
+    sources:
+    - https://github.com/Jackett/Jackett
+    - https://github.com/k8s-at-home/container-images
+    urls:
+    - https://helm.samipsolutions.fi/stable/jackett-13.0.0.tgz
+    version: 13.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: v0.20.1316
-    created: "2022-11-13T03:34:33.32638638Z"
+    created: "2022-11-13T04:28:10.807613459Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -556,10 +873,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: version-5.2.4
+    created: "2022-11-13T04:28:10.818215382Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Librespeed is a HTML5 webpage to test upload and download speeds
+    digest: 35da6b7bbaca2f62c261dbb2b4db71ba17d01f38452dc31d27f43815fd0ba2f1
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/librespeed
+    icon: https://github.com/librespeed/speedtest/blob/master/.logo/icon_huge.png?raw=true
+    keywords:
+    - librespeed
+    - speedtest
+    kubeVersion: '>=1.19.0-0'
+    name: librespeed
+    sources:
+    - https://github.com/librespeed/speedtest
+    - https://hub.docker.com/r/linuxserver/librespeed
+    - https://github.com/samipsolutions/helm-charts/tree/master/charts/librespeed
+    urls:
+    - https://helm.samipsolutions.fi/stable/librespeed-7.0.0.tgz
+    version: 7.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: version-5.2.4
-    created: "2022-11-13T03:34:33.329168817Z"
+    created: "2022-11-13T04:28:10.81541745Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -587,10 +932,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Use bjw-s common chart.
+        - kind: changed
+          description: Upgraded app to 1.0.2.2592.
+    apiVersion: v2
+    appVersion: v1.0.2.2592
+    created: "2022-11-13T04:28:10.823674445Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Looks and smells like Sonarr but made for music
+    digest: 9362053552bbdc02aa828137d2ef313ada8b29470d6f94a8b1e71749d1181f3e
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/lidarr
+    icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
+    keywords:
+    - lidarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.19.0-0'
+    name: lidarr
+    sources:
+    - https://github.com/Lidarr/Lidarr
+    - https://github.com/k8s-at-home/container-images
+    urls:
+    - https://helm.samipsolutions.fi/stable/lidarr-16.0.0.tgz
+    version: 16.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: v1.0.0.2255
-    created: "2022-11-13T03:34:33.332161372Z"
+    created: "2022-11-13T04:28:10.821036215Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -618,10 +993,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-11-13T04:28:10.829351611Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: A lightweight open source alternative to linktree
+    digest: 74b016d7416262e4f0d353a383b1ce6f411a351c12186b6ce319bcb18bc5465e
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/littlelink-server
+    icon: https://camo.githubusercontent.com/edebb9bce46a8d4a75fa8c4f50f20996c3fe55ace28ecfbfdc5da3794cc90e9a/68747470733a2f2f63646e2e636f74746c652e636c6f75642f6c6974746c656c696e6b2f736f6369616c2d636972636c652e706e67
+    keywords:
+    - littlelink-server
+    kubeVersion: '>=1.19.0-0'
+    name: littlelink-server
+    sources:
+    - https://github.com/techno-tim/littlelink-server
+    - https://github.com/sethcottle/littlelink
+    urls:
+    - https://helm.samipsolutions.fi/stable/littlelink-server-3.0.0.tgz
+    version: 3.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-11-13T03:34:33.336074205Z"
+    created: "2022-11-13T04:28:10.826487478Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -650,7 +1051,38 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.3.5
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2022-11-13T03:34:33.349831577Z"
+    created: "2022-11-13T04:28:10.836741897Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.5
+    deprecated: true
+    description: A Personal Relationship Management tool to help you organize your
+      social life
+    digest: e8f980f6db5560a1c7fc019984dbb57a9a39c53bbfe3ddc1cd2012144d6fcd0c
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/monica
+    icon: https://pbs.twimg.com/profile_images/951820722191720450/mtCNuIXX.jpg
+    keywords:
+    - crm
+    kubeVersion: '>=1.19.0-0'
+    name: monica
+    sources:
+    - https://github.com/monicahq/monica
+    - https://hub.docker.com/_/monica
+    urls:
+    - https://helm.samipsolutions.fi/stable/monica-10.0.0.tgz
+    version: 10.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `mariadb` chart dependency to version 11.3.5
+    apiVersion: v2
+    appVersion: 3.7.0-apache
+    created: "2022-11-13T04:28:10.85164717Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -683,7 +1115,7 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.3.3
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2022-11-13T03:34:33.342624063Z"
+    created: "2022-11-13T04:28:10.843972481Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -717,7 +1149,34 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: 3.0.2
-    created: "2022-11-13T03:34:33.35525764Z"
+    created: "2022-11-13T04:28:10.860670674Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Node-RED is low-code programming for event-driven applications
+    digest: ea6854e80cc5c29348c21c1fd72084f7cbf4797e8a251e0002c844f345109a2e
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/node-red
+    icon: https://nodered.org/about/resources/media/node-red-icon-2.png
+    keywords:
+    - nodered
+    - node-red
+    kubeVersion: '>=1.19.0-0'
+    name: node-red
+    sources:
+    - https://github.com/node-red/node-red-docker
+    - https://github.com/samipsolutions/helm-charts/tree/master/charts/node-red
+    urls:
+    - https://helm.samipsolutions.fi/stable/node-red-13.0.0.tgz
+    version: 13.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: 3.0.2
+    created: "2022-11-13T04:28:10.856713028Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -748,7 +1207,7 @@ entries:
           description: Support k8s 1.19+ only.
     apiVersion: v2
     appVersion: 3.0.2
-    created: "2022-11-13T03:34:33.352644417Z"
+    created: "2022-11-13T04:28:10.8542301Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -778,13 +1237,14 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: latest
-    created: "2022-11-13T03:34:33.358626527Z"
+    created: "2022-11-13T04:28:10.863370606Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
       version: 4.5.2
+    deprecated: true
     description: Satisfactory dedicated server
-    digest: 5b42d656343de45b37f944db0af1c0aa12e96e0b01030c9bdb4d296734a895aa
+    digest: 9eab7a4615f2ccb9b3b7b370af09cac01453a5a6e17ab8424e535144f9b5538b
     home: https://www.satisfactorygame.com
     icon: https://img2.storyblok.com/fit-in/0x200/filters:format(webp)/f/110098/268x268/d1ebbafe03/logo.png
     keywords:
@@ -792,9 +1252,6 @@ entries:
     - steam
     - game
     kubeVersion: '>=1.16.0-0'
-    maintainers:
-    - email: nat@natallanc.om
-      name: Truxnell
     name: satisfactory
     sources:
     - https://github.com/wolveix/satisfactory-server
@@ -805,10 +1262,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-11-13T04:28:10.868870669Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Searx is a privacy-respecting, hackable metasearch engine
+    digest: e867d41056613450291824f3ba9de3c253e1b37e2a673e0dd2b6952ac12eb38e
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/searx
+    icon: https://github.com/searx/searx/blob/master/searx/static/themes/simple/img/logo_searx_a.png?raw=true
+    keywords:
+    - searx
+    - search engine
+    - privacy
+    kubeVersion: '>=1.19.0-0'
+    name: searx
+    sources:
+    - https://github.com/searx/searx
+    - https://searx.github.io/searx/
+    - https://hub.docker.com/r/searx/searx
+    urls:
+    - https://helm.samipsolutions.fi/stable/searx-7.0.0.tgz
+    version: 7.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-11-13T03:34:33.361996014Z"
+    created: "2022-11-13T04:28:10.866266939Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -840,7 +1326,34 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: "0.57"
-    created: "2022-11-13T03:34:33.22907709Z"
+    created: "2022-11-13T04:28:10.681921302Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    deprecated: true
+    description: Dockerized Signal Messenger REST API
+    digest: ffbf6714be262ba8a44b4de6677d99968ad1c03952fa5173e6034a1d0be56faf
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/signal-cli-rest-api
+    icon: https://signal-cli-rest-api.org/icon
+    keywords:
+    - signal-cli-rest-api
+    - signal-messenger
+    - signal
+    kubeVersion: '>=1.16.0-0'
+    name: signal-cli-rest-api
+    sources:
+    - https://github.com/bbernhard/signal-cli-rest-api
+    urls:
+    - https://helm.samipsolutions.fi/incubator/signal-cli-rest-api-1.2.3.tgz
+    version: 1.2.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: "0.57"
+    created: "2022-11-13T04:28:10.679326272Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -867,10 +1380,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: v3.2.2
+    created: "2022-11-13T04:28:10.875892051Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Speedtest Exporter made in python using the official speedtest bin
+    digest: c0b981ec56993a78288edd04df9c906eff1af6fccf4b83fffb81578f5dfffa37
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/speedtest-exporter
+    keywords:
+    - speedtest-exporter
+    - speedtest
+    kubeVersion: '>=1.19.0-0'
+    name: speedtest-exporter
+    sources:
+    - https://github.com/MiguelNdeCarvalho/speedtest-exporter/
+    urls:
+    - https://helm.samipsolutions.fi/stable/speedtest-exporter-7.0.0.tgz
+    version: 7.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: v3.2.2
-    created: "2022-11-13T03:34:33.364940164Z"
+    created: "2022-11-13T04:28:10.872932816Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -895,10 +1433,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `appVersion` to v7.2.94
+        - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: v7.2.94
+    created: "2022-11-13T04:28:10.893464155Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.3.1
+    deprecated: true
+    description: Ubiquiti Network's Unifi Controller
+    digest: 736b6bb456ba87d20ca7d29256712878f07d64cdc40610f0daa4a466422fa759
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/unifi
+    icon: https://prd-www-cdn.ubnt.com/static/favicon-152.png
+    keywords:
+    - ubiquiti
+    - unifi
+    name: unifi
+    sources:
+    - https://github.com/jacobalberty/unifi-docker
+    urls:
+    - https://helm.samipsolutions.fi/stable/unifi-8.0.0.tgz
+    version: 8.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `mongodb` chart dependency to version 13.3.1
     apiVersion: v2
     appVersion: v7.1.68
-    created: "2022-11-13T03:34:33.374667293Z"
+    created: "2022-11-13T04:28:10.88441495Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -932,7 +1501,7 @@ entries:
           description: Upgraded `influxdb` chart dependency to version 5.4.9
     apiVersion: v2
     appVersion: 2.1.3
-    created: "2022-11-13T03:34:33.380957329Z"
+    created: "2022-11-13T04:28:10.900344934Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -967,22 +1536,20 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: latest
-    created: "2022-11-13T03:34:33.383805972Z"
+    created: "2022-11-13T04:28:10.903487971Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
       version: 4.5.2
+    deprecated: true
     description: Valheim dedicated gameserver with automatic update and world backup
       support
-    digest: c56c9cccb881c0e31cd8574d7b14cec5877401fd4c1df7da0ac2679a501ab905
+    digest: 3eded2a0f8e8eedb58ba77a1b11f04da4d4aea43f5937d274bab4c5a74b29e81
     home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/valheim
     icon: https://raw.githubusercontent.com/lloesche/valheim-server-docker/main/misc/Logo_valheim.png
     keywords:
     - valheim
     kubeVersion: '>=1.16.0-0'
-    maintainers:
-    - email: owner@russellhall.co.uk
-      name: rust84
     name: valheim
     sources:
     - https://github.com/lloesche/valheim-server-docker
@@ -997,7 +1564,41 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.3.5
     apiVersion: v2
     appVersion: 1.26.0
-    created: "2022-11-13T03:34:33.407514591Z"
+    created: "2022-11-13T04:28:10.937984671Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.5
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.0.1
+    deprecated: true
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: 8fdd244745576c4f0abc72e727a063e66646ff4cbc4e3325a44d454bbbe2fbf1
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/vaultwarden
+    icon: https://sesoodan.sirv.com/bitwarden_rs.png
+    keywords:
+    - Vaultwarden
+    - bitwardenrs
+    kubeVersion: '>=1.19.0-0'
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://helm.samipsolutions.fi/stable/vaultwarden-8.0.0.tgz
+    version: 8.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `mariadb` chart dependency to version 11.3.5
+    apiVersion: v2
+    appVersion: 1.26.0
+    created: "2022-11-13T04:28:10.925239223Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -1033,7 +1634,7 @@ entries:
           description: Upgraded `postgresql` chart dependency to version 12.0.1
     apiVersion: v2
     appVersion: 1.25.2
-    created: "2022-11-13T03:34:33.396368342Z"
+    created: "2022-11-13T04:28:10.915198807Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1067,10 +1668,48 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `appVersion` to 0.20.0
+        - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: 0.20.0
+    created: "2022-11-13T04:28:10.952393238Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.0.1
+    deprecated: true
+    description: The to-do app to organize your life
+    digest: 16a5b70fe2ecc7f365f5ef22c46f3c3687d9b886807514ff7ebeb6fcf1981023
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/vikunja
+    icon: https://vikunja.io/images/vikunja-logo.svg
+    keywords:
+    - vikunja
+    - to-do
+    - tasks
+    - calendar
+    - kanban
+    name: vikunja
+    sources:
+    - https://kolaente.dev/vikunja/api
+    - https://kolaente.dev/vikunja/frontend
+    - https://hub.docker.com/r/vikunja/api
+    - https://hub.docker.com/r/vikunja/frontend
+    - https://vikunja.io/docs/
+    urls:
+    - https://helm.samipsolutions.fi/stable/vikunja-9.0.0.tgz
+    version: 9.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `postgresql` chart dependency to version 12.0.1
     apiVersion: v2
     appVersion: 0.19.2
-    created: "2022-11-13T03:34:33.41547407Z"
+    created: "2022-11-13T04:28:10.94570436Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1105,10 +1744,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `appVersion` to 0.7.4
+        - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: 0.7.4
+    created: "2022-11-13T04:28:10.958918313Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: A self-hosted, ad-free, privacy-respecting metasearch engine
+    digest: 0a7f8ca26a4a55c73747587edbc4df807e416dfdec0c784349ce8fdc8aae16df
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/whoogle
+    icon: https://raw.githubusercontent.com/benbusby/whoogle-search/develop/docs/banner.png
+    keywords:
+    - whoogle
+    - search
+    - open source
+    - privacy
+    kubeVersion: '>=1.16.0-0'
+    name: whoogle
+    sources:
+    - https://github.com/benbusby/whoogle-search
+    urls:
+    - https://helm.samipsolutions.fi/stable/whoogle-5.0.0.tgz
+    version: 5.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 0.5.4
-    created: "2022-11-13T03:34:33.418608637Z"
+    created: "2022-11-13T04:28:10.956462585Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1136,10 +1805,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `appVersion` to version-2.5.290
+        - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: version-2.5.290
+    created: "2022-11-13T04:28:10.963956972Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Make documentation a joy to write using Wiki.js's beautiful and intuitive
+      interface!
+    digest: 18ce01fda60dee65fd2201c5b964ec664af261e3b3c038cf1d94d999e20f0a41
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/wikijs
+    icon: https://static.requarks.io/logo/wikijs-butterfly.svg
+    keywords:
+    - wiki
+    - wikijs
+    kubeVersion: '>=1.16.0-0'
+    name: wikijs
+    sources:
+    - https://hub.docker.com/r/linuxserver/wikijs/
+    - https://github.com/Requarks/wiki
+    urls:
+    - https://helm.samipsolutions.fi/stable/wikijs-8.0.0.tgz
+    version: 8.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: version-2.5.201
-    created: "2022-11-13T03:34:33.421403675Z"
+    created: "2022-11-13T04:28:10.961499843Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1170,7 +1869,7 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 1.0.20210424
-    created: "2022-11-13T03:34:33.42428552Z"
+    created: "2022-11-13T04:28:10.967957718Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1198,10 +1897,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `appVersion` to 1.28.1
+        - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: 1.28.1
+    created: "2022-11-13T04:28:10.970577549Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: f2553afdfed8d0979230c99a8f0264701359fe44dbda42f586c1666379b6cc39
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/zigbee2mqtt
+    icon: https://www.zigbee2mqtt.io/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.19.0-0'
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://helm.samipsolutions.fi/stable/zigbee2mqtt-11.0.0.tgz
+    version: 11.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded appVersion to version 1.27.0
     apiVersion: v2
     appVersion: 1.27.0
-    created: "2022-11-13T03:34:33.427280275Z"
+    created: "2022-11-13T04:28:10.97332558Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1231,10 +1960,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `appVersion` to 8.2.2
+        - kind: changed
+          description: Use bjw-s common chart.
+    apiVersion: v2
+    appVersion: 8.2.2
+    created: "2022-11-13T04:28:10.979858256Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    deprecated: true
+    description: Fully configurable Zwave to MQTT Gateway and Control Panel
+    digest: fb31b83c946462d6fbc3071dcf3683104628a37054b261016acefef6b2cc0e79
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/zwavejs2mqtt
+    icon: https://raw.githubusercontent.com/zwave-js/zwavejs2mqtt/v4.0.0/static/logo.png
+    keywords:
+    - zwave
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.19.0-0'
+    name: zwavejs2mqtt
+    sources:
+    - https://github.com/zwave-js/zwavejs2mqtt
+    - https://hub.docker.com/r/zwavejs/zwavejs2mqtt
+    urls:
+    - https://helm.samipsolutions.fi/stable/zwavejs2mqtt-7.0.0.tgz
+    version: 7.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 5.0.2
-    created: "2022-11-13T03:34:33.430109416Z"
+    created: "2022-11-13T04:28:10.975972711Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1258,4 +2017,4 @@ entries:
     urls:
     - https://helm.samipsolutions.fi/stable/zwavejs2mqtt-5.4.2.tgz
     version: 5.4.2
-generated: "2022-11-13T03:34:33.210992249Z"
+generated: "2022-11-13T04:28:10.655274593Z"
