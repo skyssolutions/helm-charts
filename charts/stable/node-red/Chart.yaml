@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 3.0.2
 description: Node-RED is low-code programming for event-driven applications
 name: node-red
-version: 12.0.0
+version: 12.0.1
 kubeVersion: ">=1.19.0-0"
 keywords:
   - nodered
@@ -14,7 +14,7 @@ sources:
   - https://github.com/node-red/node-red-docker
   - https://github.com/samipsolutions/helm-charts/tree/master/charts/node-red
 maintainers:
-  - name: Skyler Mäntysaari
+  - name: samip5
     url: https://github.com/samip5
 dependencies:
   - name: common
