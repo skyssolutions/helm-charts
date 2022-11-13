@@ -24,7 +24,8 @@ env:
 jobs:
   install-chart:
     name: Install chart
-    runs-on: ["self-hosted", "X64"]
+    #runs-on: ["self-hosted", "X64"]
+    runs-on: ubuntu-latest
     if: ${{ inputs.chartsToTest != '[]' && inputs.chartsToTest != '' }}
     strategy:
       matrix:
@@ -50,7 +51,6 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: "3.10"
-          cache: 'pip'
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.3.1
@@ -86,7 +86,8 @@ jobs:
     if: |
       always()
     name: Install successful
-    runs-on: ["self-hosted", "X64"]
+    #runs-on: ["self-hosted", "X64"]
+    runs-on: ubuntu-latest
     steps:
       - name: Check install matrix status
         if: ${{ (inputs.chartsToTest != '[]' && inputs.chartsToTest != '') && needs.install-chart.result != 'success' }}
@@ -94,7 +95,8 @@ jobs:
 
   unittest-chart:
     name: Unit-test chart
-    runs-on: ["self-hosted", "X64"]
+    #runs-on: ["self-hosted", "X64"]
+    runs-on: ubuntu-latest
     if: ${{ inputs.chartsToTest != '[]' && inputs.chartsToTest != '' }}
     strategy:
       matrix:
@@ -134,7 +136,8 @@ jobs:
     if: |
       always()
     name: Unittest successful
-    runs-on: ["self-hosted", "X64"]
+    #runs-on: ["self-hosted", "X64"]
+    runs-on: ubuntu-latest
     steps:
       - name: Check unittest matrix status
         if: ${{ (inputs.chartsToTest != '[]' && inputs.chartsToTest != '') && needs.unittest-chart.result != 'success' }}

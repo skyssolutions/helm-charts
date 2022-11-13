@@ -19,12 +19,13 @@ on:
       - "charts/**"
 
 env:
-  HELM_VERSION: 3.9.2
+  HELM_VERSION: 3.10.2
 
 jobs:
   prepare:
     name: Prepare data required for release
-    runs-on: ["self-hosted", "X64"]
+    #runs-on: ["self-hosted", "X64"]
+    runs-on: ubuntu-latest
     outputs:
       charts-to-release: ${{ steps.collect-charts.outputs.charts }}
     steps:
