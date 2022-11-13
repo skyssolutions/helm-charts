@@ -3,7 +3,8 @@ apiVersion: v2
 appVersion: v0.20
 description: DNS proxy as ad-blocker for local network
 name: blocky
-version: 12.0.2
+version: 13.0.0
+deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
   - blocky
@@ -13,9 +14,6 @@ home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/bl
 icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
 sources:
   - https://github.com/0xERR0R/blocky
-maintainers:
-  - name: samip5
-    url: https://github.com/samip5
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

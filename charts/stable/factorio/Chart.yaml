@@ -3,7 +3,8 @@ apiVersion: v2
 appVersion: stable
 description: Factorio dedicated steam game server
 name: factorio
-version: 2.0.0
+version: 3.0.0
+deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
   - factorio
@@ -12,9 +13,6 @@ home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/fa
 icon: https://factorio.com/static/img/factorio-wheel.png
 sources:
   - https://github.com/factoriotools/factorio-docker
-maintainers:
-  - name: Truxnell
-    email: nat@natallan.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

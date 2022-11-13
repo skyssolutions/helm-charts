@@ -3,7 +3,8 @@ apiVersion: v2
 appVersion: version-2.5.290
 description: Make documentation a joy to write using Wiki.js's beautiful and intuitive interface!
 name: wikijs
-version: 7.0.0
+version: 8.0.0
+deprecated: true
 kubeVersion: ">=1.16.0-0"
 keywords:
   - wiki
@@ -13,9 +14,6 @@ icon: https://static.requarks.io/logo/wikijs-butterfly.svg
 sources:
   - https://hub.docker.com/r/linuxserver/wikijs/
   - https://github.com/Requarks/wiki
-maintainers:
-  - name: rolfberkenbosch
-    email: rolf@berkenbosch.nl
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

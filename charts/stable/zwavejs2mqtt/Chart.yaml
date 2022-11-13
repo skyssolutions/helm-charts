@@ -3,7 +3,8 @@ apiVersion: v2
 appVersion: 8.2.2
 description: Fully configurable Zwave to MQTT Gateway and Control Panel
 name: zwavejs2mqtt
-version: 6.0.0
+version: 7.0.0
+deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
   - zwave
@@ -14,9 +15,6 @@ icon: https://raw.githubusercontent.com/zwave-js/zwavejs2mqtt/v4.0.0/static/logo
 sources:
   - https://github.com/zwave-js/zwavejs2mqtt
   - https://hub.docker.com/r/zwavejs/zwavejs2mqtt
-maintainers:
-  - name: billimek
-    email: jeff@billimek.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

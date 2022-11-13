@@ -3,7 +3,8 @@ apiVersion: v2
 appVersion: v1.0.2.2592
 description: Looks and smells like Sonarr but made for music
 name: lidarr
-version: 15.0.0
+version: 16.0.0
+deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
   - lidarr
@@ -14,9 +15,6 @@ icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
 sources:
   - https://github.com/Lidarr/Lidarr
   - https://github.com/k8s-at-home/container-images
-maintainers:
-  - name: billimek
-    email: jeff@billimek.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

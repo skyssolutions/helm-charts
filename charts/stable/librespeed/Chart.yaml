@@ -3,7 +3,8 @@ apiVersion: v2
 appVersion: version-5.2.4
 description: Librespeed is a HTML5 webpage to test upload and download speeds
 name: librespeed
-version: 6.0.0
+version: 7.0.0
+deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
   - librespeed
@@ -14,9 +15,6 @@ sources:
   - https://github.com/librespeed/speedtest
   - https://hub.docker.com/r/linuxserver/librespeed
   - https://github.com/samipsolutions/helm-charts/tree/master/charts/librespeed
-maintainers:
-  - name: mcmarkj
-    email: mark@markmcw.uk
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

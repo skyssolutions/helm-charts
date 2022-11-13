@@ -5,13 +5,11 @@ description: A dead simple static HOMepage for your servER to keep your services
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/homer
 name: homer
-version: 9.0.0
+version: 10.0.0
+deprecated: true
 kubeVersion: ">=1.16.0-0"
 sources:
   - https://github.com/bastienwirtz/homer
-maintainers:
-  - name: billimek
-    email: jeff@billimek.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/
