@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.9.4
 description: Dendrite Matrix Homeserver
 name: dendrite
-version: 8.0.2
+version: 8.0.3
 kubeVersion: ">=1.19.0-0"
 keywords:
   - dendrite
@@ -14,7 +14,7 @@ keywords:
   - polylith
 home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/dendrite
 maintainers:
-  - name: Skyler Mäntysaari
+  - name: samip5
     url: https://github.com/samip5
 sources:
   - https://github.com/matrix-org/dendrite
