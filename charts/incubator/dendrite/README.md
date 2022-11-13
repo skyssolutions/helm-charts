@@ -5,6 +5,7 @@
 Dendrite Matrix Homeserver
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/samipsolutions/helm-charts/issues/new/choose)**
+**This chart has been deprecated! Please use another way to deploy it.**
 
 ## Source Code
 
