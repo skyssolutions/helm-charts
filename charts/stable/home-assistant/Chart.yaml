@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2022.10.5
 description: Home Assistant
 name: home-assistant
-version: 15.0.0
+version: 15.0.1
 kubeVersion: ">=1.19.0-0"
 keywords:
   - home-assistant
@@ -27,14 +27,16 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: mariadb
-    version: 11.3.3
+    version: 11.3.5
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: influxdb
-    version: 5.4.9
+    version: 5.4.10
     repository: https://charts.bitnami.com/bitnami
     condition: influxdb.enabled
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Use bjw-s common chart.
+      description: Upgraded `mariadb` chart dependency to version 11.3.5
+    - kind: changed
+      description: Upgraded `influxdb` chart dependency to version 5.4.10
