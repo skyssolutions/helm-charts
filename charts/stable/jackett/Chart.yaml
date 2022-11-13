@@ -4,6 +4,7 @@ appVersion: v0.20.2186
 description: API Support for your favorite torrent trackers
 name: jackett
 version: 13.0.0
+deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
   - jackett

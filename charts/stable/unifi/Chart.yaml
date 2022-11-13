@@ -4,6 +4,7 @@ appVersion: v7.2.94
 description: Ubiquiti Network's Unifi Controller
 name: unifi
 version: 8.0.0
+deprecated: true
 keywords:
   - ubiquiti
   - unifi
@@ -19,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/
-    version: 1.0.1
+    version: 0.2.2
   - name: mongodb
     version: 13.3.1
     repository: https://charts.bitnami.com/bitnami

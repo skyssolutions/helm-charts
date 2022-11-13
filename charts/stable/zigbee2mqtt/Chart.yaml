@@ -4,6 +4,7 @@ appVersion: 1.28.1
 description: Bridges events and allows you to control your Zigbee devices via MQTT
 name: zigbee2mqtt
 version: 11.0.0
+deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
   - zigbee
@@ -21,7 +22,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/
-    version: 1.0.1
+    version: 0.2.2
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
