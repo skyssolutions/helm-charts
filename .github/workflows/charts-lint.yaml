@@ -17,7 +17,7 @@ on:
         type: string
 
 env:
-  HELM_VERSION: 3.9.2
+  HELM_VERSION: 3.10.2
 
 jobs:
   lint-chart:
@@ -27,7 +27,8 @@ jobs:
       matrix:
         chart: ${{ fromJSON(inputs.chartsToLint) }}
       fail-fast: false
-    runs-on: ["self-hosted", "X64"]
+    #runs-on: ["self-hosted", "X64"]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
