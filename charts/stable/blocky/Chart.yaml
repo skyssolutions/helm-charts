@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.20
 description: DNS proxy as ad-blocker for local network
 name: blocky
-version: 12.0.2
+version: 13.0.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - blocky
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/
-    version: 0.2.2
+    version: 1.0.1
   - name: redis
     repository: https://charts.bitnami.com/bitnami
     version: 17.3.9

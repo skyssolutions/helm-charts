@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v7.2.94
 description: Ubiquiti Network's Unifi Controller
 name: unifi
-version: 7.0.0
+version: 8.0.0
 keywords:
   - ubiquiti
   - unifi
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/
-    version: 0.2.2
+    version: 1.0.1
   - name: mongodb
     version: 13.3.1
     repository: https://charts.bitnami.com/bitnami

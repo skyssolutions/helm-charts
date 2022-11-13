@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: stable
 description: Factorio dedicated steam game server
 name: factorio
-version: 2.0.0
+version: 3.0.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - factorio
@@ -18,7 +18,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/
-    version: 0.2.2
+    version: 1.0.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
