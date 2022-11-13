@@ -14,9 +14,6 @@ icon: https://ghost.org/images/logos/logo-black-1.png
 sources:
   - https://github.com/TryGhost/Ghost
   - https://github.com/TryGhost/Ghost-CLI
-maintainers:
-  - name: samip5
-    email: sm+k8s-at-home+git@samip.fi
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

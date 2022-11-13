@@ -12,11 +12,6 @@ home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/un
 icon: https://prd-www-cdn.ubnt.com/static/favicon-152.png
 sources:
   - https://github.com/jacobalberty/unifi-docker
-maintainers:
-  - name: billimek
-    email: jeff@billimek.com
-  - name: mcronce
-    email: mike@quadra-tec.net
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

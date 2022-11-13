@@ -16,9 +16,6 @@ sources:
   - https://github.com/home-assistant/home-assistant
   - https://github.com/cdr/code-server
   - https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/home-assistant
-maintainers:
-  - name: billimek
-    email: jeff@billimek.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

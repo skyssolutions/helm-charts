@@ -16,9 +16,6 @@ sources:
   - https://github.com/searx/searx
   - https://searx.github.io/searx/
   - https://hub.docker.com/r/searx/searx
-maintainers:
-  - name: auricom
-    email: k8s-at-home@xpander.eml.cc
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

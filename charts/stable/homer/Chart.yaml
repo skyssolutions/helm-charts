@@ -10,9 +10,6 @@ deprecated: true
 kubeVersion: ">=1.16.0-0"
 sources:
   - https://github.com/bastienwirtz/homer
-maintainers:
-  - name: billimek
-    email: jeff@billimek.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

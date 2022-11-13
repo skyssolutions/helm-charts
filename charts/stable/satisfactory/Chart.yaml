@@ -14,9 +14,6 @@ home: https://www.satisfactorygame.com
 icon: https://img2.storyblok.com/fit-in/0x200/filters:format(webp)/f/110098/268x268/d1ebbafe03/logo.png
 sources:
   - https://github.com/wolveix/satisfactory-server
-maintainers:
-  - name: samip5
-    url: https://github.com/samip5
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com

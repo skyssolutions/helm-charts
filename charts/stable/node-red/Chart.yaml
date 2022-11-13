@@ -14,9 +14,6 @@ icon: https://nodered.org/about/resources/media/node-red-icon-2.png
 sources:
   - https://github.com/node-red/node-red-docker
   - https://github.com/samipsolutions/helm-charts/tree/master/charts/node-red
-maintainers:
-  - name: samip5
-    url: https://github.com/samip5
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

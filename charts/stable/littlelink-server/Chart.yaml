@@ -13,9 +13,6 @@ icon: https://camo.githubusercontent.com/edebb9bce46a8d4a75fa8c4f50f20996c3fe55a
 sources:
   - https://github.com/techno-tim/littlelink-server
   - https://github.com/sethcottle/littlelink
-maintainers:
-  - name: rwaltr
-    email: rwaltr@pm.me
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

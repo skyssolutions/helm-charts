@@ -15,9 +15,6 @@ sources:
   - https://github.com/librespeed/speedtest
   - https://hub.docker.com/r/linuxserver/librespeed
   - https://github.com/samipsolutions/helm-charts/tree/master/charts/librespeed
-maintainers:
-  - name: mcmarkj
-    email: mark@markmcw.uk
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

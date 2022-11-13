@@ -14,9 +14,6 @@ home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/bl
 icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
 sources:
   - https://github.com/0xERR0R/blocky
-maintainers:
-  - name: samip5
-    url: https://github.com/samip5
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

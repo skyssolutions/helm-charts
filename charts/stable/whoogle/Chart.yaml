@@ -15,9 +15,6 @@ home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/wh
 icon: https://raw.githubusercontent.com/benbusby/whoogle-search/develop/docs/banner.png
 sources:
   - https://github.com/benbusby/whoogle-search
-maintainers:
-  - name: FlipEnergy
-    email: dennis.zhang.nrg@gmail.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

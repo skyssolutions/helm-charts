@@ -15,9 +15,6 @@ icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
 sources:
   - https://github.com/Lidarr/Lidarr
   - https://github.com/k8s-at-home/container-images
-maintainers:
-  - name: billimek
-    email: jeff@billimek.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/

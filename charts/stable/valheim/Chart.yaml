@@ -13,9 +13,6 @@ icon: https://raw.githubusercontent.com/lloesche/valheim-server-docker/main/misc
 sources:
   - https://github.com/lloesche/valheim-server-docker
   - https://hub.docker.com/r/lloesche/valheim-server
-maintainers:
-  - name: rust84
-    email: owner@russellhall.co.uk
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com

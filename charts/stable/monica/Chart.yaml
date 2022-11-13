@@ -13,9 +13,6 @@ icon: https://pbs.twimg.com/profile_images/951820722191720450/mtCNuIXX.jpg
 sources:
   - https://github.com/monicahq/monica
   - https://hub.docker.com/_/monica
-maintainers:
-  - name: billimek
-    email: jeff@billimek.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/
