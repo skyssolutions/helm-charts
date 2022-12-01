@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.10.7
 description: Dendrite Matrix Homeserver
 name: dendrite
-version: 9.1.1
+version: 9.1.0
 kubeVersion: ">=1.20.0-0"
 deprecated: true
 keywords:
@@ -22,7 +22,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts/
     version: 0.2.2
   - name: nats
-    version: 0.18.3
+    version: 0.18.2
     repository: https://nats-io.github.io/k8s/helm/charts/
     condition: nats.enabled
   # Client API
