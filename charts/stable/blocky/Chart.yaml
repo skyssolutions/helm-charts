@@ -25,4 +25,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `redis` chart dependency to version 17.3.9
+      description: Upgraded `redis` chart dependency to version 17.3.11
