@@ -23,6 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `appVersion` to v7.2.94
-    - kind: changed
-      description: Use bjw-s common chart.
+      description: Upgraded `mongodb` chart dependency to version 13.6.2

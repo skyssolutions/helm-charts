@@ -30,6 +30,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `appVersion` to 0.20.0
-    - kind: changed
-      description: Use bjw-s common chart.
+      description: Upgraded `postgresql` chart dependency to version 12.1.6
