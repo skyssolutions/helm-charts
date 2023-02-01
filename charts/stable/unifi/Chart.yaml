@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `mongodb` chart dependency to version 13.6.2
+      description: Upgraded `mongodb` chart dependency to version 13.6.7

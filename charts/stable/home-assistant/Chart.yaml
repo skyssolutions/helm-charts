@@ -35,4 +35,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `influxdb` chart dependency to version 5.4.14
+      description: Upgraded `postgresql` chart dependency to version 12.1.13
+    - kind: changed
+      description: Upgraded `mariadb` chart dependency to version 11.4.5
+    - kind: changed
+      description: Upgraded `influxdb` chart dependency to version 5.4.15
