@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 0.20.0
 description: The to-do app to organize your life
 name: vikunja
-version: 9.1.0
+version: 9.1.1
 deprecated: true
 keywords:
   - vikunja
@@ -24,7 +24,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts/
     version: 0.2.2
   - name: postgresql
-    version: 12.1.6
+    version: 12.1.13
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 annotations:
