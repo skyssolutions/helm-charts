@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: latest
 description: "A lightweight open source alternative to linktree"
 name: littlelink-server
-version: 3.0.0
+version: 3.0.1
 deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
