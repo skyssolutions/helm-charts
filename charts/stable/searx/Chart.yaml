@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.0.0
 description: Searx is a privacy-respecting, hackable metasearch engine
 name: searx
-version: 7.0.0
+version: 8.0.0
 deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
@@ -19,7 +19,7 @@ sources:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/
-    version: 0.2.2
+    version: 1.3.2
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
