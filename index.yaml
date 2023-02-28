@@ -7,7 +7,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: stable
-    created: "2023-02-26T10:41:35.184746398Z"
+    created: "2023-02-28T16:21:10.07065419Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -33,7 +33,7 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: stable
-    created: "2023-02-26T10:41:35.179517883Z"
+    created: "2023-02-28T16:21:10.063167598Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -60,7 +60,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: 5.22.4
-    created: "2023-02-26T10:41:35.206976884Z"
+    created: "2023-02-28T16:21:10.094928664Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -91,7 +91,7 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.4.5
     apiVersion: v2
     appVersion: 5.22.4
-    created: "2023-02-26T10:41:35.191271741Z"
+    created: "2023-02-28T16:21:10.083964476Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -123,7 +123,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: latest
-    created: "2023-02-26T10:41:35.212216999Z"
+    created: "2023-02-28T16:21:10.102120357Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -149,7 +149,7 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: latest
-    created: "2023-02-26T10:41:35.20953044Z"
+    created: "2023-02-28T16:21:10.098427361Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -176,7 +176,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2023-02-26T10:41:35.231402219Z"
+    created: "2023-02-28T16:21:10.120560937Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -207,7 +207,7 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.4.5
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2023-02-26T10:41:35.224857175Z"
+    created: "2023-02-28T16:21:10.112431146Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -232,6 +232,40 @@ entries:
     urls:
     - https://helm.samipsolutions.fi/stable/monica-10.1.1.tgz
     version: 10.1.1
+  pod-gateway:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: |
+            IPv6 support maybe
+          links:
+            - name: Common library chart definition
+              url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-02-28T16:21:10.057910803Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: 'Admision controller to change the default gateway and DNS server
+      of PODs. It is typically used to route PODs through a VPN server. '
+    digest: a9fb7ed74581c0a83a884e396329504e9147f7c686e62d0ae62167bd7f830083
+    home: https://github.com/angelnu/charts/tree/master/charts/stable/pod-gateway
+    icon: https://kubernetes.io/images/wheel.svg
+    keywords:
+    - pod-gateway
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - name: samip5
+      url: https://github.com/samip5
+    name: pod-gateway
+    sources:
+    - https://github.com/angelnu/gateway-admision-controller
+    - https://github.com/samip5/pod-gateway
+    urls:
+    - https://helm.samipsolutions.fi/incubator/pod-gateway-9.9.0.tgz
+    version: 9.9.0
   satisfactory:
   - annotations:
       artifacthub.io/changes: |-
@@ -239,7 +273,7 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: latest
-    created: "2023-02-26T10:41:35.236159323Z"
+    created: "2023-02-28T16:21:10.123912434Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -267,7 +301,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-02-26T10:41:35.242191155Z"
+    created: "2023-02-28T16:21:10.133530324Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -296,7 +330,7 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-02-26T10:41:35.23923029Z"
+    created: "2023-02-28T16:21:10.129664628Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -326,7 +360,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: v3.2.2
-    created: "2023-02-26T10:41:35.24743797Z"
+    created: "2023-02-28T16:21:10.143746313Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -351,7 +385,7 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: v3.2.2
-    created: "2023-02-26T10:41:35.24471151Z"
+    created: "2023-02-28T16:21:10.13725982Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -377,7 +411,7 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: latest
-    created: "2023-02-26T10:41:35.256874076Z"
+    created: "2023-02-28T16:21:10.147374309Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -398,4 +432,4 @@ entries:
     urls:
     - https://helm.samipsolutions.fi/stable/valheim-4.4.2.tgz
     version: 4.4.2
-generated: "2023-02-26T10:41:35.175006985Z"
+generated: "2023-02-28T16:21:10.053122708Z"
