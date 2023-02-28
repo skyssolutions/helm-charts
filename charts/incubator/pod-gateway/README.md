@@ -1,29 +1,19 @@
 # pod-gateway
 
-![Version: 6.0.0](https://img.shields.io/badge/Version-6.0.0-informational?style=flat-square) ![AppVersion: v1.8.1](https://img.shields.io/badge/AppVersion-v1.8.1-informational?style=flat-square)
-
 Admision controller to change the default gateway and DNS server of PODs
-
-**Homepage:** <https://github.com/k8s-at-home/charts/tree/master/charts/stable/pod-gateway>
-
-## Maintainers
-
-| Name | Email | Url |
-| ---- | ------ | --- |
-| angelnu | <git@angelnu.com> |  |
 
 ## Source Code
 
-* <https://github.com/k8s-at-home/gateway-admision-controller>
-* <https://github.com/k8s-at-home/pod-gateway>
+* <https://github.com/angelnu/gateway-admision-controller>
+* <https://github.com/samip5/pod-gateway>
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.19.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 1.0.1 |
+| https://bjw-s.github.io/helm-charts | common | 1.3.2 |
 
 ## Values
 
