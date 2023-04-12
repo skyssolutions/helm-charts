@@ -25,8 +25,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: |
-        IPv6 support maybe
-      links:
-        - name: Common library chart definition
-          url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
+      description: Upgraded `common` chart dependency to version 1.4.0
