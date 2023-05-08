@@ -5,7 +5,7 @@ description: |
   Admision controller to change the default gateway and DNS server of PODs.
   It is typically used to route PODs through a VPN server.
 name: pod-gateway
-version: 9.10.0
+version: 9.11.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - pod-gateway
@@ -20,9 +20,9 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.4.0
+    version: 1.5.0
 
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 1.4.0
+      description: Upgraded `common` chart dependency to version 1.5.0
