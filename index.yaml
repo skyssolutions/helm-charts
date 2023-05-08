@@ -4,10 +4,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `common` chart dependency to version 1.5.0
+    apiVersion: v2
+    appVersion: stable
+    created: "2023-05-08T14:34:58.416494636Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.0
+    deprecated: true
+    description: Factorio dedicated steam game server
+    digest: d1ee92e44af0568f5d06189cb5212e4e41872e780cf3edc275034c07ac83a7cc
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/factorio
+    icon: https://factorio.com/static/img/factorio-wheel.png
+    keywords:
+    - factorio
+    - steam
+    kubeVersion: '>=1.19.0-0'
+    name: factorio
+    sources:
+    - https://github.com/factoriotools/factorio-docker
+    urls:
+    - https://helm.samipsolutions.fi/stable/factorio-4.2.0.tgz
+    version: 4.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 1.4.0
     apiVersion: v2
     appVersion: stable
-    created: "2023-05-01T13:38:35.315540746Z"
+    created: "2023-05-08T14:34:58.412601902Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -33,7 +59,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: stable
-    created: "2023-05-01T13:38:35.311951635Z"
+    created: "2023-05-08T14:34:58.407427358Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -59,7 +85,7 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: stable
-    created: "2023-05-01T13:38:35.308154823Z"
+    created: "2023-05-08T14:34:58.403681926Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -83,10 +109,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `common` chart dependency to version 1.5.0
+    apiVersion: v2
+    appVersion: 5.22.4
+    created: "2023-05-08T14:34:58.460770515Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    deprecated: true
+    description: Ghost is a blogging and publishing software
+    digest: a370a61a8d84b4e9fe4eb22ecc110eaa87d232f5ed68bc6bf92e160801355a6c
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/ghost
+    icon: https://ghost.org/images/logos/logo-black-1.png
+    keywords:
+    - ghost
+    - blogging
+    kubeVersion: '>=1.19.0-0'
+    name: ghost
+    sources:
+    - https://github.com/TryGhost/Ghost
+    - https://github.com/TryGhost/Ghost-CLI
+    urls:
+    - https://helm.samipsolutions.fi/stable/ghost-6.3.0.tgz
+    version: 6.3.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `mariadb` chart dependency to version 11.5.7
     apiVersion: v2
     appVersion: 5.22.4
-    created: "2023-05-01T13:38:35.353219367Z"
+    created: "2023-05-08T14:34:58.45435206Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -117,7 +174,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.4.0
     apiVersion: v2
     appVersion: 5.22.4
-    created: "2023-05-01T13:38:35.346952147Z"
+    created: "2023-05-08T14:34:58.44612959Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -148,7 +205,7 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.4.7
     apiVersion: v2
     appVersion: 5.22.4
-    created: "2023-05-01T13:38:35.338937821Z"
+    created: "2023-05-08T14:34:58.439642234Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -179,7 +236,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: 5.22.4
-    created: "2023-05-01T13:38:35.330974196Z"
+    created: "2023-05-08T14:34:58.430417055Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -210,7 +267,7 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.4.5
     apiVersion: v2
     appVersion: 5.22.4
-    created: "2023-05-01T13:38:35.323913473Z"
+    created: "2023-05-08T14:34:58.424088901Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -239,10 +296,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `common` chart dependency to version 1.5.0
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-05-08T14:34:58.472820519Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.0
+    deprecated: true
+    description: A lightweight open source alternative to linktree
+    digest: 13a35aa5a3760032b95a4802138ccd97df3e7c9b45c17fa5f5d9f6cdcc6ff05f
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/littlelink-server
+    icon: https://camo.githubusercontent.com/edebb9bce46a8d4a75fa8c4f50f20996c3fe55ace28ecfbfdc5da3794cc90e9a/68747470733a2f2f63646e2e636f74746c652e636c6f75642f6c6974746c656c696e6b2f736f6369616c2d636972636c652e706e67
+    keywords:
+    - littlelink-server
+    kubeVersion: '>=1.19.0-0'
+    name: littlelink-server
+    sources:
+    - https://github.com/techno-tim/littlelink-server
+    - https://github.com/sethcottle/littlelink
+    urls:
+    - https://helm.samipsolutions.fi/stable/littlelink-server-4.2.0.tgz
+    version: 4.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 1.4.0
     apiVersion: v2
     appVersion: latest
-    created: "2023-05-01T13:38:35.362618197Z"
+    created: "2023-05-08T14:34:58.470005594Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -268,7 +351,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: latest
-    created: "2023-05-01T13:38:35.359845788Z"
+    created: "2023-05-08T14:34:58.466704566Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -294,7 +377,7 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: latest
-    created: "2023-05-01T13:38:35.355456574Z"
+    created: "2023-05-08T14:34:58.463346837Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -318,10 +401,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `common` chart dependency to version 1.5.0
+    apiVersion: v2
+    appVersion: 3.7.0-apache
+    created: "2023-05-08T14:34:58.517880605Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    deprecated: true
+    description: A Personal Relationship Management tool to help you organize your
+      social life
+    digest: cbe6616df6afd07d4e72fd00fa2b02d43decabef38addc2afd122fe5b6a8e0cf
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/monica
+    icon: https://pbs.twimg.com/profile_images/951820722191720450/mtCNuIXX.jpg
+    keywords:
+    - crm
+    kubeVersion: '>=1.19.0-0'
+    name: monica
+    sources:
+    - https://github.com/monicahq/monica
+    - https://hub.docker.com/_/monica
+    urls:
+    - https://helm.samipsolutions.fi/stable/monica-11.3.0.tgz
+    version: 11.3.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `mariadb` chart dependency to version 11.5.7
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2023-05-01T13:38:35.396770406Z"
+    created: "2023-05-08T14:34:58.510634743Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -352,7 +466,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.4.0
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2023-05-01T13:38:35.388902081Z"
+    created: "2023-05-08T14:34:58.502900176Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -383,7 +497,7 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.4.7
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2023-05-01T13:38:35.382714361Z"
+    created: "2023-05-08T14:34:58.496486821Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -414,7 +528,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2023-05-01T13:38:35.375519038Z"
+    created: "2023-05-08T14:34:58.486385935Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -445,7 +559,7 @@ entries:
           description: Upgraded `mariadb` chart dependency to version 11.4.5
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2023-05-01T13:38:35.368713616Z"
+    created: "2023-05-08T14:34:58.478951371Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -474,10 +588,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `common` chart dependency to version 1.5.0
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-05-08T14:34:58.395005852Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    description: 'Admision controller to change the default gateway and DNS server
+      of PODs. It is typically used to route PODs through a VPN server. '
+    digest: 188c1f9d74014702b7c1afbb2c4be2eee618b4ff17514090996d26add3b11efc
+    home: https://github.com/angelnu/charts/tree/master/charts/stable/pod-gateway
+    icon: https://kubernetes.io/images/wheel.svg
+    keywords:
+    - pod-gateway
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - name: samip5
+      url: https://github.com/samip5
+    name: pod-gateway
+    sources:
+    - https://github.com/angelnu/gateway-admision-controller
+    - https://github.com/samip5/pod-gateway
+    urls:
+    - https://helm.samipsolutions.fi/incubator/pod-gateway-9.11.0.tgz
+    version: 9.11.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 1.4.0
     apiVersion: v2
     appVersion: latest
-    created: "2023-05-01T13:38:35.296959587Z"
+    created: "2023-05-08T14:34:58.391386221Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -510,7 +653,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: latest
-    created: "2023-05-01T13:38:35.300588699Z"
+    created: "2023-05-08T14:34:58.400091695Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -540,7 +683,7 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: latest
-    created: "2023-05-01T13:38:35.399783816Z"
+    created: "2023-05-08T14:34:58.520561528Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -565,10 +708,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `common` chart dependency to version 1.5.0
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-05-08T14:34:58.533227736Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.0
+    deprecated: true
+    description: Searx is a privacy-respecting, hackable metasearch engine
+    digest: ae4e21a57110e2338c4eb56af8fa8a80fe12fffa58226c6e962088b0614da14c
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/searx
+    icon: https://github.com/searx/searx/blob/master/searx/static/themes/simple/img/logo_searx_a.png?raw=true
+    keywords:
+    - searx
+    - search engine
+    - privacy
+    kubeVersion: '>=1.19.0-0'
+    name: searx
+    sources:
+    - https://github.com/searx/searx
+    - https://searx.github.io/searx/
+    - https://hub.docker.com/r/searx/searx
+    urls:
+    - https://helm.samipsolutions.fi/stable/searx-8.2.0.tgz
+    version: 8.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 1.4.0
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-05-01T13:38:35.408130242Z"
+    created: "2023-05-08T14:34:58.530339712Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -597,7 +769,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-05-01T13:38:35.405326433Z"
+    created: "2023-05-08T14:34:58.527453887Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -626,7 +798,7 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-05-01T13:38:35.402557825Z"
+    created: "2023-05-08T14:34:58.524476061Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -653,10 +825,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgraded `common` chart dependency to version 1.5.0
+    apiVersion: v2
+    appVersion: v3.2.2
+    created: "2023-05-08T14:34:58.545780444Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.0
+    deprecated: true
+    description: Speedtest Exporter made in python using the official speedtest bin
+    digest: 9028cdc6ad5fcf961cb7a02421e5f013cc1a1e0c29029e615c494bbc5298f5cd
+    home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/speedtest-exporter
+    keywords:
+    - speedtest-exporter
+    - speedtest
+    kubeVersion: '>=1.19.0-0'
+    name: speedtest-exporter
+    sources:
+    - https://github.com/MiguelNdeCarvalho/speedtest-exporter/
+    urls:
+    - https://helm.samipsolutions.fi/stable/speedtest-exporter-8.2.0.tgz
+    version: 8.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 1.4.0
     apiVersion: v2
     appVersion: v3.2.2
-    created: "2023-05-01T13:38:35.417865373Z"
+    created: "2023-05-08T14:34:58.542880419Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -681,7 +878,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.3.2
     apiVersion: v2
     appVersion: v3.2.2
-    created: "2023-05-01T13:38:35.415322565Z"
+    created: "2023-05-08T14:34:58.540107095Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -706,7 +903,7 @@ entries:
           description: Use bjw-s common chart.
     apiVersion: v2
     appVersion: v3.2.2
-    created: "2023-05-01T13:38:35.411901654Z"
+    created: "2023-05-08T14:34:58.537294871Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -732,7 +929,7 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: latest
-    created: "2023-05-01T13:38:35.420333981Z"
+    created: "2023-05-08T14:34:58.549750178Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -753,4 +950,4 @@ entries:
     urls:
     - https://helm.samipsolutions.fi/stable/valheim-4.4.2.tgz
     version: 4.4.2
-generated: "2023-05-01T13:38:35.293734177Z"
+generated: "2023-05-08T14:34:58.387941891Z"
