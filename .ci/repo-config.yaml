@@ -19,3 +19,4 @@ excluded-charts-install:
   - apps/wireguard
   - incubator/sdtd
   - library/common
+  - stable/longhorn
