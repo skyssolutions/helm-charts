@@ -7,14 +7,14 @@ entries:
           description: Upgraded `common` chart dependency to version 1.5.0
     apiVersion: v2
     appVersion: stable
-    created: "2023-06-02T12:34:59.442649798Z"
+    created: "2023-07-21T12:59:42.378086889Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
       version: 1.5.1
     deprecated: true
     description: Factorio dedicated steam game server
-    digest: 9bc3f712eb45a2f9da924c30e9dc7b5b7f8b978d831e6c166cdc1775a151c463
+    digest: 61f0f7b90eb6c172ee2f5f5a7bc1e96b07cb8b48e6c8a0d5a0002f504df57e63
     home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/factorio
     icon: https://factorio.com/static/img/factorio-wheel.png
     keywords:
@@ -34,7 +34,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.5.0
     apiVersion: v2
     appVersion: 5.22.4
-    created: "2023-06-02T12:34:59.502616409Z"
+    created: "2023-07-21T12:59:42.387424797Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -59,6 +59,39 @@ entries:
     urls:
     - https://helm.samipsolutions.fi/stable/ghost-6.3.1.tgz
     version: 6.3.1
+  longhorn:
+  - apiVersion: v1
+    appVersion: v1.5.0
+    created: "2023-07-21T12:59:42.390206529Z"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: d4f7055a60837318c451d73f49c6aad18a4a51f7e93535271abae7016fcb4c25
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - https://helm.samipsolutions.fi/stable/longhorn-1.5.1.tgz
+    version: 1.5.1
   monica:
   - annotations:
       artifacthub.io/changes: |-
@@ -66,7 +99,7 @@ entries:
           description: Upgraded `common` chart dependency to version 1.5.0
     apiVersion: v2
     appVersion: 3.7.0-apache
-    created: "2023-06-02T12:34:59.576250959Z"
+    created: "2023-07-21T12:59:42.399665238Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -98,14 +131,14 @@ entries:
           description: Upgraded `common` chart dependency to version 1.5.0
     apiVersion: v2
     appVersion: latest
-    created: "2023-06-02T12:34:59.411860884Z"
+    created: "2023-07-21T12:59:42.373100432Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
       version: 1.5.1
     description: 'Admision controller to change the default gateway and DNS server
       of PODs. It is typically used to route PODs through a VPN server. '
-    digest: ae9e665a6e7979cf27e60539d87fc6b307a83a9af327ebdeceff0faddf891c69
+    digest: a5baa12e9e14112a1e76816ec9ce86d2b8150bec535dea1e0c3905598fb7111c
     home: https://github.com/angelnu/charts/tree/master/charts/stable/pod-gateway
     icon: https://kubernetes.io/images/wheel.svg
     keywords:
@@ -128,14 +161,14 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: latest
-    created: "2023-06-02T12:34:59.579223289Z"
+    created: "2023-07-21T12:59:42.403011577Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
       version: 4.5.2
     deprecated: true
     description: Satisfactory dedicated server
-    digest: 2d77657d8764b65ecda4024d60fe0999a85ad98663f228e8e88ab9b25a1534e2
+    digest: 4399044f2c6b60cf7f8f4d0e922d4bd90b98582a575cf01e65d11f20818d20f4
     home: https://www.satisfactorygame.com
     icon: https://img2.storyblok.com/fit-in/0x200/filters:format(webp)/f/110098/268x268/d1ebbafe03/logo.png
     keywords:
@@ -156,14 +189,14 @@ entries:
           description: Upgraded `common` chart dependency to version 1.5.0
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-06-02T12:34:59.599745998Z"
+    created: "2023-07-21T12:59:42.406582218Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
       version: 1.5.1
     deprecated: true
     description: Searx is a privacy-respecting, hackable metasearch engine
-    digest: dc33e4a64acfa0d87c089295659573971c604c3fcc48b9797ef0ec85d6d88fc6
+    digest: db0aac0f8291a00c011d701c60ccf67beda3ce17718c7b9295be259706523bd4
     home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/searx
     icon: https://github.com/searx/searx/blob/master/searx/static/themes/simple/img/logo_searx_a.png?raw=true
     keywords:
@@ -186,14 +219,14 @@ entries:
           description: Upgraded `common` chart dependency to version 1.5.0
     apiVersion: v2
     appVersion: v3.2.2
-    created: "2023-06-02T12:34:59.617360278Z"
+    created: "2023-07-21T12:59:42.41633483Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
       version: 1.5.1
     deprecated: true
     description: Speedtest Exporter made in python using the official speedtest bin
-    digest: 0fb50b700c96d3f629b53e932ce4285a2d43f04f5f7800ce5b729cefdd07a785
+    digest: 6a9f68b49eefc4bf630c4096252b31aea5df190da9799e2535877adfbf96b2db
     home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/speedtest-exporter
     keywords:
     - speedtest-exporter
@@ -212,7 +245,7 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: latest
-    created: "2023-06-02T12:34:59.620461509Z"
+    created: "2023-07-21T12:59:42.420199775Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -220,7 +253,7 @@ entries:
     deprecated: true
     description: Valheim dedicated gameserver with automatic update and world backup
       support
-    digest: 50883f1282be05e9204f52bfe0d2e780365249b68a1709b730c960e68d43a217
+    digest: 89938c3f85d327542bd89c2b70564766a23cc481bb5ac6aec5d2294db8affb1b
     home: https://github.com/samipsolutions/helm-charts/tree/master/charts/stable/valheim
     icon: https://raw.githubusercontent.com/lloesche/valheim-server-docker/main/misc/Logo_valheim.png
     keywords:
@@ -233,4 +266,4 @@ entries:
     urls:
     - https://helm.samipsolutions.fi/stable/valheim-4.4.2.tgz
     version: 4.4.2
-generated: "2023-06-02T12:34:59.400258166Z"
+generated: "2023-07-21T12:59:42.368659681Z"
