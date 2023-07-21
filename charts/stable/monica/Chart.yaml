@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 3.7.0-apache
 description: A Personal Relationship Management tool to help you organize your social life
 name: monica
-version: 11.3.1
+version: 12.0.0
 deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
@@ -18,7 +18,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts/
     version: 1.5.1
   - name: mariadb
-    version: 11.5.7
+    version: 12.2.8
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 annotations:
