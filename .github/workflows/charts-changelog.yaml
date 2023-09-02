@@ -17,7 +17,7 @@ on:
 jobs:
   validate-changelog:
     name: Validate changelog
-    runs-on: ["self-hosted", "X64"]
+    runs-on: ["arc-sol"]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -37,7 +37,7 @@ jobs:
           done
   generate-changelog:
     name: Generate changelog annotations
-    runs-on: ["self-hosted", "X64"]
+    runs-on: ["arc-sol"]
     needs:
       - validate-changelog
     outputs:
