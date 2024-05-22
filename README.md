@@ -18,7 +18,7 @@ Please refer to Helm's [documentation](https://helm.sh/docs/) to get started.
 Once Helm is set up properly, add the repo as follows:
 
 ```console
-helm repo add samipsolutions https://helm.samipsolutions.fi/
+helm repo add samipsolutions https://helm.skysolutions.fi/
 ```
 
 You can then run `helm search repo samipsolutions` to see the charts.
